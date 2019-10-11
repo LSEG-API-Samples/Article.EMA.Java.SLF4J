@@ -88,12 +88,12 @@ The example file is saved as "\resource\log4j2.xml" file.
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
         </Console>
-        <File name="File" fileName="../logs/log4j.log" immediateFlush="false" append="false">
+        <File name="File" fileName="../logs/ema_log4j.log" immediateFlush="false" append="false">
             <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
         </File>
     </Appenders>
     <loggers>
-        <Logger name="org.apache.log4j.xml" level="TRACE"/>
+        <Logger name="com.thomsonreuters.ema" level="TRACE"/>
         <root level="TRACE">
             <appender-ref ref="Console"/>
             <appender-ref ref="File"/>
