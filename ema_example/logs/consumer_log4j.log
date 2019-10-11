@@ -1,0 +1,1432 @@
+current date-2019-10-11 13:49:01,633 Method-main()   Class name-com.refinitiv.ema.consumer.Consumer_App   Message-Starting Consumer_App application
+current date-2019-10-11 13:49:02,454 Method-main()   Class name-com.refinitiv.ema.consumer.Consumer_App   Message-Consumer_App: Send item request message
+current date-2019-10-11 13:49:02,501 Method-onRefreshMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Consumer_App.AppClient: Receives Market Price Refresh message
+current date-2019-10-11 13:49:02,502 Method-onRefreshMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Item Name: /EUR=
+current date-2019-10-11 13:49:02,503 Method-onRefreshMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Service Name: ELEKTRON_DD
+current date-2019-10-11 13:49:02,504 Method-onRefreshMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Item State: Open / Ok / None / 'All is well'
+current date-2019-10-11 13:49:02,510 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1 Name = PROD_PERM DataType: UInt Value: 363
+current date-2019-10-11 13:49:02,510 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 2 Name = RDNDISPLAY DataType: UInt Value: 153
+current date-2019-10-11 13:49:02,512 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: SANTANDER    H/d
+current date-2019-10-11 13:49:02,513 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 5 Name = TIMACT DataType: Time Value: 6:33:0:0
+current date-2019-10-11 13:49:02,514 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 11 Name = NETCHNG_1 DataType: Real Value: 0.0011
+current date-2019-10-11 13:49:02,514 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 12 Name = HIGH_1 DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,516 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 13 Name = LOW_1 DataType: Real Value: 1.1005
+current date-2019-10-11 13:49:02,517 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 15 Name = CURRENCY DataType: Enum Value: USD
+current date-2019-10-11 13:49:02,518 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 17 Name = ACTIV_DATE DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:02,519 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 19 Name = OPEN_PRC DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,519 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 21 Name = HST_CLOSE DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,520 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 22 Name = BID DataType: Real Value: 1.1015
+current date-2019-10-11 13:49:02,521 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 23 Name = BID_1 DataType: Real Value: 1.1014
+current date-2019-10-11 13:49:02,521 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 24 Name = BID_2 DataType: Real Value: 1.1015
+current date-2019-10-11 13:49:02,522 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 25 Name = ASK DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,523 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 26 Name = ASK_1 DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,524 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 27 Name = ASK_2 DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,524 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 32 Name = ACVOL_1 DataType: Real Value: 19454.0
+current date-2019-10-11 13:49:02,525 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 53 Name = TRD_UNITS DataType: Enum Value: 4DP 
+current date-2019-10-11 13:49:02,526 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 56 Name = PCTCHNG DataType: Real Value: 0.1
+current date-2019-10-11 13:49:02,526 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 57 Name = OPEN_BID DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,527 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 59 Name = OPEN_ASK DataType: Real Value: 1.1008
+current date-2019-10-11 13:49:02,528 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 60 Name = CLOSE_BID DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,528 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 61 Name = CLOSE_ASK DataType: Real Value: 1.1008
+current date-2019-10-11 13:49:02,529 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 77 Name = NUM_MOVES DataType: Real Value: 90925.0
+current date-2019-10-11 13:49:02,530 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 78 Name = OFFCL_CODE DataType: Rmtes Value: SAHK        
+current date-2019-10-11 13:49:02,530 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 79 Name = HSTCLSDATE DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,531 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 90 Name = YRHIGH DataType: Real Value: 1.157
+current date-2019-10-11 13:49:02,532 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 91 Name = YRLOW DataType: Real Value: 1.088
+current date-2019-10-11 13:49:02,533 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 105 Name = BCKGRNDPAG DataType: Rmtes Value: SAHK
+current date-2019-10-11 13:49:02,534 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 114 Name = BID_NET_CH DataType: Real Value: 0.0011
+current date-2019-10-11 13:49:02,534 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 115 Name = BID_TICK_1 DataType: Enum Value: þ
+current date-2019-10-11 13:49:02,535 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 131 Name = PRC_QL2 DataType: Enum Value: D15
+current date-2019-10-11 13:49:02,536 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 134 Name = MID_PRICE DataType: Real Value: 1.1017
+current date-2019-10-11 13:49:02,537 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 135 Name = MID_NET_CH DataType: Real Value: 0.0011
+current date-2019-10-11 13:49:02,538 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 136 Name = MID_CLOSE DataType: Real Value: 1.1006
+current date-2019-10-11 13:49:02,539 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 196 Name = HIGHTP_1 DataType: Enum Value: B
+current date-2019-10-11 13:49:02,540 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 197 Name = LOWTP_1 DataType: Enum Value: A
+current date-2019-10-11 13:49:02,541 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 203 Name = BID_HIGH_1 DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,542 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 204 Name = BID_LOW_1 DataType: Real Value: 1.1003
+current date-2019-10-11 13:49:02,543 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 205 Name = YRBIDHIGH DataType: Real Value: 1.157
+current date-2019-10-11 13:49:02,544 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 206 Name = YRBIDLOW DataType: Real Value: 1.0877
+current date-2019-10-11 13:49:02,545 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 207 Name = HST_CLSBID DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,546 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 208 Name = HSTCLBDDAT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,547 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 211 Name = NUM_BIDS DataType: Real Value: 19454.0
+current date-2019-10-11 13:49:02,548 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 259 Name = RECORDTYPE DataType: UInt Value: 209
+current date-2019-10-11 13:49:02,549 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 270 Name = ACT_TP_1 DataType: Enum Value: Bþ
+current date-2019-10-11 13:49:02,550 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 271 Name = ACT_TP_2 DataType: Enum Value: Bþ
+current date-2019-10-11 13:49:02,550 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 272 Name = ACT_TP_3 DataType: Enum Value: Bþ
+current date-2019-10-11 13:49:02,551 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 275 Name = SEC_ACT_1 DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,551 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 276 Name = SEC_ACT_2 DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,552 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 277 Name = SEC_ACT_3 DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,552 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 280 Name = SC_ACT_TP1 DataType: Enum Value:  A
+current date-2019-10-11 13:49:02,553 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 281 Name = SC_ACT_TP2 DataType: Enum Value:  A
+current date-2019-10-11 13:49:02,553 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 282 Name = SC_ACT_TP3 DataType: Enum Value:  A
+current date-2019-10-11 13:49:02,553 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 285 Name = OPEN_TIME DataType: Time Value: 21:0:0:0
+current date-2019-10-11 13:49:02,554 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 286 Name = HIGH_TIME DataType: Time Value: 4:53:0:0
+current date-2019-10-11 13:49:02,554 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 287 Name = LOW_TIME DataType: Time Value: 21:7:0:0
+current date-2019-10-11 13:49:02,554 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 350 Name = YRHIGHDAT DataType: Date Value: 10 / 1 / 2019
+current date-2019-10-11 13:49:02,554 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 351 Name = YRLOWDAT DataType: Date Value: 1 / 10 / 2019
+current date-2019-10-11 13:49:02,555 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 372 Name = IRGPRC DataType: Real Value: 0.1
+current date-2019-10-11 13:49:02,555 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 375 Name = TIMCOR DataType: Time Value: 21:1:42:0
+current date-2019-10-11 13:49:02,555 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 393 Name = PRIMACT_1 DataType: Real Value: 1.1015
+current date-2019-10-11 13:49:02,556 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 394 Name = PRIMACT_2 DataType: Real Value: 1.1014
+current date-2019-10-11 13:49:02,556 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 395 Name = PRIMACT_3 DataType: Real Value: 1.1015
+current date-2019-10-11 13:49:02,556 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 544 Name = BASE_CCY DataType: Rmtes Value: EUR
+current date-2019-10-11 13:49:02,557 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 728 Name = BCAST_REF DataType: Rmtes Value: FX-W0-US
+current date-2019-10-11 13:49:02,557 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 825 Name = CROSS_SC DataType: Enum Value: 1E+00
+current date-2019-10-11 13:49:02,558 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 826 Name = DLG_CODE1 DataType: Rmtes Value: SAHK  
+current date-2019-10-11 13:49:02,558 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 827 Name = DLG_CODE2 DataType: Rmtes Value:       
+current date-2019-10-11 13:49:02,558 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 828 Name = DLG_CODE3 DataType: Rmtes Value:       
+current date-2019-10-11 13:49:02,559 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 831 Name = CTBTR_1 DataType: Rmtes Value: SANTANDER   
+current date-2019-10-11 13:49:02,559 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 832 Name = CTBTR_2 DataType: Rmtes Value: BARCLAYS    
+current date-2019-10-11 13:49:02,559 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 833 Name = CTBTR_3 DataType: Rmtes Value: BARCLAYS    
+current date-2019-10-11 13:49:02,560 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 836 Name = CTB_LOC1 DataType: Rmtes Value: HKG
+current date-2019-10-11 13:49:02,560 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 837 Name = CTB_LOC2 DataType: Rmtes Value: LON
+current date-2019-10-11 13:49:02,560 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 838 Name = CTB_LOC3 DataType: Rmtes Value: LON
+current date-2019-10-11 13:49:02,561 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 841 Name = CTB_PAGE1 DataType: Rmtes Value: SAHK
+current date-2019-10-11 13:49:02,561 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 842 Name = CTB_PAGE2 DataType: Rmtes Value: BCFX
+current date-2019-10-11 13:49:02,562 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 843 Name = CTB_PAGE3 DataType: Rmtes Value: BCFX
+current date-2019-10-11 13:49:02,562 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 875 Name = VALUE_DT1 DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:02,562 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 876 Name = VALUE_DT2 DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:02,563 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 877 Name = VALUE_DT3 DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:02,563 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 957 Name = SEC_HIGH DataType: Real Value: 1.1022
+current date-2019-10-11 13:49:02,563 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 958 Name = SEC_HI_TP DataType: Enum Value: A
+current date-2019-10-11 13:49:02,563 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 959 Name = SEC_LOW DataType: Real Value: 1.1005
+current date-2019-10-11 13:49:02,564 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 960 Name = SEC_LO_TP DataType: Enum Value: B
+current date-2019-10-11 13:49:02,564 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 962 Name = OPEN_TYPE DataType: Enum Value: B 
+current date-2019-10-11 13:49:02,565 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 964 Name = CLOSE_TYPE DataType: Enum Value: B 
+current date-2019-10-11 13:49:02,565 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 967 Name = BKGD_REF DataType: Ascii Value: Euro
+current date-2019-10-11 13:49:02,566 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 995 Name = GEN_TEXT16 DataType: Rmtes Value: <EUR/BKGDINFO>
+current date-2019-10-11 13:49:02,567 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 998 Name = GEN_VAL3 DataType: Real Value: 1.1008
+current date-2019-10-11 13:49:02,567 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 999 Name = GEN_VAL4 DataType: Real Value: 1.1014
+current date-2019-10-11 13:49:02,568 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1000 Name = GV1_TEXT DataType: Rmtes Value: SPOT
+current date-2019-10-11 13:49:02,569 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1001 Name = GV2_TEXT DataType: Rmtes Value: EURUSD
+current date-2019-10-11 13:49:02,570 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1003 Name = GV4_TEXT DataType: Rmtes Value: SPOT
+current date-2019-10-11 13:49:02,571 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1010 Name = VALUE_TS1 DataType: Time Value: 6:33:28:0
+current date-2019-10-11 13:49:02,571 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1011 Name = VALUE_TS2 DataType: Time Value: 6:32:29:0
+current date-2019-10-11 13:49:02,572 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1012 Name = VALUE_TS3 DataType: Time Value: 6:31:29:0
+current date-2019-10-11 13:49:02,572 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1025 Name = QUOTIM DataType: Time Value: 6:33:28:0
+current date-2019-10-11 13:49:02,573 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1029 Name = GEN_VAL5 DataType: Real Value: 1.097
+current date-2019-10-11 13:49:02,574 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1030 Name = GEN_VAL6 DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,575 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1031 Name = GEN_VAL7 DataType: Real Value: 1.0969
+current date-2019-10-11 13:49:02,576 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1032 Name = GEN_VAL8 DataType: Real Value: 1.1037
+current date-2019-10-11 13:49:02,576 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1033 Name = GEN_VAL9 DataType: Real Value: 1.0972
+current date-2019-10-11 13:49:02,577 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1034 Name = GEN_VAL10 DataType: Real Value: 1.0973
+current date-2019-10-11 13:49:02,577 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1035 Name = GV5_TEXT DataType: Rmtes Value: OP_BID
+current date-2019-10-11 13:49:02,578 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1036 Name = GV6_TEXT DataType: Rmtes Value: BID_HI
+current date-2019-10-11 13:49:02,578 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1037 Name = GV7_TEXT DataType: Rmtes Value: BID_LO
+current date-2019-10-11 13:49:02,579 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1038 Name = GV8_TEXT DataType: Rmtes Value: ASK_HI
+current date-2019-10-11 13:49:02,579 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1039 Name = GV9_TEXT DataType: Rmtes Value: ASK_LO
+current date-2019-10-11 13:49:02,580 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1040 Name = GV10_TEXT DataType: Rmtes Value: OP_ASK
+current date-2019-10-11 13:49:02,581 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1052 Name = GN_TXT16_2 DataType: Rmtes Value: <EURVOL>
+current date-2019-10-11 13:49:02,581 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1061 Name = GV1_TIME DataType: Time Value: 6:0:0:0
+current date-2019-10-11 13:49:02,582 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1080 Name = PREF_DISP DataType: UInt Value: 6205
+current date-2019-10-11 13:49:02,583 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1271 Name = GN_TXT24_1 DataType: Rmtes Value: <0#EURF=>
+current date-2019-10-11 13:49:02,584 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1709 Name = RDN_EXCHD2 DataType: Enum Value: NY$
+current date-2019-10-11 13:49:02,585 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3263 Name = PREV_DISP DataType: UInt Value: 60
+current date-2019-10-11 13:49:02,585 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3269 Name = ASIA_CL_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,585 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3270 Name = ASIA_CLOSE DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:02,586 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3271 Name = ASIA_HI_TM DataType: Time Value: 4:53:0:0
+current date-2019-10-11 13:49:02,586 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3272 Name = ASIA_HIGH DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,586 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3273 Name = ASIA_LOW DataType: Real Value: 1.1005
+current date-2019-10-11 13:49:02,587 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3274 Name = ASIA_LW_TM DataType: Time Value: 21:7:0:0
+current date-2019-10-11 13:49:02,587 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3275 Name = ASIA_NETCH DataType: Real Value: -1.0E-4
+current date-2019-10-11 13:49:02,587 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3276 Name = ASIA_OP_TM DataType: Time Value: 21:0:0:0
+current date-2019-10-11 13:49:02,588 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3277 Name = ASIA_OPEN DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,588 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3278 Name = EURO_CL_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,589 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3279 Name = EURO_CLOSE DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:02,589 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3280 Name = EURO_HI_TM DataType: Time Value: 5:44:0:0
+current date-2019-10-11 13:49:02,589 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3281 Name = EURO_HIGH DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,590 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3282 Name = EURO_LOW DataType: Real Value: 1.1012
+current date-2019-10-11 13:49:02,590 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3283 Name = EURO_LW_TM DataType: Time Value: 6:17:0:0
+current date-2019-10-11 13:49:02,591 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3284 Name = EURO_NETCH DataType: Real Value: -1.0E-4
+current date-2019-10-11 13:49:02,591 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3285 Name = EURO_OP_TM DataType: Time Value: 5:0:0:0
+current date-2019-10-11 13:49:02,591 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3286 Name = EURO_OPEN DataType: Real Value: 1.1014
+current date-2019-10-11 13:49:02,591 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3287 Name = US_CL_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,592 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3288 Name = US_CLOSE DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,592 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3289 Name = US_HI_TM DataType: Time Value: 11:30:0:0
+current date-2019-10-11 13:49:02,592 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3290 Name = US_HIGH DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,593 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3291 Name = US_LOW DataType: Real Value: 1.1003
+current date-2019-10-11 13:49:02,593 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3292 Name = US_LW_TM DataType: Time Value: 15:13:0:0
+current date-2019-10-11 13:49:02,593 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3293 Name = US_NETCH DataType: Real Value: 0.0035
+current date-2019-10-11 13:49:02,594 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3294 Name = US_OP_TM DataType: Time Value: 11:0:0:0
+current date-2019-10-11 13:49:02,594 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3295 Name = US_OPEN DataType: Real Value: 1.1024
+current date-2019-10-11 13:49:02,594 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3296 Name = ASK_SPREAD DataType: Real Value: 1.1003
+current date-2019-10-11 13:49:02,595 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3303 Name = BID_SPREAD DataType: Real Value: 1.101
+current date-2019-10-11 13:49:02,595 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3352 Name = MID_SPREAD DataType: Real Value: 1.1
+current date-2019-10-11 13:49:02,595 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3362 Name = MONTH_HIGH DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,596 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3363 Name = MONTH_LOW DataType: Real Value: 1.088
+current date-2019-10-11 13:49:02,596 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3378 Name = PCTCHG_3M DataType: Real Value: -2.11
+current date-2019-10-11 13:49:02,596 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3379 Name = PCTCHG_6M DataType: Real Value: -2.09
+current date-2019-10-11 13:49:02,596 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3380 Name = PCTCHG_MTD DataType: Real Value: 0.24
+current date-2019-10-11 13:49:02,597 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3381 Name = PCTCHG_YTD DataType: Real Value: -3.96
+current date-2019-10-11 13:49:02,597 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3386 Name = QUOTE_DATE DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:02,597 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3408 Name = WEEK_HIGH DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,598 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3409 Name = WEEK_LOW DataType: Real Value: 1.0942
+current date-2019-10-11 13:49:02,598 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3512 Name = ASK_HIGH_1 DataType: Real Value: 1.1022
+current date-2019-10-11 13:49:02,599 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3513 Name = ASK_HI_TME DataType: Time Value: 4:53:0:0
+current date-2019-10-11 13:49:02,600 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3514 Name = ASK_LOW_1 DataType: Real Value: 1.1005
+current date-2019-10-11 13:49:02,600 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3515 Name = ASK_LO_TME DataType: Time Value: 21:7:0:0
+current date-2019-10-11 13:49:02,601 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3580 Name = BID_ASK_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,601 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3621 Name = HIGH_2 DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,602 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3622 Name = HIGH_3 DataType: Real Value: 1.1017
+current date-2019-10-11 13:49:02,602 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3623 Name = HIGH_4 DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:02,602 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3624 Name = HIGH_5 DataType: Real Value: 1.1015
+current date-2019-10-11 13:49:02,603 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3625 Name = HIGH_TIME2 DataType: Time Value: 2:55:0:0
+current date-2019-10-11 13:49:02,603 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3626 Name = HIGH_TIME3 DataType: Time Value: 2:2:0:0
+current date-2019-10-11 13:49:02,603 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3627 Name = HIGH_TIME4 DataType: Time Value: 1:56:0:0
+current date-2019-10-11 13:49:02,604 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3628 Name = HIGH_TIME5 DataType: Time Value: 1:49:0:0
+current date-2019-10-11 13:49:02,604 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3629 Name = LOW_2 DataType: Real Value: 1.1006
+current date-2019-10-11 13:49:02,604 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3630 Name = LOW_3 DataType: Real Value: 1.0972
+current date-2019-10-11 13:49:02,605 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3631 Name = LOW_4 DataType: Real Value: 1.0973
+current date-2019-10-11 13:49:02,605 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3632 Name = LOW_5 DataType: Real Value: 1.0953
+current date-2019-10-11 13:49:02,606 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3633 Name = LOW_TIME2 DataType: Time Value: 21:0:0:0
+current date-2019-10-11 13:49:02,606 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3634 Name = LOW_TIME3 DataType: Time Value: 21:2:0:0
+current date-2019-10-11 13:49:02,607 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3635 Name = LOW_TIME4 DataType: Time Value: 21:0:0:0
+current date-2019-10-11 13:49:02,607 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3636 Name = LOW_TIME5 DataType: Time Value: 21:7:0:0
+current date-2019-10-11 13:49:02,607 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3754 Name = SCALING DataType: Rmtes Value: 1
+current date-2019-10-11 13:49:02,608 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3791 Name = START_DT DataType: Date Value: 15 / 10 / 2019
+current date-2019-10-11 13:49:02,608 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3832 Name = WKHI_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,608 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3833 Name = WKLO_DT DataType: Date Value: 8 / 10 / 2019
+current date-2019-10-11 13:49:02,608 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3834 Name = MTHHI_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,609 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3835 Name = MTHLO_DT DataType: Date Value: 1 / 10 / 2019
+current date-2019-10-11 13:49:02,609 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3855 Name = QUOTIM_MS DataType: UInt Value: 23608901
+current date-2019-10-11 13:49:02,609 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 4350 Name = MID_HIGH DataType: Real Value: 1.102
+current date-2019-10-11 13:49:02,610 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 4351 Name = MID_LOW DataType: Real Value: 1.1005
+current date-2019-10-11 13:49:02,610 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 4352 Name = MID_HTIM DataType: Time Value: 4:53:4:0
+current date-2019-10-11 13:49:02,611 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 4353 Name = MID_LTIM DataType: Time Value: 21:0:30:0
+current date-2019-10-11 13:49:02,611 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 5291 Name = MID_OPEN DataType: Real Value: 1.1006
+current date-2019-10-11 13:49:02,612 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 5357 Name = CONTEXT_ID DataType: Real Value: 3312.0
+current date-2019-10-11 13:49:02,612 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6076 Name = BID_HIGH_2 DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,612 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6077 Name = BID_HIGH_3 DataType: Real Value: 1.1017
+current date-2019-10-11 13:49:02,613 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6078 Name = BID_HIGH_4 DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:02,613 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6079 Name = BID_HIGH_5 DataType: Real Value: 1.1015
+current date-2019-10-11 13:49:02,613 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6080 Name = BID_LOW_2 DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,614 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6081 Name = BID_LOW_3 DataType: Real Value: 1.0969
+current date-2019-10-11 13:49:02,614 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6082 Name = BID_LOW_4 DataType: Real Value: 1.095
+current date-2019-10-11 13:49:02,614 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6083 Name = BID_LOW_5 DataType: Real Value: 1.0951
+current date-2019-10-11 13:49:02,615 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6084 Name = ASK_HIGH_2 DataType: Real Value: 1.1021
+current date-2019-10-11 13:49:02,615 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6085 Name = ASK_HIGH_3 DataType: Real Value: 1.102
+current date-2019-10-11 13:49:02,615 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6086 Name = ASK_HIGH_4 DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,616 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6087 Name = ASK_HIGH_5 DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,616 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6088 Name = ASK_LOW_2 DataType: Real Value: 1.1006
+current date-2019-10-11 13:49:02,616 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6089 Name = ASK_LOW_3 DataType: Real Value: 1.0972
+current date-2019-10-11 13:49:02,617 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6090 Name = ASK_LOW_4 DataType: Real Value: 1.0973
+current date-2019-10-11 13:49:02,617 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6091 Name = ASK_LOW_5 DataType: Real Value: 1.0953
+current date-2019-10-11 13:49:02,617 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6140 Name = PRV_BID_H DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,617 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6141 Name = PRV_ASK_H DataType: Real Value: 1.1037
+current date-2019-10-11 13:49:02,618 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6142 Name = PRV_BID_L DataType: Real Value: 1.0969
+current date-2019-10-11 13:49:02,618 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6143 Name = PRV_ASK_L DataType: Real Value: 1.0972
+current date-2019-10-11 13:49:02,618 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6401 Name = DDS_DSO_ID DataType: UInt Value: 4216
+current date-2019-10-11 13:49:02,619 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6409 Name = BR_LINK1 DataType: Ascii Value:  blank
+current date-2019-10-11 13:49:02,619 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6410 Name = BR_LINK2 DataType: Ascii Value:  blank
+current date-2019-10-11 13:49:02,619 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6411 Name = BR_LINK3 DataType: Ascii Value:  blank
+current date-2019-10-11 13:49:02,619 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6480 Name = SPS_SP_RIC DataType: Ascii Value: .[SPSCDSAS0404
+current date-2019-10-11 13:49:02,620 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6696 Name = QUOTIM_2 DataType: Time Value: 6:32:29:0
+current date-2019-10-11 13:49:02,620 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6697 Name = QUOTIM_3 DataType: Time Value: 6:31:29:0
+current date-2019-10-11 13:49:02,620 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6816 Name = QUOTE_DT2 DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:02,621 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6817 Name = QUOTE_DT3 DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:02,621 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6821 Name = ASKYRHIDAT DataType: Date Value: 10 / 1 / 2019
+current date-2019-10-11 13:49:02,621 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6822 Name = ASKYRLODAT DataType: Date Value: 1 / 10 / 2019
+current date-2019-10-11 13:49:02,622 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6833 Name = BIDYRHIDAT DataType: Date Value: 10 / 1 / 2019
+current date-2019-10-11 13:49:02,622 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6834 Name = BIDYRLODAT DataType: Date Value: 1 / 10 / 2019
+current date-2019-10-11 13:49:02,622 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6837 Name = ASIABAC_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,622 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6838 Name = EUBAC_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,623 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6839 Name = USBAC_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,623 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 6954 Name = HST_NUMBID DataType: Int Value: 90925
+current date-2019-10-11 13:49:02,623 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7808 Name = ASK_FWDOR DataType: Real Value:  blank
+current date-2019-10-11 13:49:02,624 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7809 Name = BID_FWDOR DataType: Real Value:  blank
+current date-2019-10-11 13:49:02,624 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7838 Name = AMERCL_ASK DataType: Real Value: 1.1008
+current date-2019-10-11 13:49:02,624 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7839 Name = AMERCL_BID DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,625 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7840 Name = AMERHI_ASK DataType: Real Value: 1.1037
+current date-2019-10-11 13:49:02,625 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7841 Name = AMERHI_BID DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,626 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7842 Name = AMERLO_ASK DataType: Real Value: 1.1003
+current date-2019-10-11 13:49:02,626 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7843 Name = AMERLO_BID DataType: Real Value: 1.1
+current date-2019-10-11 13:49:02,626 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7844 Name = AMEROP_ASK DataType: Real Value: 1.1028
+current date-2019-10-11 13:49:02,627 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7845 Name = AMEROP_BID DataType: Real Value: 1.1024
+current date-2019-10-11 13:49:02,627 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7846 Name = ASIACL_ASK DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,627 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7847 Name = ASIACL_BID DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:02,628 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7848 Name = ASIAHI_ASK DataType: Real Value: 1.1022
+current date-2019-10-11 13:49:02,628 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7849 Name = ASIAHI_BID DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,629 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7850 Name = ASIALO_ASK DataType: Real Value: 1.1005
+current date-2019-10-11 13:49:02,629 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7851 Name = ASIALO_BID DataType: Real Value: 1.1003
+current date-2019-10-11 13:49:02,629 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7852 Name = ASIAOP_ASK DataType: Real Value: 1.1008
+current date-2019-10-11 13:49:02,630 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7853 Name = ASIAOP_BID DataType: Real Value: 1.1004
+current date-2019-10-11 13:49:02,630 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7854 Name = BIDPCTCHNG DataType: Real Value: 0.1
+current date-2019-10-11 13:49:02,631 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7855 Name = EURCL_ASK DataType: Real Value: 1.102
+current date-2019-10-11 13:49:02,631 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7856 Name = EURCL_BID DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:02,632 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7857 Name = EURHI_ASK DataType: Real Value: 1.1021
+current date-2019-10-11 13:49:02,632 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7858 Name = EURHI_BID DataType: Real Value: 1.1019
+current date-2019-10-11 13:49:02,633 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7859 Name = EURLO_ASK DataType: Real Value: 1.1012
+current date-2019-10-11 13:49:02,633 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7860 Name = EURLO_BID DataType: Real Value: 1.101
+current date-2019-10-11 13:49:02,633 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7861 Name = EUROP_ASK DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:02,634 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7862 Name = EUROP_BID DataType: Real Value: 1.1014
+current date-2019-10-11 13:49:02,634 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7863 Name = HST_HIMID DataType: Real Value: 1.1036
+current date-2019-10-11 13:49:02,634 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7864 Name = HST_LOMID DataType: Real Value: 1.0971
+current date-2019-10-11 13:49:02,635 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7865 Name = HST_OPNASK DataType: Real Value: 1.0973
+current date-2019-10-11 13:49:02,635 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7866 Name = HST_OPNBID DataType: Real Value: 1.097
+current date-2019-10-11 13:49:02,635 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7868 Name = YRASKHIGH DataType: Real Value: 1.1572
+current date-2019-10-11 13:49:02,635 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7869 Name = YRASKLOW DataType: Real Value: 1.088
+current date-2019-10-11 13:49:02,636 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7880 Name = ASIA_BNC DataType: Real Value: -1.0E-4
+current date-2019-10-11 13:49:02,636 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7885 Name = EURO_BNC DataType: Real Value: -1.0E-4
+current date-2019-10-11 13:49:02,636 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7886 Name = MTH_ASK_LO DataType: Real Value: 1.088
+current date-2019-10-11 13:49:02,637 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7887 Name = MTH_BID_HI DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,637 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7888 Name = US_BNC DataType: Real Value: 0.0035
+current date-2019-10-11 13:49:02,637 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7889 Name = WK_ASK_LO DataType: Real Value: 1.0942
+current date-2019-10-11 13:49:02,638 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7890 Name = WK_BID_HI DataType: Real Value: 1.1034
+current date-2019-10-11 13:49:02,638 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 8107 Name = BID_HOURLY DataType: Real Value: 1.1014
+current date-2019-10-11 13:49:02,638 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 8635 Name = RCS_AS_CL2 DataType: Rmtes Value:                         
+current date-2019-10-11 13:49:02,639 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 9192 Name = MTH_ALO_DT DataType: Date Value: 1 / 10 / 2019
+current date-2019-10-11 13:49:02,639 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 9193 Name = MTH_BHI_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,639 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 9194 Name = WK_ALO_DT DataType: Date Value: 8 / 10 / 2019
+current date-2019-10-11 13:49:02,639 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 9195 Name = WK_BHI_DT DataType: Date Value: 10 / 10 / 2019
+current date-2019-10-11 13:49:02,640 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 13404 Name = FXMM_TYPE DataType: Enum Value:         
+current date-2019-10-11 13:49:02,640 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14162 Name = ASIA_AH_MS DataType: Time Value: 4:53:5:542
+current date-2019-10-11 13:49:02,640 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14163 Name = ASIA_AL_MS DataType: Time Value: 21:7:13:19
+current date-2019-10-11 13:49:02,640 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14164 Name = ASIA_AO_MS DataType: Time Value: 21:0:1:82
+current date-2019-10-11 13:49:02,641 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14165 Name = ASIA_BH_MS DataType: Time Value: 4:53:4:158
+current date-2019-10-11 13:49:02,641 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14166 Name = ASIA_BL_MS DataType: Time Value: 21:1:42:782
+current date-2019-10-11 13:49:02,641 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14167 Name = ASIA_BO_MS DataType: Time Value: 21:0:0:978
+current date-2019-10-11 13:49:02,641 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14168 Name = EURO_AH_MS DataType: Time Value: 5:43:21:199
+current date-2019-10-11 13:49:02,641 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14169 Name = EURO_AL_MS DataType: Time Value: 6:17:3:429
+current date-2019-10-11 13:49:02,642 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14170 Name = EURO_AO_MS DataType: Time Value: 5:0:1:208
+current date-2019-10-11 13:49:02,642 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14171 Name = EURO_BH_MS DataType: Time Value: 5:44:5:707
+current date-2019-10-11 13:49:02,642 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14172 Name = EURO_BL_MS DataType: Time Value: 6:16:9:717
+current date-2019-10-11 13:49:02,643 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14173 Name = EURO_BO_MS DataType: Time Value: 5:0:1:208
+current date-2019-10-11 13:49:02,643 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14174 Name = US_AH_MS DataType: Time Value: 11:30:49:93
+current date-2019-10-11 13:49:02,643 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14175 Name = US_AL_MS DataType: Time Value: 15:13:33:812
+current date-2019-10-11 13:49:02,644 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14176 Name = US_AO_MS DataType: Time Value: 11:0:0:502
+current date-2019-10-11 13:49:02,644 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14177 Name = US_BH_MS DataType: Time Value: 11:30:49:93
+current date-2019-10-11 13:49:02,644 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14178 Name = US_BL_MS DataType: Time Value: 15:14:0:702
+current date-2019-10-11 13:49:02,644 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14179 Name = US_BO_MS DataType: Time Value: 11:0:0:502
+current date-2019-10-11 13:49:02,645 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14180 Name = OPN_BID_MS DataType: Time Value: 21:0:0:978
+current date-2019-10-11 13:49:02,645 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14181 Name = ASKHI1_MS DataType: Time Value: 4:53:5:542
+current date-2019-10-11 13:49:02,645 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14182 Name = ASKHI2_MS DataType: Time Value: 4:51:16:62
+current date-2019-10-11 13:49:02,645 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14183 Name = ASKHI3_MS DataType: Time Value: 2:19:34:901
+current date-2019-10-11 13:49:02,645 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14184 Name = ASKHI4_MS DataType: Time Value: 2:1:27:48
+current date-2019-10-11 13:49:02,646 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14185 Name = ASKHI5_MS DataType: Time Value: 1:51:50:514
+current date-2019-10-11 13:49:02,646 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14186 Name = ASKLO1_MS DataType: Time Value: 21:7:13:19
+current date-2019-10-11 13:49:02,646 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14187 Name = ASKLO2_MS DataType: Time Value: 21:0:2:487
+current date-2019-10-11 13:49:02,647 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14188 Name = ASKLO3_MS DataType: Time Value: 21:2:15:70
+current date-2019-10-11 13:49:02,647 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14189 Name = ASKLO4_MS DataType: Time Value: 21:0:1:429
+current date-2019-10-11 13:49:02,647 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14190 Name = ASKLO5_MS DataType: Time Value: 21:7:0:875
+current date-2019-10-11 13:49:02,647 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14191 Name = BIDHI1_MS DataType: Time Value: 4:53:4:158
+current date-2019-10-11 13:49:02,648 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14192 Name = BIDHI2_MS DataType: Time Value: 2:55:57:370
+current date-2019-10-11 13:49:02,648 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14193 Name = BIDHI3_MS DataType: Time Value: 2:2:34:917
+current date-2019-10-11 13:49:02,648 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14194 Name = BIDHI4_MS DataType: Time Value: 1:56:26:284
+current date-2019-10-11 13:49:02,649 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14195 Name = BIDHI5_MS DataType: Time Value: 1:49:43:378
+current date-2019-10-11 13:49:02,649 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14196 Name = BIDLO1_MS DataType: Time Value: 21:1:42:782
+current date-2019-10-11 13:49:02,649 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14197 Name = BIDLO2_MS DataType: Time Value: 21:0:0:978
+current date-2019-10-11 13:49:02,650 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14198 Name = BIDLO3_MS DataType: Time Value: 21:0:2:182
+current date-2019-10-11 13:49:02,650 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14199 Name = BIDLO4_MS DataType: Time Value: 21:6:56:999
+current date-2019-10-11 13:49:02,650 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14200 Name = BIDLO5_MS DataType: Time Value: 21:6:19:380
+current date-2019-10-11 13:49:02,650 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14201 Name = MIDHI1_MS DataType: Time Value: 4:53:4:158
+current date-2019-10-11 13:49:02,651 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14202 Name = MIDLO1_MS DataType: Time Value: 21:0:30:934
+current date-2019-10-11 13:49:02,651 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 14208 Name = BID_HR_MS DataType: Time Value: 6:0:0:462
+current date-2019-10-11 13:49:02,651 Method-onRefreshMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-
+
+current date-2019-10-11 13:49:29,570 Method-onUpdateMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Consumer_App.AppClient: Receives Market Price Update message
+current date-2019-10-11 13:49:29,571 Method-onUpdateMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Item Name: /EUR=
+current date-2019-10-11 13:49:29,571 Method-onUpdateMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Service Name: ELEKTRON_DD
+current date-2019-10-11 13:49:29,572 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 372 Name = IRGPRC DataType: Real Value: 0.11
+current date-2019-10-11 13:49:29,572 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 22 Name = BID DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:29,573 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 393 Name = PRIMACT_1 DataType: Real Value: 1.1016
+current date-2019-10-11 13:49:29,573 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 270 Name = ACT_TP_1 DataType: Enum Value: Bþ
+current date-2019-10-11 13:49:29,574 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 134 Name = MID_PRICE DataType: Real Value: 1.1018
+current date-2019-10-11 13:49:29,574 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 25 Name = ASK DataType: Real Value: 1.102
+current date-2019-10-11 13:49:29,575 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 275 Name = SEC_ACT_1 DataType: Real Value: 1.102
+current date-2019-10-11 13:49:29,575 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 114 Name = BID_NET_CH DataType: Real Value: 0.0012
+current date-2019-10-11 13:49:29,576 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 11 Name = NETCHNG_1 DataType: Real Value: 0.0012
+current date-2019-10-11 13:49:29,576 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 56 Name = PCTCHNG DataType: Real Value: 0.11
+current date-2019-10-11 13:49:29,577 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7854 Name = BIDPCTCHNG DataType: Real Value: 0.11
+current date-2019-10-11 13:49:29,578 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3378 Name = PCTCHG_3M DataType: Real Value: -2.1
+current date-2019-10-11 13:49:29,578 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3379 Name = PCTCHG_6M DataType: Real Value: -2.08
+current date-2019-10-11 13:49:29,579 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3380 Name = PCTCHG_MTD DataType: Real Value: 0.25
+current date-2019-10-11 13:49:29,579 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3381 Name = PCTCHG_YTD DataType: Real Value: -3.95
+current date-2019-10-11 13:49:29,580 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 32 Name = ACVOL_1 DataType: Real Value: 19527.0
+current date-2019-10-11 13:49:29,580 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 115 Name = BID_TICK_1 DataType: Enum Value: þ
+current date-2019-10-11 13:49:29,580 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 211 Name = NUM_BIDS DataType: Real Value: 19527.0
+current date-2019-10-11 13:49:29,581 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3386 Name = QUOTE_DATE DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:29,581 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 875 Name = VALUE_DT1 DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:29,582 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 17 Name = ACTIV_DATE DataType: Date Value: 11 / 10 / 2019
+current date-2019-10-11 13:49:29,582 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3855 Name = QUOTIM_MS DataType: UInt Value: 23669243
+current date-2019-10-11 13:49:29,583 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1025 Name = QUOTIM DataType: Time Value: 6:34:29:0
+current date-2019-10-11 13:49:29,583 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 1010 Name = VALUE_TS1 DataType: Time Value: 6:34:29:0
+current date-2019-10-11 13:49:29,583 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 5 Name = TIMACT DataType: Time Value: 6:34:0:0
+current date-2019-10-11 13:49:29,584 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 135 Name = MID_NET_CH DataType: Real Value: 0.0012
+current date-2019-10-11 13:49:29,584 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 831 Name = CTBTR_1 DataType: Rmtes Value: ABSA Bk     
+current date-2019-10-11 13:49:29,585 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 836 Name = CTB_LOC1 DataType: Rmtes Value: JHB
+current date-2019-10-11 13:49:29,585 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 841 Name = CTB_PAGE1 DataType: Rmtes Value: ABSA
+current date-2019-10-11 13:49:29,586 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: ABSA Bk      J/d
+current date-2019-10-11 13:49:29,586 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 78 Name = OFFCL_CODE DataType: Rmtes Value: ABSG        
+current date-2019-10-11 13:49:29,587 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 105 Name = BCKGRNDPAG DataType: Rmtes Value: ABSA
+current date-2019-10-11 13:49:29,588 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 826 Name = DLG_CODE1 DataType: Rmtes Value: ABSG  
+current date-2019-10-11 13:49:29,588 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3275 Name = ASIA_NETCH DataType: Real Value: 0.0
+current date-2019-10-11 13:49:29,588 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 3284 Name = EURO_NETCH DataType: Real Value: 0.0
+current date-2019-10-11 13:49:29,589 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7880 Name = ASIA_BNC DataType: Real Value: 0.0
+current date-2019-10-11 13:49:29,589 Method-decode()   Class name-com.refinitiv.ema.consumer.AppClient   Message-Fid: 7885 Name = EURO_BNC DataType: Real Value: 0.0
+current date-2019-10-11 13:49:29,590 Method-onUpdateMsg()   Class name-com.refinitiv.ema.consumer.AppClient   Message-
+
+13:51:23.435 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+13:51:24.077 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+13:51:24.131 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+13:51:24.132 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+13:51:24.132 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+13:51:24.132 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'All is well'
+13:51:24.137 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1 Name = PROD_PERM DataType: UInt Value: 363
+13:51:24.138 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 2 Name = RDNDISPLAY DataType: UInt Value: 153
+13:51:24.140 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: BARCLAYS     L/d
+13:51:24.140 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5 Name = TIMACT DataType: Time Value: 6:35:0:0
+13:51:24.141 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 11 Name = NETCHNG_1 DataType: Real Value: 0.0013
+13:51:24.141 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 12 Name = HIGH_1 DataType: Real Value: 1.1019
+13:51:24.142 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 13 Name = LOW_1 DataType: Real Value: 1.1005
+13:51:24.143 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 15 Name = CURRENCY DataType: Enum Value: USD
+13:51:24.143 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 17 Name = ACTIV_DATE DataType: Date Value: 11 / 10 / 2019
+13:51:24.144 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 19 Name = OPEN_PRC DataType: Real Value: 1.1004
+13:51:24.145 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 21 Name = HST_CLOSE DataType: Real Value: 1.1004
+13:51:24.145 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 1.1017
+13:51:24.146 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 23 Name = BID_1 DataType: Real Value: 1.1016
+13:51:24.146 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 24 Name = BID_2 DataType: Real Value: 1.1015
+13:51:24.147 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 1.1021
+13:51:24.147 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 26 Name = ASK_1 DataType: Real Value: 1.102
+13:51:24.148 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 27 Name = ASK_2 DataType: Real Value: 1.1018
+13:51:24.149 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 32 Name = ACVOL_1 DataType: Real Value: 19602.0
+13:51:24.149 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 53 Name = TRD_UNITS DataType: Enum Value: 4DP 
+13:51:24.150 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 56 Name = PCTCHNG DataType: Real Value: 0.12
+13:51:24.150 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 57 Name = OPEN_BID DataType: Real Value: 1.1004
+13:51:24.151 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 59 Name = OPEN_ASK DataType: Real Value: 1.1008
+13:51:24.151 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 60 Name = CLOSE_BID DataType: Real Value: 1.1004
+13:51:24.152 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 61 Name = CLOSE_ASK DataType: Real Value: 1.1008
+13:51:24.152 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 77 Name = NUM_MOVES DataType: Real Value: 90925.0
+13:51:24.152 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 78 Name = OFFCL_CODE DataType: Rmtes Value:             
+13:51:24.153 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 79 Name = HSTCLSDATE DataType: Date Value: 10 / 10 / 2019
+13:51:24.153 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 90 Name = YRHIGH DataType: Real Value: 1.157
+13:51:24.153 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 91 Name = YRLOW DataType: Real Value: 1.088
+13:51:24.154 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 105 Name = BCKGRNDPAG DataType: Rmtes Value: BCFX
+13:51:24.154 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 114 Name = BID_NET_CH DataType: Real Value: 0.0013
+13:51:24.154 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 115 Name = BID_TICK_1 DataType: Enum Value: þ
+13:51:24.155 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 131 Name = PRC_QL2 DataType: Enum Value: D15
+13:51:24.155 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 134 Name = MID_PRICE DataType: Real Value: 1.1019
+13:51:24.155 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 135 Name = MID_NET_CH DataType: Real Value: 0.0013
+13:51:24.156 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 136 Name = MID_CLOSE DataType: Real Value: 1.1006
+13:51:24.156 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 196 Name = HIGHTP_1 DataType: Enum Value: B
+13:51:24.156 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 197 Name = LOWTP_1 DataType: Enum Value: A
+13:51:24.157 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 203 Name = BID_HIGH_1 DataType: Real Value: 1.1019
+13:51:24.157 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 204 Name = BID_LOW_1 DataType: Real Value: 1.1003
+13:51:24.157 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 205 Name = YRBIDHIGH DataType: Real Value: 1.157
+13:51:24.158 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 206 Name = YRBIDLOW DataType: Real Value: 1.0877
+13:51:24.158 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 207 Name = HST_CLSBID DataType: Real Value: 1.1004
+13:51:24.158 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 208 Name = HSTCLBDDAT DataType: Date Value: 10 / 10 / 2019
+13:51:24.159 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 211 Name = NUM_BIDS DataType: Real Value: 19602.0
+13:51:24.160 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 259 Name = RECORDTYPE DataType: UInt Value: 209
+13:51:24.160 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 270 Name = ACT_TP_1 DataType: Enum Value: Bþ
+13:51:24.161 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 271 Name = ACT_TP_2 DataType: Enum Value: Bþ
+13:51:24.161 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 272 Name = ACT_TP_3 DataType: Enum Value: Bþ
+13:51:24.162 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 275 Name = SEC_ACT_1 DataType: Real Value: 1.1021
+13:51:24.162 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 276 Name = SEC_ACT_2 DataType: Real Value: 1.102
+13:51:24.162 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 277 Name = SEC_ACT_3 DataType: Real Value: 1.1018
+13:51:24.163 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 280 Name = SC_ACT_TP1 DataType: Enum Value:  A
+13:51:24.163 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 281 Name = SC_ACT_TP2 DataType: Enum Value:  A
+13:51:24.164 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 282 Name = SC_ACT_TP3 DataType: Enum Value:  A
+13:51:24.164 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 285 Name = OPEN_TIME DataType: Time Value: 21:0:0:0
+13:51:24.164 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 286 Name = HIGH_TIME DataType: Time Value: 4:53:0:0
+13:51:24.165 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 287 Name = LOW_TIME DataType: Time Value: 21:7:0:0
+13:51:24.165 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 350 Name = YRHIGHDAT DataType: Date Value: 10 / 1 / 2019
+13:51:24.166 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 351 Name = YRLOWDAT DataType: Date Value: 1 / 10 / 2019
+13:51:24.166 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 372 Name = IRGPRC DataType: Real Value: 0.12
+13:51:24.166 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 375 Name = TIMCOR DataType: Time Value: 21:1:42:0
+13:51:24.167 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 393 Name = PRIMACT_1 DataType: Real Value: 1.1017
+13:51:24.167 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 394 Name = PRIMACT_2 DataType: Real Value: 1.1016
+13:51:24.167 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 395 Name = PRIMACT_3 DataType: Real Value: 1.1015
+13:51:24.168 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 544 Name = BASE_CCY DataType: Rmtes Value: EUR
+13:51:24.168 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 728 Name = BCAST_REF DataType: Rmtes Value: FX-W0-US
+13:51:24.168 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 825 Name = CROSS_SC DataType: Enum Value: 1E+00
+13:51:24.169 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 826 Name = DLG_CODE1 DataType: Rmtes Value:       
+13:51:24.169 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 827 Name = DLG_CODE2 DataType: Rmtes Value: ABSG  
+13:51:24.170 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 828 Name = DLG_CODE3 DataType: Rmtes Value: SAHK  
+13:51:24.170 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 831 Name = CTBTR_1 DataType: Rmtes Value: BARCLAYS    
+13:51:24.170 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 832 Name = CTBTR_2 DataType: Rmtes Value: ABSA Bk     
+13:51:24.171 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 833 Name = CTBTR_3 DataType: Rmtes Value: SANTANDER   
+13:51:24.171 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 836 Name = CTB_LOC1 DataType: Rmtes Value: LON
+13:51:24.172 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 837 Name = CTB_LOC2 DataType: Rmtes Value: JHB
+13:51:24.172 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 838 Name = CTB_LOC3 DataType: Rmtes Value: HKG
+13:51:24.172 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 841 Name = CTB_PAGE1 DataType: Rmtes Value: BCFX
+13:51:24.173 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 842 Name = CTB_PAGE2 DataType: Rmtes Value: ABSA
+13:51:24.173 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 843 Name = CTB_PAGE3 DataType: Rmtes Value: SAHK
+13:51:24.173 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 875 Name = VALUE_DT1 DataType: Date Value: 11 / 10 / 2019
+13:51:24.174 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 876 Name = VALUE_DT2 DataType: Date Value: 11 / 10 / 2019
+13:51:24.174 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 877 Name = VALUE_DT3 DataType: Date Value: 11 / 10 / 2019
+13:51:24.174 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 957 Name = SEC_HIGH DataType: Real Value: 1.1022
+13:51:24.175 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 958 Name = SEC_HI_TP DataType: Enum Value: A
+13:51:24.175 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 959 Name = SEC_LOW DataType: Real Value: 1.1005
+13:51:24.176 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 960 Name = SEC_LO_TP DataType: Enum Value: B
+13:51:24.176 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 962 Name = OPEN_TYPE DataType: Enum Value: B 
+13:51:24.176 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 964 Name = CLOSE_TYPE DataType: Enum Value: B 
+13:51:24.177 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 967 Name = BKGD_REF DataType: Ascii Value: Euro
+13:51:24.177 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 995 Name = GEN_TEXT16 DataType: Rmtes Value: <EUR/BKGDINFO>
+13:51:24.178 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 998 Name = GEN_VAL3 DataType: Real Value: 1.1008
+13:51:24.178 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 999 Name = GEN_VAL4 DataType: Real Value: 1.1014
+13:51:24.178 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1000 Name = GV1_TEXT DataType: Rmtes Value: SPOT
+13:51:24.178 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1001 Name = GV2_TEXT DataType: Rmtes Value: EURUSD
+13:51:24.179 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1003 Name = GV4_TEXT DataType: Rmtes Value: SPOT
+13:51:24.179 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1010 Name = VALUE_TS1 DataType: Time Value: 6:35:28:0
+13:51:24.180 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1011 Name = VALUE_TS2 DataType: Time Value: 6:34:29:0
+13:51:24.180 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1012 Name = VALUE_TS3 DataType: Time Value: 6:33:28:0
+13:51:24.180 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1025 Name = QUOTIM DataType: Time Value: 6:35:28:0
+13:51:24.181 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1029 Name = GEN_VAL5 DataType: Real Value: 1.097
+13:51:24.181 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1030 Name = GEN_VAL6 DataType: Real Value: 1.1034
+13:51:24.181 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1031 Name = GEN_VAL7 DataType: Real Value: 1.0969
+13:51:24.182 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1032 Name = GEN_VAL8 DataType: Real Value: 1.1037
+13:51:24.182 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1033 Name = GEN_VAL9 DataType: Real Value: 1.0972
+13:51:24.183 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1034 Name = GEN_VAL10 DataType: Real Value: 1.0973
+13:51:24.183 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1035 Name = GV5_TEXT DataType: Rmtes Value: OP_BID
+13:51:24.183 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1036 Name = GV6_TEXT DataType: Rmtes Value: BID_HI
+13:51:24.184 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1037 Name = GV7_TEXT DataType: Rmtes Value: BID_LO
+13:51:24.184 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1038 Name = GV8_TEXT DataType: Rmtes Value: ASK_HI
+13:51:24.185 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1039 Name = GV9_TEXT DataType: Rmtes Value: ASK_LO
+13:51:24.185 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1040 Name = GV10_TEXT DataType: Rmtes Value: OP_ASK
+13:51:24.185 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1052 Name = GN_TXT16_2 DataType: Rmtes Value: <EURVOL>
+13:51:24.186 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1061 Name = GV1_TIME DataType: Time Value: 6:0:0:0
+13:51:24.186 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1080 Name = PREF_DISP DataType: UInt Value: 6205
+13:51:24.187 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1271 Name = GN_TXT24_1 DataType: Rmtes Value: <0#EURF=>
+13:51:24.188 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1709 Name = RDN_EXCHD2 DataType: Enum Value: NY$
+13:51:24.188 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3263 Name = PREV_DISP DataType: UInt Value: 60
+13:51:24.189 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3269 Name = ASIA_CL_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.189 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3270 Name = ASIA_CLOSE DataType: Real Value: 1.1016
+13:51:24.189 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3271 Name = ASIA_HI_TM DataType: Time Value: 4:53:0:0
+13:51:24.190 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3272 Name = ASIA_HIGH DataType: Real Value: 1.1019
+13:51:24.190 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3273 Name = ASIA_LOW DataType: Real Value: 1.1005
+13:51:24.191 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3274 Name = ASIA_LW_TM DataType: Time Value: 21:7:0:0
+13:51:24.191 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3275 Name = ASIA_NETCH DataType: Real Value: 1.0E-4
+13:51:24.192 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3276 Name = ASIA_OP_TM DataType: Time Value: 21:0:0:0
+13:51:24.192 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3277 Name = ASIA_OPEN DataType: Real Value: 1.1004
+13:51:24.192 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3278 Name = EURO_CL_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.193 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3279 Name = EURO_CLOSE DataType: Real Value: 1.1016
+13:51:24.193 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3280 Name = EURO_HI_TM DataType: Time Value: 5:44:0:0
+13:51:24.194 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3281 Name = EURO_HIGH DataType: Real Value: 1.1019
+13:51:24.194 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3282 Name = EURO_LOW DataType: Real Value: 1.1012
+13:51:24.195 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3283 Name = EURO_LW_TM DataType: Time Value: 6:17:0:0
+13:51:24.195 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3284 Name = EURO_NETCH DataType: Real Value: 1.0E-4
+13:51:24.195 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3285 Name = EURO_OP_TM DataType: Time Value: 5:0:0:0
+13:51:24.196 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3286 Name = EURO_OPEN DataType: Real Value: 1.1014
+13:51:24.196 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3287 Name = US_CL_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.197 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3288 Name = US_CLOSE DataType: Real Value: 1.1004
+13:51:24.197 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3289 Name = US_HI_TM DataType: Time Value: 11:30:0:0
+13:51:24.198 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3290 Name = US_HIGH DataType: Real Value: 1.1034
+13:51:24.198 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3291 Name = US_LOW DataType: Real Value: 1.1003
+13:51:24.199 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3292 Name = US_LW_TM DataType: Time Value: 15:13:0:0
+13:51:24.200 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3293 Name = US_NETCH DataType: Real Value: 0.0035
+13:51:24.200 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3294 Name = US_OP_TM DataType: Time Value: 11:0:0:0
+13:51:24.201 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3295 Name = US_OPEN DataType: Real Value: 1.1024
+13:51:24.201 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3296 Name = ASK_SPREAD DataType: Real Value: 1.1003
+13:51:24.202 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3303 Name = BID_SPREAD DataType: Real Value: 1.101
+13:51:24.202 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3352 Name = MID_SPREAD DataType: Real Value: 1.1
+13:51:24.203 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3362 Name = MONTH_HIGH DataType: Real Value: 1.1034
+13:51:24.203 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3363 Name = MONTH_LOW DataType: Real Value: 1.088
+13:51:24.203 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3378 Name = PCTCHG_3M DataType: Real Value: -2.09
+13:51:24.204 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3379 Name = PCTCHG_6M DataType: Real Value: -2.07
+13:51:24.204 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3380 Name = PCTCHG_MTD DataType: Real Value: 0.25
+13:51:24.204 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3381 Name = PCTCHG_YTD DataType: Real Value: -3.94
+13:51:24.205 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3386 Name = QUOTE_DATE DataType: Date Value: 11 / 10 / 2019
+13:51:24.205 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3408 Name = WEEK_HIGH DataType: Real Value: 1.1034
+13:51:24.205 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3409 Name = WEEK_LOW DataType: Real Value: 1.0942
+13:51:24.206 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3512 Name = ASK_HIGH_1 DataType: Real Value: 1.1022
+13:51:24.206 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3513 Name = ASK_HI_TME DataType: Time Value: 4:53:0:0
+13:51:24.207 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3514 Name = ASK_LOW_1 DataType: Real Value: 1.1005
+13:51:24.207 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3515 Name = ASK_LO_TME DataType: Time Value: 21:7:0:0
+13:51:24.207 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3580 Name = BID_ASK_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.208 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3621 Name = HIGH_2 DataType: Real Value: 1.1018
+13:51:24.208 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3622 Name = HIGH_3 DataType: Real Value: 1.1017
+13:51:24.209 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3623 Name = HIGH_4 DataType: Real Value: 1.1016
+13:51:24.209 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3624 Name = HIGH_5 DataType: Real Value: 1.1015
+13:51:24.209 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3625 Name = HIGH_TIME2 DataType: Time Value: 2:55:0:0
+13:51:24.210 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3626 Name = HIGH_TIME3 DataType: Time Value: 2:2:0:0
+13:51:24.210 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3627 Name = HIGH_TIME4 DataType: Time Value: 1:56:0:0
+13:51:24.211 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3628 Name = HIGH_TIME5 DataType: Time Value: 1:49:0:0
+13:51:24.211 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3629 Name = LOW_2 DataType: Real Value: 1.1006
+13:51:24.211 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3630 Name = LOW_3 DataType: Real Value: 1.0972
+13:51:24.212 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3631 Name = LOW_4 DataType: Real Value: 1.0973
+13:51:24.212 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3632 Name = LOW_5 DataType: Real Value: 1.0953
+13:51:24.212 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3633 Name = LOW_TIME2 DataType: Time Value: 21:0:0:0
+13:51:24.213 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3634 Name = LOW_TIME3 DataType: Time Value: 21:2:0:0
+13:51:24.213 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3635 Name = LOW_TIME4 DataType: Time Value: 21:0:0:0
+13:51:24.213 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3636 Name = LOW_TIME5 DataType: Time Value: 21:7:0:0
+13:51:24.214 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3754 Name = SCALING DataType: Rmtes Value: 1
+13:51:24.214 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3791 Name = START_DT DataType: Date Value: 15 / 10 / 2019
+13:51:24.214 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3832 Name = WKHI_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.215 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3833 Name = WKLO_DT DataType: Date Value: 8 / 10 / 2019
+13:51:24.215 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3834 Name = MTHHI_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.216 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3835 Name = MTHLO_DT DataType: Date Value: 1 / 10 / 2019
+13:51:24.217 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3855 Name = QUOTIM_MS DataType: UInt Value: 23728683
+13:51:24.217 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4350 Name = MID_HIGH DataType: Real Value: 1.102
+13:51:24.218 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4351 Name = MID_LOW DataType: Real Value: 1.1005
+13:51:24.218 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4352 Name = MID_HTIM DataType: Time Value: 4:53:4:0
+13:51:24.219 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4353 Name = MID_LTIM DataType: Time Value: 21:0:30:0
+13:51:24.219 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5291 Name = MID_OPEN DataType: Real Value: 1.1006
+13:51:24.220 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5357 Name = CONTEXT_ID DataType: Real Value: 3312.0
+13:51:24.220 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6076 Name = BID_HIGH_2 DataType: Real Value: 1.1018
+13:51:24.220 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6077 Name = BID_HIGH_3 DataType: Real Value: 1.1017
+13:51:24.221 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6078 Name = BID_HIGH_4 DataType: Real Value: 1.1016
+13:51:24.221 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6079 Name = BID_HIGH_5 DataType: Real Value: 1.1015
+13:51:24.222 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6080 Name = BID_LOW_2 DataType: Real Value: 1.1004
+13:51:24.222 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6081 Name = BID_LOW_3 DataType: Real Value: 1.0969
+13:51:24.223 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6082 Name = BID_LOW_4 DataType: Real Value: 1.095
+13:51:24.223 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6083 Name = BID_LOW_5 DataType: Real Value: 1.0951
+13:51:24.223 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6084 Name = ASK_HIGH_2 DataType: Real Value: 1.1021
+13:51:24.224 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6085 Name = ASK_HIGH_3 DataType: Real Value: 1.102
+13:51:24.224 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6086 Name = ASK_HIGH_4 DataType: Real Value: 1.1019
+13:51:24.224 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6087 Name = ASK_HIGH_5 DataType: Real Value: 1.1018
+13:51:24.225 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6088 Name = ASK_LOW_2 DataType: Real Value: 1.1006
+13:51:24.225 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6089 Name = ASK_LOW_3 DataType: Real Value: 1.0972
+13:51:24.225 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6090 Name = ASK_LOW_4 DataType: Real Value: 1.0973
+13:51:24.226 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6091 Name = ASK_LOW_5 DataType: Real Value: 1.0953
+13:51:24.226 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6140 Name = PRV_BID_H DataType: Real Value: 1.1034
+13:51:24.226 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6141 Name = PRV_ASK_H DataType: Real Value: 1.1037
+13:51:24.226 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6142 Name = PRV_BID_L DataType: Real Value: 1.0969
+13:51:24.227 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6143 Name = PRV_ASK_L DataType: Real Value: 1.0972
+13:51:24.227 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6401 Name = DDS_DSO_ID DataType: UInt Value: 4216
+13:51:24.228 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6409 Name = BR_LINK1 DataType: Ascii Value:  blank
+13:51:24.228 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6410 Name = BR_LINK2 DataType: Ascii Value:  blank
+13:51:24.228 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6411 Name = BR_LINK3 DataType: Ascii Value:  blank
+13:51:24.228 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6480 Name = SPS_SP_RIC DataType: Ascii Value: .[SPSCDSAS0404
+13:51:24.229 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6696 Name = QUOTIM_2 DataType: Time Value: 6:34:29:0
+13:51:24.229 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6697 Name = QUOTIM_3 DataType: Time Value: 6:33:28:0
+13:51:24.229 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6816 Name = QUOTE_DT2 DataType: Date Value: 11 / 10 / 2019
+13:51:24.229 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6817 Name = QUOTE_DT3 DataType: Date Value: 11 / 10 / 2019
+13:51:24.230 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6821 Name = ASKYRHIDAT DataType: Date Value: 10 / 1 / 2019
+13:51:24.230 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6822 Name = ASKYRLODAT DataType: Date Value: 1 / 10 / 2019
+13:51:24.230 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6833 Name = BIDYRHIDAT DataType: Date Value: 10 / 1 / 2019
+13:51:24.231 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6834 Name = BIDYRLODAT DataType: Date Value: 1 / 10 / 2019
+13:51:24.231 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6837 Name = ASIABAC_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.231 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6838 Name = EUBAC_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.232 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6839 Name = USBAC_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.232 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6954 Name = HST_NUMBID DataType: Int Value: 90925
+13:51:24.232 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7808 Name = ASK_FWDOR DataType: Real Value:  blank
+13:51:24.233 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7809 Name = BID_FWDOR DataType: Real Value:  blank
+13:51:24.233 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7838 Name = AMERCL_ASK DataType: Real Value: 1.1008
+13:51:24.234 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7839 Name = AMERCL_BID DataType: Real Value: 1.1004
+13:51:24.234 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7840 Name = AMERHI_ASK DataType: Real Value: 1.1037
+13:51:24.234 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7841 Name = AMERHI_BID DataType: Real Value: 1.1034
+13:51:24.235 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7842 Name = AMERLO_ASK DataType: Real Value: 1.1003
+13:51:24.235 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7843 Name = AMERLO_BID DataType: Real Value: 1.1
+13:51:24.235 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7844 Name = AMEROP_ASK DataType: Real Value: 1.1028
+13:51:24.236 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7845 Name = AMEROP_BID DataType: Real Value: 1.1024
+13:51:24.236 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7846 Name = ASIACL_ASK DataType: Real Value: 1.1018
+13:51:24.237 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7847 Name = ASIACL_BID DataType: Real Value: 1.1016
+13:51:24.237 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7848 Name = ASIAHI_ASK DataType: Real Value: 1.1022
+13:51:24.238 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7849 Name = ASIAHI_BID DataType: Real Value: 1.1019
+13:51:24.238 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7850 Name = ASIALO_ASK DataType: Real Value: 1.1005
+13:51:24.239 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7851 Name = ASIALO_BID DataType: Real Value: 1.1003
+13:51:24.239 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7852 Name = ASIAOP_ASK DataType: Real Value: 1.1008
+13:51:24.239 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7853 Name = ASIAOP_BID DataType: Real Value: 1.1004
+13:51:24.240 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7854 Name = BIDPCTCHNG DataType: Real Value: 0.12
+13:51:24.240 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7855 Name = EURCL_ASK DataType: Real Value: 1.102
+13:51:24.241 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7856 Name = EURCL_BID DataType: Real Value: 1.1016
+13:51:24.241 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7857 Name = EURHI_ASK DataType: Real Value: 1.1021
+13:51:24.242 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7858 Name = EURHI_BID DataType: Real Value: 1.1019
+13:51:24.242 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7859 Name = EURLO_ASK DataType: Real Value: 1.1012
+13:51:24.242 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7860 Name = EURLO_BID DataType: Real Value: 1.101
+13:51:24.243 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7861 Name = EUROP_ASK DataType: Real Value: 1.1018
+13:51:24.243 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7862 Name = EUROP_BID DataType: Real Value: 1.1014
+13:51:24.244 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7863 Name = HST_HIMID DataType: Real Value: 1.1036
+13:51:24.244 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7864 Name = HST_LOMID DataType: Real Value: 1.0971
+13:51:24.245 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7865 Name = HST_OPNASK DataType: Real Value: 1.0973
+13:51:24.246 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7866 Name = HST_OPNBID DataType: Real Value: 1.097
+13:51:24.246 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7868 Name = YRASKHIGH DataType: Real Value: 1.1572
+13:51:24.247 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7869 Name = YRASKLOW DataType: Real Value: 1.088
+13:51:24.247 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7880 Name = ASIA_BNC DataType: Real Value: 1.0E-4
+13:51:24.247 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7885 Name = EURO_BNC DataType: Real Value: 1.0E-4
+13:51:24.248 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7886 Name = MTH_ASK_LO DataType: Real Value: 1.088
+13:51:24.248 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7887 Name = MTH_BID_HI DataType: Real Value: 1.1034
+13:51:24.249 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7888 Name = US_BNC DataType: Real Value: 0.0035
+13:51:24.249 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7889 Name = WK_ASK_LO DataType: Real Value: 1.0942
+13:51:24.250 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7890 Name = WK_BID_HI DataType: Real Value: 1.1034
+13:51:24.250 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 8107 Name = BID_HOURLY DataType: Real Value: 1.1014
+13:51:24.250 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 8635 Name = RCS_AS_CL2 DataType: Rmtes Value:                         
+13:51:24.251 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9192 Name = MTH_ALO_DT DataType: Date Value: 1 / 10 / 2019
+13:51:24.251 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9193 Name = MTH_BHI_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.251 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9194 Name = WK_ALO_DT DataType: Date Value: 8 / 10 / 2019
+13:51:24.252 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9195 Name = WK_BHI_DT DataType: Date Value: 10 / 10 / 2019
+13:51:24.252 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 13404 Name = FXMM_TYPE DataType: Enum Value:         
+13:51:24.252 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14162 Name = ASIA_AH_MS DataType: Time Value: 4:53:5:542
+13:51:24.253 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14163 Name = ASIA_AL_MS DataType: Time Value: 21:7:13:19
+13:51:24.253 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14164 Name = ASIA_AO_MS DataType: Time Value: 21:0:1:82
+13:51:24.253 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14165 Name = ASIA_BH_MS DataType: Time Value: 4:53:4:158
+13:51:24.253 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14166 Name = ASIA_BL_MS DataType: Time Value: 21:1:42:782
+13:51:24.254 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14167 Name = ASIA_BO_MS DataType: Time Value: 21:0:0:978
+13:51:24.254 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14168 Name = EURO_AH_MS DataType: Time Value: 5:43:21:199
+13:51:24.254 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14169 Name = EURO_AL_MS DataType: Time Value: 6:17:3:429
+13:51:24.255 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14170 Name = EURO_AO_MS DataType: Time Value: 5:0:1:208
+13:51:24.255 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14171 Name = EURO_BH_MS DataType: Time Value: 5:44:5:707
+13:51:24.255 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14172 Name = EURO_BL_MS DataType: Time Value: 6:16:9:717
+13:51:24.255 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14173 Name = EURO_BO_MS DataType: Time Value: 5:0:1:208
+13:51:24.256 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14174 Name = US_AH_MS DataType: Time Value: 11:30:49:93
+13:51:24.256 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14175 Name = US_AL_MS DataType: Time Value: 15:13:33:812
+13:51:24.256 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14176 Name = US_AO_MS DataType: Time Value: 11:0:0:502
+13:51:24.257 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14177 Name = US_BH_MS DataType: Time Value: 11:30:49:93
+13:51:24.257 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14178 Name = US_BL_MS DataType: Time Value: 15:14:0:702
+13:51:24.257 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14179 Name = US_BO_MS DataType: Time Value: 11:0:0:502
+13:51:24.258 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14180 Name = OPN_BID_MS DataType: Time Value: 21:0:0:978
+13:51:24.258 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14181 Name = ASKHI1_MS DataType: Time Value: 4:53:5:542
+13:51:24.258 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14182 Name = ASKHI2_MS DataType: Time Value: 4:51:16:62
+13:51:24.258 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14183 Name = ASKHI3_MS DataType: Time Value: 2:19:34:901
+13:51:24.259 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14184 Name = ASKHI4_MS DataType: Time Value: 2:1:27:48
+13:51:24.259 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14185 Name = ASKHI5_MS DataType: Time Value: 1:51:50:514
+13:51:24.259 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14186 Name = ASKLO1_MS DataType: Time Value: 21:7:13:19
+13:51:24.260 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14187 Name = ASKLO2_MS DataType: Time Value: 21:0:2:487
+13:51:24.260 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14188 Name = ASKLO3_MS DataType: Time Value: 21:2:15:70
+13:51:24.260 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14189 Name = ASKLO4_MS DataType: Time Value: 21:0:1:429
+13:51:24.260 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14190 Name = ASKLO5_MS DataType: Time Value: 21:7:0:875
+13:51:24.261 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14191 Name = BIDHI1_MS DataType: Time Value: 4:53:4:158
+13:51:24.261 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14192 Name = BIDHI2_MS DataType: Time Value: 2:55:57:370
+13:51:24.261 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14193 Name = BIDHI3_MS DataType: Time Value: 2:2:34:917
+13:51:24.262 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14194 Name = BIDHI4_MS DataType: Time Value: 1:56:26:284
+13:51:24.262 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14195 Name = BIDHI5_MS DataType: Time Value: 1:49:43:378
+13:51:24.263 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14196 Name = BIDLO1_MS DataType: Time Value: 21:1:42:782
+13:51:24.263 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14197 Name = BIDLO2_MS DataType: Time Value: 21:0:0:978
+13:51:24.263 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14198 Name = BIDLO3_MS DataType: Time Value: 21:0:2:182
+13:51:24.264 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14199 Name = BIDLO4_MS DataType: Time Value: 21:6:56:999
+13:51:24.264 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14200 Name = BIDLO5_MS DataType: Time Value: 21:6:19:380
+13:51:24.264 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14201 Name = MIDHI1_MS DataType: Time Value: 4:53:4:158
+13:51:24.265 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14202 Name = MIDLO1_MS DataType: Time Value: 21:0:30:934
+13:51:24.266 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14208 Name = BID_HR_MS DataType: Time Value: 6:0:0:462
+13:51:24.266 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+13:51:29.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+13:51:29.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+13:51:29.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+13:51:29.568 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 372 Name = IRGPRC DataType: Real Value: 0.11
+13:51:29.568 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 1.1016
+13:51:29.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 393 Name = PRIMACT_1 DataType: Real Value: 1.1016
+13:51:29.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 270 Name = ACT_TP_1 DataType: Enum Value: Bþ
+13:51:29.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 134 Name = MID_PRICE DataType: Real Value: 1.1018
+13:51:29.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 1.102
+13:51:29.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 275 Name = SEC_ACT_1 DataType: Real Value: 1.102
+13:51:29.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 114 Name = BID_NET_CH DataType: Real Value: 0.0012
+13:51:29.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 11 Name = NETCHNG_1 DataType: Real Value: 0.0012
+13:51:29.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 56 Name = PCTCHNG DataType: Real Value: 0.11
+13:51:29.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7854 Name = BIDPCTCHNG DataType: Real Value: 0.11
+13:51:29.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3378 Name = PCTCHG_3M DataType: Real Value: -2.1
+13:51:29.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3379 Name = PCTCHG_6M DataType: Real Value: -2.08
+13:51:29.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3380 Name = PCTCHG_MTD DataType: Real Value: 0.25
+13:51:29.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3381 Name = PCTCHG_YTD DataType: Real Value: -3.95
+13:51:29.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 32 Name = ACVOL_1 DataType: Real Value: 19687.0
+13:51:29.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 115 Name = BID_TICK_1 DataType: Enum Value: þ
+13:51:29.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 211 Name = NUM_BIDS DataType: Real Value: 19687.0
+13:51:29.574 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3386 Name = QUOTE_DATE DataType: Date Value: 11 / 10 / 2019
+13:51:29.575 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 875 Name = VALUE_DT1 DataType: Date Value: 11 / 10 / 2019
+13:51:29.575 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 17 Name = ACTIV_DATE DataType: Date Value: 11 / 10 / 2019
+13:51:29.575 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3855 Name = QUOTIM_MS DataType: UInt Value: 23789168
+13:51:29.576 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1025 Name = QUOTIM DataType: Time Value: 6:36:29:0
+13:51:29.576 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1010 Name = VALUE_TS1 DataType: Time Value: 6:36:29:0
+13:51:29.578 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5 Name = TIMACT DataType: Time Value: 6:36:0:0
+13:51:29.578 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 135 Name = MID_NET_CH DataType: Real Value: 0.0012
+13:51:29.579 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 831 Name = CTBTR_1 DataType: Rmtes Value: BARCLAYS    
+13:51:29.579 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 836 Name = CTB_LOC1 DataType: Rmtes Value: LON
+13:51:29.579 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 841 Name = CTB_PAGE1 DataType: Rmtes Value: BCFX
+13:51:29.580 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: BARCLAYS     L/d
+13:51:29.581 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 78 Name = OFFCL_CODE DataType: Rmtes Value:             
+13:51:29.582 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 105 Name = BCKGRNDPAG DataType: Rmtes Value: BCFX
+13:51:29.582 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 826 Name = DLG_CODE1 DataType: Rmtes Value:       
+13:51:29.582 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3275 Name = ASIA_NETCH DataType: Real Value: 0.0
+13:51:29.583 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3284 Name = EURO_NETCH DataType: Real Value: 0.0
+13:51:29.583 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7880 Name = ASIA_BNC DataType: Real Value: 0.0
+13:51:29.587 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7885 Name = EURO_BNC DataType: Real Value: 0.0
+13:51:29.588 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+13:52:16.773 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+13:52:17.389 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+13:52:17.437 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+13:52:17.438 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+13:52:17.439 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+13:52:17.439 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'All is well'
+13:52:17.443 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1 Name = PROD_PERM DataType: UInt Value: 363
+13:52:17.443 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 2 Name = RDNDISPLAY DataType: UInt Value: 153
+13:52:17.444 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: BARCLAYS     L/d
+13:52:17.445 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5 Name = TIMACT DataType: Time Value: 6:36:0:0
+13:52:17.445 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 11 Name = NETCHNG_1 DataType: Real Value: 0.0012
+13:52:17.446 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 12 Name = HIGH_1 DataType: Real Value: 1.1019
+13:52:17.446 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 13 Name = LOW_1 DataType: Real Value: 1.1005
+13:52:17.447 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 15 Name = CURRENCY DataType: Enum Value: USD
+13:52:17.447 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 17 Name = ACTIV_DATE DataType: Date Value: 11 / 10 / 2019
+13:52:17.447 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 19 Name = OPEN_PRC DataType: Real Value: 1.1004
+13:52:17.448 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 21 Name = HST_CLOSE DataType: Real Value: 1.1004
+13:52:17.448 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 1.1016
+13:52:17.448 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 23 Name = BID_1 DataType: Real Value: 1.1017
+13:52:17.449 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 24 Name = BID_2 DataType: Real Value: 1.1016
+13:52:17.449 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 1.102
+13:52:17.450 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 26 Name = ASK_1 DataType: Real Value: 1.1021
+13:52:17.450 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 27 Name = ASK_2 DataType: Real Value: 1.102
+13:52:17.451 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 32 Name = ACVOL_1 DataType: Real Value: 19687.0
+13:52:17.451 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 53 Name = TRD_UNITS DataType: Enum Value: 4DP 
+13:52:17.452 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 56 Name = PCTCHNG DataType: Real Value: 0.11
+13:52:17.453 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 57 Name = OPEN_BID DataType: Real Value: 1.1004
+13:52:17.454 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 59 Name = OPEN_ASK DataType: Real Value: 1.1008
+13:52:17.454 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 60 Name = CLOSE_BID DataType: Real Value: 1.1004
+13:52:17.455 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 61 Name = CLOSE_ASK DataType: Real Value: 1.1008
+13:52:17.455 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 77 Name = NUM_MOVES DataType: Real Value: 90925.0
+13:52:17.455 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 78 Name = OFFCL_CODE DataType: Rmtes Value:             
+13:52:17.456 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 79 Name = HSTCLSDATE DataType: Date Value: 10 / 10 / 2019
+13:52:17.456 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 90 Name = YRHIGH DataType: Real Value: 1.157
+13:52:17.457 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 91 Name = YRLOW DataType: Real Value: 1.088
+13:52:17.457 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 105 Name = BCKGRNDPAG DataType: Rmtes Value: BCFX
+13:52:17.458 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 114 Name = BID_NET_CH DataType: Real Value: 0.0012
+13:52:17.458 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 115 Name = BID_TICK_1 DataType: Enum Value: þ
+13:52:17.458 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 131 Name = PRC_QL2 DataType: Enum Value: D15
+13:52:17.459 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 134 Name = MID_PRICE DataType: Real Value: 1.1018
+13:52:17.459 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 135 Name = MID_NET_CH DataType: Real Value: 0.0012
+13:52:17.459 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 136 Name = MID_CLOSE DataType: Real Value: 1.1006
+13:52:17.460 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 196 Name = HIGHTP_1 DataType: Enum Value: B
+13:52:17.460 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 197 Name = LOWTP_1 DataType: Enum Value: A
+13:52:17.460 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 203 Name = BID_HIGH_1 DataType: Real Value: 1.1019
+13:52:17.461 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 204 Name = BID_LOW_1 DataType: Real Value: 1.1003
+13:52:17.461 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 205 Name = YRBIDHIGH DataType: Real Value: 1.157
+13:52:17.462 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 206 Name = YRBIDLOW DataType: Real Value: 1.0877
+13:52:17.462 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 207 Name = HST_CLSBID DataType: Real Value: 1.1004
+13:52:17.462 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 208 Name = HSTCLBDDAT DataType: Date Value: 10 / 10 / 2019
+13:52:17.463 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 211 Name = NUM_BIDS DataType: Real Value: 19687.0
+13:52:17.463 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 259 Name = RECORDTYPE DataType: UInt Value: 209
+13:52:17.464 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 270 Name = ACT_TP_1 DataType: Enum Value: Bþ
+13:52:17.464 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 271 Name = ACT_TP_2 DataType: Enum Value: Bþ
+13:52:17.465 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 272 Name = ACT_TP_3 DataType: Enum Value: Bþ
+13:52:17.465 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 275 Name = SEC_ACT_1 DataType: Real Value: 1.102
+13:52:17.465 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 276 Name = SEC_ACT_2 DataType: Real Value: 1.1021
+13:52:17.466 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 277 Name = SEC_ACT_3 DataType: Real Value: 1.102
+13:52:17.466 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 280 Name = SC_ACT_TP1 DataType: Enum Value:  A
+13:52:17.467 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 281 Name = SC_ACT_TP2 DataType: Enum Value:  A
+13:52:17.467 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 282 Name = SC_ACT_TP3 DataType: Enum Value:  A
+13:52:17.468 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 285 Name = OPEN_TIME DataType: Time Value: 21:0:0:0
+13:52:17.468 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 286 Name = HIGH_TIME DataType: Time Value: 4:53:0:0
+13:52:17.469 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 287 Name = LOW_TIME DataType: Time Value: 21:7:0:0
+13:52:17.470 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 350 Name = YRHIGHDAT DataType: Date Value: 10 / 1 / 2019
+13:52:17.470 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 351 Name = YRLOWDAT DataType: Date Value: 1 / 10 / 2019
+13:52:17.471 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 372 Name = IRGPRC DataType: Real Value: 0.11
+13:52:17.471 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 375 Name = TIMCOR DataType: Time Value: 21:1:42:0
+13:52:17.472 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 393 Name = PRIMACT_1 DataType: Real Value: 1.1016
+13:52:17.472 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 394 Name = PRIMACT_2 DataType: Real Value: 1.1017
+13:52:17.472 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 395 Name = PRIMACT_3 DataType: Real Value: 1.1016
+13:52:17.473 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 544 Name = BASE_CCY DataType: Rmtes Value: EUR
+13:52:17.473 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 728 Name = BCAST_REF DataType: Rmtes Value: FX-W0-US
+13:52:17.474 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 825 Name = CROSS_SC DataType: Enum Value: 1E+00
+13:52:17.474 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 826 Name = DLG_CODE1 DataType: Rmtes Value:       
+13:52:17.475 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 827 Name = DLG_CODE2 DataType: Rmtes Value:       
+13:52:17.475 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 828 Name = DLG_CODE3 DataType: Rmtes Value: ABSG  
+13:52:17.476 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 831 Name = CTBTR_1 DataType: Rmtes Value: BARCLAYS    
+13:52:17.477 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 832 Name = CTBTR_2 DataType: Rmtes Value: BARCLAYS    
+13:52:17.477 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 833 Name = CTBTR_3 DataType: Rmtes Value: ABSA Bk     
+13:52:17.478 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 836 Name = CTB_LOC1 DataType: Rmtes Value: LON
+13:52:17.479 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 837 Name = CTB_LOC2 DataType: Rmtes Value: LON
+13:52:17.479 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 838 Name = CTB_LOC3 DataType: Rmtes Value: JHB
+13:52:17.480 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 841 Name = CTB_PAGE1 DataType: Rmtes Value: BCFX
+13:52:17.480 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 842 Name = CTB_PAGE2 DataType: Rmtes Value: BCFX
+13:52:17.481 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 843 Name = CTB_PAGE3 DataType: Rmtes Value: ABSA
+13:52:17.481 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 875 Name = VALUE_DT1 DataType: Date Value: 11 / 10 / 2019
+13:52:17.482 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 876 Name = VALUE_DT2 DataType: Date Value: 11 / 10 / 2019
+13:52:17.482 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 877 Name = VALUE_DT3 DataType: Date Value: 11 / 10 / 2019
+13:52:17.483 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 957 Name = SEC_HIGH DataType: Real Value: 1.1022
+13:52:17.483 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 958 Name = SEC_HI_TP DataType: Enum Value: A
+13:52:17.483 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 959 Name = SEC_LOW DataType: Real Value: 1.1005
+13:52:17.484 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 960 Name = SEC_LO_TP DataType: Enum Value: B
+13:52:17.484 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 962 Name = OPEN_TYPE DataType: Enum Value: B 
+13:52:17.485 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 964 Name = CLOSE_TYPE DataType: Enum Value: B 
+13:52:17.486 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 967 Name = BKGD_REF DataType: Ascii Value: Euro
+13:52:17.487 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 995 Name = GEN_TEXT16 DataType: Rmtes Value: <EUR/BKGDINFO>
+13:52:17.487 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 998 Name = GEN_VAL3 DataType: Real Value: 1.1008
+13:52:17.488 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 999 Name = GEN_VAL4 DataType: Real Value: 1.1014
+13:52:17.488 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1000 Name = GV1_TEXT DataType: Rmtes Value: SPOT
+13:52:17.489 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1001 Name = GV2_TEXT DataType: Rmtes Value: EURUSD
+13:52:17.489 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1003 Name = GV4_TEXT DataType: Rmtes Value: SPOT
+13:52:17.489 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1010 Name = VALUE_TS1 DataType: Time Value: 6:36:29:0
+13:52:17.490 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1011 Name = VALUE_TS2 DataType: Time Value: 6:35:28:0
+13:52:17.490 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1012 Name = VALUE_TS3 DataType: Time Value: 6:34:29:0
+13:52:17.490 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1025 Name = QUOTIM DataType: Time Value: 6:36:29:0
+13:52:17.491 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1029 Name = GEN_VAL5 DataType: Real Value: 1.097
+13:52:17.491 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1030 Name = GEN_VAL6 DataType: Real Value: 1.1034
+13:52:17.492 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1031 Name = GEN_VAL7 DataType: Real Value: 1.0969
+13:52:17.492 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1032 Name = GEN_VAL8 DataType: Real Value: 1.1037
+13:52:17.493 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1033 Name = GEN_VAL9 DataType: Real Value: 1.0972
+13:52:17.493 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1034 Name = GEN_VAL10 DataType: Real Value: 1.0973
+13:52:17.493 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1035 Name = GV5_TEXT DataType: Rmtes Value: OP_BID
+13:52:17.494 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1036 Name = GV6_TEXT DataType: Rmtes Value: BID_HI
+13:52:17.494 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1037 Name = GV7_TEXT DataType: Rmtes Value: BID_LO
+13:52:17.495 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1038 Name = GV8_TEXT DataType: Rmtes Value: ASK_HI
+13:52:17.495 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1039 Name = GV9_TEXT DataType: Rmtes Value: ASK_LO
+13:52:17.496 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1040 Name = GV10_TEXT DataType: Rmtes Value: OP_ASK
+13:52:17.496 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1052 Name = GN_TXT16_2 DataType: Rmtes Value: <EURVOL>
+13:52:17.496 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1061 Name = GV1_TIME DataType: Time Value: 6:0:0:0
+13:52:17.497 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1080 Name = PREF_DISP DataType: UInt Value: 6205
+13:52:17.498 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1271 Name = GN_TXT24_1 DataType: Rmtes Value: <0#EURF=>
+13:52:17.502 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1709 Name = RDN_EXCHD2 DataType: Enum Value: NY$
+13:52:17.503 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3263 Name = PREV_DISP DataType: UInt Value: 60
+13:52:17.505 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3269 Name = ASIA_CL_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.506 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3270 Name = ASIA_CLOSE DataType: Real Value: 1.1016
+13:52:17.506 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3271 Name = ASIA_HI_TM DataType: Time Value: 4:53:0:0
+13:52:17.507 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3272 Name = ASIA_HIGH DataType: Real Value: 1.1019
+13:52:17.507 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3273 Name = ASIA_LOW DataType: Real Value: 1.1005
+13:52:17.507 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3274 Name = ASIA_LW_TM DataType: Time Value: 21:7:0:0
+13:52:17.508 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3275 Name = ASIA_NETCH DataType: Real Value: 0.0
+13:52:17.508 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3276 Name = ASIA_OP_TM DataType: Time Value: 21:0:0:0
+13:52:17.509 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3277 Name = ASIA_OPEN DataType: Real Value: 1.1004
+13:52:17.509 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3278 Name = EURO_CL_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.510 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3279 Name = EURO_CLOSE DataType: Real Value: 1.1016
+13:52:17.510 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3280 Name = EURO_HI_TM DataType: Time Value: 5:44:0:0
+13:52:17.510 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3281 Name = EURO_HIGH DataType: Real Value: 1.1019
+13:52:17.511 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3282 Name = EURO_LOW DataType: Real Value: 1.1012
+13:52:17.511 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3283 Name = EURO_LW_TM DataType: Time Value: 6:17:0:0
+13:52:17.511 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3284 Name = EURO_NETCH DataType: Real Value: 0.0
+13:52:17.511 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3285 Name = EURO_OP_TM DataType: Time Value: 5:0:0:0
+13:52:17.512 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3286 Name = EURO_OPEN DataType: Real Value: 1.1014
+13:52:17.512 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3287 Name = US_CL_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.512 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3288 Name = US_CLOSE DataType: Real Value: 1.1004
+13:52:17.513 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3289 Name = US_HI_TM DataType: Time Value: 11:30:0:0
+13:52:17.513 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3290 Name = US_HIGH DataType: Real Value: 1.1034
+13:52:17.513 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3291 Name = US_LOW DataType: Real Value: 1.1003
+13:52:17.514 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3292 Name = US_LW_TM DataType: Time Value: 15:13:0:0
+13:52:17.514 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3293 Name = US_NETCH DataType: Real Value: 0.0035
+13:52:17.514 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3294 Name = US_OP_TM DataType: Time Value: 11:0:0:0
+13:52:17.515 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3295 Name = US_OPEN DataType: Real Value: 1.1024
+13:52:17.515 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3296 Name = ASK_SPREAD DataType: Real Value: 1.1003
+13:52:17.516 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3303 Name = BID_SPREAD DataType: Real Value: 1.101
+13:52:17.516 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3352 Name = MID_SPREAD DataType: Real Value: 1.1
+13:52:17.517 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3362 Name = MONTH_HIGH DataType: Real Value: 1.1034
+13:52:17.517 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3363 Name = MONTH_LOW DataType: Real Value: 1.088
+13:52:17.517 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3378 Name = PCTCHG_3M DataType: Real Value: -2.1
+13:52:17.518 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3379 Name = PCTCHG_6M DataType: Real Value: -2.08
+13:52:17.518 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3380 Name = PCTCHG_MTD DataType: Real Value: 0.25
+13:52:17.518 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3381 Name = PCTCHG_YTD DataType: Real Value: -3.95
+13:52:17.519 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3386 Name = QUOTE_DATE DataType: Date Value: 11 / 10 / 2019
+13:52:17.519 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3408 Name = WEEK_HIGH DataType: Real Value: 1.1034
+13:52:17.520 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3409 Name = WEEK_LOW DataType: Real Value: 1.0942
+13:52:17.520 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3512 Name = ASK_HIGH_1 DataType: Real Value: 1.1022
+13:52:17.521 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3513 Name = ASK_HI_TME DataType: Time Value: 4:53:0:0
+13:52:17.521 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3514 Name = ASK_LOW_1 DataType: Real Value: 1.1005
+13:52:17.522 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3515 Name = ASK_LO_TME DataType: Time Value: 21:7:0:0
+13:52:17.522 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3580 Name = BID_ASK_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.523 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3621 Name = HIGH_2 DataType: Real Value: 1.1018
+13:52:17.523 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3622 Name = HIGH_3 DataType: Real Value: 1.1017
+13:52:17.523 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3623 Name = HIGH_4 DataType: Real Value: 1.1016
+13:52:17.524 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3624 Name = HIGH_5 DataType: Real Value: 1.1015
+13:52:17.524 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3625 Name = HIGH_TIME2 DataType: Time Value: 2:55:0:0
+13:52:17.525 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3626 Name = HIGH_TIME3 DataType: Time Value: 2:2:0:0
+13:52:17.525 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3627 Name = HIGH_TIME4 DataType: Time Value: 1:56:0:0
+13:52:17.525 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3628 Name = HIGH_TIME5 DataType: Time Value: 1:49:0:0
+13:52:17.525 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3629 Name = LOW_2 DataType: Real Value: 1.1006
+13:52:17.526 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3630 Name = LOW_3 DataType: Real Value: 1.0972
+13:52:17.526 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3631 Name = LOW_4 DataType: Real Value: 1.0973
+13:52:17.526 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3632 Name = LOW_5 DataType: Real Value: 1.0953
+13:52:17.527 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3633 Name = LOW_TIME2 DataType: Time Value: 21:0:0:0
+13:52:17.527 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3634 Name = LOW_TIME3 DataType: Time Value: 21:2:0:0
+13:52:17.528 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3635 Name = LOW_TIME4 DataType: Time Value: 21:0:0:0
+13:52:17.528 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3636 Name = LOW_TIME5 DataType: Time Value: 21:7:0:0
+13:52:17.528 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3754 Name = SCALING DataType: Rmtes Value: 1
+13:52:17.529 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3791 Name = START_DT DataType: Date Value: 15 / 10 / 2019
+13:52:17.529 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3832 Name = WKHI_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.529 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3833 Name = WKLO_DT DataType: Date Value: 8 / 10 / 2019
+13:52:17.530 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3834 Name = MTHHI_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.530 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3835 Name = MTHLO_DT DataType: Date Value: 1 / 10 / 2019
+13:52:17.530 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3855 Name = QUOTIM_MS DataType: UInt Value: 23789168
+13:52:17.531 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4350 Name = MID_HIGH DataType: Real Value: 1.102
+13:52:17.531 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4351 Name = MID_LOW DataType: Real Value: 1.1005
+13:52:17.531 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4352 Name = MID_HTIM DataType: Time Value: 4:53:4:0
+13:52:17.531 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 4353 Name = MID_LTIM DataType: Time Value: 21:0:30:0
+13:52:17.532 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5291 Name = MID_OPEN DataType: Real Value: 1.1006
+13:52:17.532 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5357 Name = CONTEXT_ID DataType: Real Value: 3312.0
+13:52:17.532 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6076 Name = BID_HIGH_2 DataType: Real Value: 1.1018
+13:52:17.533 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6077 Name = BID_HIGH_3 DataType: Real Value: 1.1017
+13:52:17.533 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6078 Name = BID_HIGH_4 DataType: Real Value: 1.1016
+13:52:17.533 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6079 Name = BID_HIGH_5 DataType: Real Value: 1.1015
+13:52:17.534 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6080 Name = BID_LOW_2 DataType: Real Value: 1.1004
+13:52:17.534 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6081 Name = BID_LOW_3 DataType: Real Value: 1.0969
+13:52:17.534 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6082 Name = BID_LOW_4 DataType: Real Value: 1.095
+13:52:17.535 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6083 Name = BID_LOW_5 DataType: Real Value: 1.0951
+13:52:17.535 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6084 Name = ASK_HIGH_2 DataType: Real Value: 1.1021
+13:52:17.535 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6085 Name = ASK_HIGH_3 DataType: Real Value: 1.102
+13:52:17.536 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6086 Name = ASK_HIGH_4 DataType: Real Value: 1.1019
+13:52:17.536 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6087 Name = ASK_HIGH_5 DataType: Real Value: 1.1018
+13:52:17.536 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6088 Name = ASK_LOW_2 DataType: Real Value: 1.1006
+13:52:17.537 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6089 Name = ASK_LOW_3 DataType: Real Value: 1.0972
+13:52:17.537 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6090 Name = ASK_LOW_4 DataType: Real Value: 1.0973
+13:52:17.537 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6091 Name = ASK_LOW_5 DataType: Real Value: 1.0953
+13:52:17.537 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6140 Name = PRV_BID_H DataType: Real Value: 1.1034
+13:52:17.538 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6141 Name = PRV_ASK_H DataType: Real Value: 1.1037
+13:52:17.538 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6142 Name = PRV_BID_L DataType: Real Value: 1.0969
+13:52:17.538 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6143 Name = PRV_ASK_L DataType: Real Value: 1.0972
+13:52:17.539 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6401 Name = DDS_DSO_ID DataType: UInt Value: 4216
+13:52:17.539 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6409 Name = BR_LINK1 DataType: Ascii Value:  blank
+13:52:17.539 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6410 Name = BR_LINK2 DataType: Ascii Value:  blank
+13:52:17.540 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6411 Name = BR_LINK3 DataType: Ascii Value:  blank
+13:52:17.540 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6480 Name = SPS_SP_RIC DataType: Ascii Value: .[SPSCDSAS0404
+13:52:17.540 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6696 Name = QUOTIM_2 DataType: Time Value: 6:35:28:0
+13:52:17.540 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6697 Name = QUOTIM_3 DataType: Time Value: 6:34:29:0
+13:52:17.541 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6816 Name = QUOTE_DT2 DataType: Date Value: 11 / 10 / 2019
+13:52:17.541 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6817 Name = QUOTE_DT3 DataType: Date Value: 11 / 10 / 2019
+13:52:17.541 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6821 Name = ASKYRHIDAT DataType: Date Value: 10 / 1 / 2019
+13:52:17.542 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6822 Name = ASKYRLODAT DataType: Date Value: 1 / 10 / 2019
+13:52:17.542 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6833 Name = BIDYRHIDAT DataType: Date Value: 10 / 1 / 2019
+13:52:17.542 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6834 Name = BIDYRLODAT DataType: Date Value: 1 / 10 / 2019
+13:52:17.542 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6837 Name = ASIABAC_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.543 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6838 Name = EUBAC_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.543 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6839 Name = USBAC_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.544 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 6954 Name = HST_NUMBID DataType: Int Value: 90925
+13:52:17.544 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7808 Name = ASK_FWDOR DataType: Real Value:  blank
+13:52:17.544 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7809 Name = BID_FWDOR DataType: Real Value:  blank
+13:52:17.545 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7838 Name = AMERCL_ASK DataType: Real Value: 1.1008
+13:52:17.545 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7839 Name = AMERCL_BID DataType: Real Value: 1.1004
+13:52:17.545 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7840 Name = AMERHI_ASK DataType: Real Value: 1.1037
+13:52:17.546 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7841 Name = AMERHI_BID DataType: Real Value: 1.1034
+13:52:17.546 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7842 Name = AMERLO_ASK DataType: Real Value: 1.1003
+13:52:17.546 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7843 Name = AMERLO_BID DataType: Real Value: 1.1
+13:52:17.547 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7844 Name = AMEROP_ASK DataType: Real Value: 1.1028
+13:52:17.547 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7845 Name = AMEROP_BID DataType: Real Value: 1.1024
+13:52:17.547 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7846 Name = ASIACL_ASK DataType: Real Value: 1.1018
+13:52:17.548 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7847 Name = ASIACL_BID DataType: Real Value: 1.1016
+13:52:17.548 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7848 Name = ASIAHI_ASK DataType: Real Value: 1.1022
+13:52:17.549 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7849 Name = ASIAHI_BID DataType: Real Value: 1.1019
+13:52:17.549 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7850 Name = ASIALO_ASK DataType: Real Value: 1.1005
+13:52:17.550 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7851 Name = ASIALO_BID DataType: Real Value: 1.1003
+13:52:17.550 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7852 Name = ASIAOP_ASK DataType: Real Value: 1.1008
+13:52:17.550 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7853 Name = ASIAOP_BID DataType: Real Value: 1.1004
+13:52:17.551 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7854 Name = BIDPCTCHNG DataType: Real Value: 0.11
+13:52:17.551 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7855 Name = EURCL_ASK DataType: Real Value: 1.102
+13:52:17.553 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7856 Name = EURCL_BID DataType: Real Value: 1.1016
+13:52:17.553 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7857 Name = EURHI_ASK DataType: Real Value: 1.1021
+13:52:17.554 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7858 Name = EURHI_BID DataType: Real Value: 1.1019
+13:52:17.554 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7859 Name = EURLO_ASK DataType: Real Value: 1.1012
+13:52:17.554 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7860 Name = EURLO_BID DataType: Real Value: 1.101
+13:52:17.555 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7861 Name = EUROP_ASK DataType: Real Value: 1.1018
+13:52:17.555 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7862 Name = EUROP_BID DataType: Real Value: 1.1014
+13:52:17.555 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7863 Name = HST_HIMID DataType: Real Value: 1.1036
+13:52:17.556 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7864 Name = HST_LOMID DataType: Real Value: 1.0971
+13:52:17.556 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7865 Name = HST_OPNASK DataType: Real Value: 1.0973
+13:52:17.556 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7866 Name = HST_OPNBID DataType: Real Value: 1.097
+13:52:17.557 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7868 Name = YRASKHIGH DataType: Real Value: 1.1572
+13:52:17.557 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7869 Name = YRASKLOW DataType: Real Value: 1.088
+13:52:17.557 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7880 Name = ASIA_BNC DataType: Real Value: 0.0
+13:52:17.558 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7885 Name = EURO_BNC DataType: Real Value: 0.0
+13:52:17.558 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7886 Name = MTH_ASK_LO DataType: Real Value: 1.088
+13:52:17.558 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7887 Name = MTH_BID_HI DataType: Real Value: 1.1034
+13:52:17.558 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7888 Name = US_BNC DataType: Real Value: 0.0035
+13:52:17.559 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7889 Name = WK_ASK_LO DataType: Real Value: 1.0942
+13:52:17.559 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7890 Name = WK_BID_HI DataType: Real Value: 1.1034
+13:52:17.559 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 8107 Name = BID_HOURLY DataType: Real Value: 1.1014
+13:52:17.560 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 8635 Name = RCS_AS_CL2 DataType: Rmtes Value:                         
+13:52:17.560 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9192 Name = MTH_ALO_DT DataType: Date Value: 1 / 10 / 2019
+13:52:17.560 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9193 Name = MTH_BHI_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.561 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9194 Name = WK_ALO_DT DataType: Date Value: 8 / 10 / 2019
+13:52:17.561 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 9195 Name = WK_BHI_DT DataType: Date Value: 10 / 10 / 2019
+13:52:17.561 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 13404 Name = FXMM_TYPE DataType: Enum Value:         
+13:52:17.562 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14162 Name = ASIA_AH_MS DataType: Time Value: 4:53:5:542
+13:52:17.562 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14163 Name = ASIA_AL_MS DataType: Time Value: 21:7:13:19
+13:52:17.562 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14164 Name = ASIA_AO_MS DataType: Time Value: 21:0:1:82
+13:52:17.562 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14165 Name = ASIA_BH_MS DataType: Time Value: 4:53:4:158
+13:52:17.563 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14166 Name = ASIA_BL_MS DataType: Time Value: 21:1:42:782
+13:52:17.563 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14167 Name = ASIA_BO_MS DataType: Time Value: 21:0:0:978
+13:52:17.563 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14168 Name = EURO_AH_MS DataType: Time Value: 5:43:21:199
+13:52:17.563 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14169 Name = EURO_AL_MS DataType: Time Value: 6:17:3:429
+13:52:17.564 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14170 Name = EURO_AO_MS DataType: Time Value: 5:0:1:208
+13:52:17.564 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14171 Name = EURO_BH_MS DataType: Time Value: 5:44:5:707
+13:52:17.564 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14172 Name = EURO_BL_MS DataType: Time Value: 6:16:9:717
+13:52:17.565 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14173 Name = EURO_BO_MS DataType: Time Value: 5:0:1:208
+13:52:17.565 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14174 Name = US_AH_MS DataType: Time Value: 11:30:49:93
+13:52:17.565 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14175 Name = US_AL_MS DataType: Time Value: 15:13:33:812
+13:52:17.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14176 Name = US_AO_MS DataType: Time Value: 11:0:0:502
+13:52:17.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14177 Name = US_BH_MS DataType: Time Value: 11:30:49:93
+13:52:17.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14178 Name = US_BL_MS DataType: Time Value: 15:14:0:702
+13:52:17.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14179 Name = US_BO_MS DataType: Time Value: 11:0:0:502
+13:52:17.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14180 Name = OPN_BID_MS DataType: Time Value: 21:0:0:978
+13:52:17.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14181 Name = ASKHI1_MS DataType: Time Value: 4:53:5:542
+13:52:17.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14182 Name = ASKHI2_MS DataType: Time Value: 4:51:16:62
+13:52:17.568 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14183 Name = ASKHI3_MS DataType: Time Value: 2:19:34:901
+13:52:17.568 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14184 Name = ASKHI4_MS DataType: Time Value: 2:1:27:48
+13:52:17.568 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14185 Name = ASKHI5_MS DataType: Time Value: 1:51:50:514
+13:52:17.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14186 Name = ASKLO1_MS DataType: Time Value: 21:7:13:19
+13:52:17.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14187 Name = ASKLO2_MS DataType: Time Value: 21:0:2:487
+13:52:17.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14188 Name = ASKLO3_MS DataType: Time Value: 21:2:15:70
+13:52:17.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14189 Name = ASKLO4_MS DataType: Time Value: 21:0:1:429
+13:52:17.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14190 Name = ASKLO5_MS DataType: Time Value: 21:7:0:875
+13:52:17.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14191 Name = BIDHI1_MS DataType: Time Value: 4:53:4:158
+13:52:17.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14192 Name = BIDHI2_MS DataType: Time Value: 2:55:57:370
+13:52:17.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14193 Name = BIDHI3_MS DataType: Time Value: 2:2:34:917
+13:52:17.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14194 Name = BIDHI4_MS DataType: Time Value: 1:56:26:284
+13:52:17.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14195 Name = BIDHI5_MS DataType: Time Value: 1:49:43:378
+13:52:17.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14196 Name = BIDLO1_MS DataType: Time Value: 21:1:42:782
+13:52:17.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14197 Name = BIDLO2_MS DataType: Time Value: 21:0:0:978
+13:52:17.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14198 Name = BIDLO3_MS DataType: Time Value: 21:0:2:182
+13:52:17.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14199 Name = BIDLO4_MS DataType: Time Value: 21:6:56:999
+13:52:17.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14200 Name = BIDLO5_MS DataType: Time Value: 21:6:19:380
+13:52:17.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14201 Name = MIDHI1_MS DataType: Time Value: 4:53:4:158
+13:52:17.574 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14202 Name = MIDLO1_MS DataType: Time Value: 21:0:30:934
+13:52:17.574 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 14208 Name = BID_HR_MS DataType: Time Value: 6:0:0:462
+13:52:17.574 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+13:52:29.564 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+13:52:29.564 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+13:52:29.564 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+13:52:29.565 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 372 Name = IRGPRC DataType: Real Value: 0.12
+13:52:29.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 1.1017
+13:52:29.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 393 Name = PRIMACT_1 DataType: Real Value: 1.1017
+13:52:29.566 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 270 Name = ACT_TP_1 DataType: Enum Value: Bþ
+13:52:29.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 134 Name = MID_PRICE DataType: Real Value: 1.1019
+13:52:29.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 1.1021
+13:52:29.567 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 275 Name = SEC_ACT_1 DataType: Real Value: 1.1021
+13:52:29.568 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 114 Name = BID_NET_CH DataType: Real Value: 0.0013
+13:52:29.568 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 11 Name = NETCHNG_1 DataType: Real Value: 0.0013
+13:52:29.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 56 Name = PCTCHNG DataType: Real Value: 0.12
+13:52:29.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7854 Name = BIDPCTCHNG DataType: Real Value: 0.12
+13:52:29.569 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3378 Name = PCTCHG_3M DataType: Real Value: -2.09
+13:52:29.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3379 Name = PCTCHG_6M DataType: Real Value: -2.07
+13:52:29.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3380 Name = PCTCHG_MTD DataType: Real Value: 0.25
+13:52:29.570 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3381 Name = PCTCHG_YTD DataType: Real Value: -3.94
+13:52:29.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 32 Name = ACVOL_1 DataType: Real Value: 19741.0
+13:52:29.571 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 115 Name = BID_TICK_1 DataType: Enum Value: þ
+13:52:29.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 211 Name = NUM_BIDS DataType: Real Value: 19741.0
+13:52:29.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3386 Name = QUOTE_DATE DataType: Date Value: 11 / 10 / 2019
+13:52:29.572 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 875 Name = VALUE_DT1 DataType: Date Value: 11 / 10 / 2019
+13:52:29.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 17 Name = ACTIV_DATE DataType: Date Value: 11 / 10 / 2019
+13:52:29.573 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3855 Name = QUOTIM_MS DataType: UInt Value: 23848527
+13:52:29.574 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1025 Name = QUOTIM DataType: Time Value: 6:37:28:0
+13:52:29.574 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 1010 Name = VALUE_TS1 DataType: Time Value: 6:37:28:0
+13:52:29.574 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 5 Name = TIMACT DataType: Time Value: 6:37:0:0
+13:52:29.575 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 135 Name = MID_NET_CH DataType: Real Value: 0.0013
+13:52:29.575 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 831 Name = CTBTR_1 DataType: Rmtes Value: BARCLAYS    
+13:52:29.576 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 836 Name = CTB_LOC1 DataType: Rmtes Value: LON
+13:52:29.576 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 841 Name = CTB_PAGE1 DataType: Rmtes Value: BCFX
+13:52:29.576 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: BARCLAYS     L/d
+13:52:29.577 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 78 Name = OFFCL_CODE DataType: Rmtes Value:             
+13:52:29.578 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 105 Name = BCKGRNDPAG DataType: Rmtes Value: BCFX
+13:52:29.578 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 826 Name = DLG_CODE1 DataType: Rmtes Value:       
+13:52:29.578 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3275 Name = ASIA_NETCH DataType: Real Value: 1.0E-4
+13:52:29.579 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3284 Name = EURO_NETCH DataType: Real Value: 1.0E-4
+13:52:29.579 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7880 Name = ASIA_BNC DataType: Real Value: 1.0E-4
+13:52:29.580 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 7885 Name = EURO_BNC DataType: Real Value: 1.0E-4
+13:52:29.580 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:00:30.300 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+14:01:51.376 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+14:01:54.300 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+14:01:55.294 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+14:01:55.295 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:01:55.296 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:01:55.297 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
+14:01:55.300 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: /EUR=
+14:01:55.301 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 15 Name = CURRENCY DataType: Enum Value: USD
+14:01:55.302 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 21 Name = HST_CLOSE DataType: Real Value: 39.0
+14:01:55.303 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.9
+14:01:55.304 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.94
+14:01:55.305 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 9.0
+14:01:55.306 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 19.0
+14:01:55.307 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:01:56.296 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:01:56.297 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:01:56.298 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:01:56.299 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.91
+14:01:56.300 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.94
+14:01:56.301 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 10.0
+14:01:56.302 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 19.0
+14:01:56.303 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:01:57.298 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:01:57.299 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:01:57.300 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:01:57.301 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.92
+14:01:57.303 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.95
+14:01:57.304 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 11.0
+14:01:57.304 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 20.0
+14:01:57.306 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:01:58.301 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:01:58.303 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:01:58.304 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:01:58.305 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.93
+14:01:58.306 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.96
+14:01:58.307 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 12.0
+14:01:58.308 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 21.0
+14:01:58.309 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:01:59.304 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:01:59.305 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:01:59.306 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:01:59.307 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.94
+14:01:59.308 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.97
+14:01:59.309 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 13.0
+14:01:59.310 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 22.0
+14:01:59.311 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:00.314 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:00.316 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:00.316 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:00.318 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.95
+14:02:00.319 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.98
+14:02:00.320 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 14.0
+14:02:00.321 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 23.0
+14:02:00.322 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:01.319 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:01.320 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:01.320 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:01.321 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.96
+14:02:01.321 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.99
+14:02:01.321 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 15.0
+14:02:01.321 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 24.0
+14:02:01.322 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:02.324 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:02.324 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:02.324 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:02.325 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.97
+14:02:02.325 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.0
+14:02:02.325 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 16.0
+14:02:02.326 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 25.0
+14:02:02.326 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:03.329 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:03.329 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:03.329 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:03.330 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.98
+14:02:03.332 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.01
+14:02:03.332 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 17.0
+14:02:03.332 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 26.0
+14:02:03.333 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:04.336 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:04.337 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:04.337 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:04.337 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.99
+14:02:04.338 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.02
+14:02:04.338 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 18.0
+14:02:04.338 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 27.0
+14:02:04.339 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:05.340 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:05.341 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:05.341 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:05.341 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.0
+14:02:05.342 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.03
+14:02:05.342 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 19.0
+14:02:05.343 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 28.0
+14:02:05.343 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:06.345 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:06.346 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:06.346 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:06.347 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.01
+14:02:06.347 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.04
+14:02:06.347 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 20.0
+14:02:06.348 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 29.0
+14:02:06.348 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:07.346 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:07.347 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:07.347 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:07.347 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.02
+14:02:07.348 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.05
+14:02:07.348 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 21.0
+14:02:07.349 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 30.0
+14:02:07.349 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:08.350 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:08.351 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:08.351 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:08.352 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.03
+14:02:08.352 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.06
+14:02:08.352 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 22.0
+14:02:08.353 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 31.0
+14:02:08.353 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:09.356 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:09.356 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:09.356 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:09.357 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.04
+14:02:09.357 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.07
+14:02:09.358 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 23.0
+14:02:09.358 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 32.0
+14:02:09.358 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:10.358 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:10.359 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:10.359 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:10.360 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.05
+14:02:10.360 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.08
+14:02:10.360 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 24.0
+14:02:10.361 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 33.0
+14:02:10.361 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:11.364 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:11.364 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:11.365 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:11.365 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.06
+14:02:11.365 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.09
+14:02:11.366 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 25.0
+14:02:11.366 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 34.0
+14:02:11.367 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:12.366 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:12.366 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:12.367 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:12.367 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.07
+14:02:12.367 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.1
+14:02:12.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 26.0
+14:02:12.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 35.0
+14:02:12.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:13.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:13.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:13.369 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:13.369 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.08
+14:02:13.369 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.11
+14:02:13.370 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 27.0
+14:02:13.370 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 36.0
+14:02:13.370 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:14.372 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:14.373 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:14.373 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:14.374 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.09
+14:02:14.374 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.12
+14:02:14.375 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 28.0
+14:02:14.375 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 37.0
+14:02:14.375 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:15.376 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:15.377 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:15.377 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:15.378 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.1
+14:02:15.379 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.13
+14:02:15.381 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 29.0
+14:02:15.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 38.0
+14:02:15.384 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:16.378 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:16.378 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:16.378 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:16.379 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.11
+14:02:16.379 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.14
+14:02:16.380 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 30.0
+14:02:16.380 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 39.0
+14:02:16.380 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:17.380 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:17.380 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:17.380 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:17.381 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.12
+14:02:17.381 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.15
+14:02:17.381 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 31.0
+14:02:17.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 40.0
+14:02:17.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:18.380 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:18.381 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:18.381 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:18.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.13
+14:02:18.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.16
+14:02:18.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 32.0
+14:02:18.383 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 41.0
+14:02:18.383 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:19.381 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:19.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:19.382 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:19.383 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.14
+14:02:19.383 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.17
+14:02:19.384 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 33.0
+14:02:19.384 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 42.0
+14:02:19.384 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:20.383 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:20.384 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:20.384 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:20.385 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.15
+14:02:20.385 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.18
+14:02:20.385 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 34.0
+14:02:20.386 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 43.0
+14:02:20.386 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:21.385 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:21.386 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:21.386 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:21.387 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.16
+14:02:21.387 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.19
+14:02:21.387 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 35.0
+14:02:21.388 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 44.0
+14:02:21.388 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:22.387 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:22.388 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:22.388 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:22.389 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.17
+14:02:22.389 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.2
+14:02:22.389 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 36.0
+14:02:22.389 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 45.0
+14:02:22.390 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:23.389 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:23.390 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:23.390 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:23.391 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.18
+14:02:23.391 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.21
+14:02:23.391 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 37.0
+14:02:23.392 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 46.0
+14:02:23.392 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:24.390 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:24.391 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:24.391 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:24.391 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.19
+14:02:24.392 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.22
+14:02:24.392 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 38.0
+14:02:24.393 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 47.0
+14:02:24.393 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:25.394 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:25.395 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:25.395 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:25.396 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.2
+14:02:25.397 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.23
+14:02:25.398 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 39.0
+14:02:25.398 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 48.0
+14:02:25.400 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:26.398 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:26.398 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:26.399 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:26.399 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.21
+14:02:26.399 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.24
+14:02:26.400 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 40.0
+14:02:26.400 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 49.0
+14:02:26.400 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:27.403 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:27.404 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:27.404 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:27.405 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.22
+14:02:27.405 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.25
+14:02:27.405 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 41.0
+14:02:27.406 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 50.0
+14:02:27.406 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:28.406 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:28.407 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:28.407 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:28.407 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.23
+14:02:28.408 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.26
+14:02:28.408 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 42.0
+14:02:28.409 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 51.0
+14:02:28.409 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:29.409 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:29.410 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:29.410 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:29.411 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.24
+14:02:29.412 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.27
+14:02:29.412 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 43.0
+14:02:29.412 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 52.0
+14:02:29.413 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:02:30.412 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:02:30.412 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:02:30.412 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:02:30.413 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.25
+14:02:30.413 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.28
+14:02:30.413 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 44.0
+14:02:30.414 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 53.0
+14:02:30.414 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+

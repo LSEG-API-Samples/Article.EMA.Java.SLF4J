@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
+        </Console>
+        <File name="File" fileName="./logs/log4j.log" immediateFlush="false" append="false">
+            <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
+        </File>
+    </Appenders>
+    <loggers>
+        <Logger name="com.refinitiv.ema.Consumer_App" level="TRACE">
+            <appender-ref ref="File"/>
+            <appender-ref ref="Console"/>
+        </Logger>
+        <!--<root level="TRACE">
+            <appender-ref ref="Console"/>
+        </root>-->
+    </loggers>
+</Configuration>
+
+
+        <!--<?xml version="1.0" encoding="UTF-8"?>
+        <Configuration>
+            <Appenders>
+                <Console name="STDOUT" target="SYSTEM_OUT">
+                    <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
+                </Console>
+                <File name="MyFile" fileName="./all.log" immediateFlush="false" append="false">
+                    <param name="maxFileSize" value="10MB"/>
+                    <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
+                </File>
+            </Appenders>
+            <loggers>
+                <Logger name="org.apache.log4j.xml" level="TRACE"/>
+                <root level="TRACE">
+                    <appender-ref ref="STDOUT"/>
+                    <appender-ref ref="MyFile"/>
+                </root>
+            </loggers>
+        </Configuration>
+        -->
+
+
+<!-- ## -Dlog4j.configurationFile=D:\Project\Code\SLF4J\emajava\src\resource\log4j2.xml -->
