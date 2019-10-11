@@ -1430,3 +1430,122 @@ current date-2019-10-11 13:49:29,590 Method-onUpdateMsg()   Class name-com.refin
 14:02:30.414 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 53.0
 14:02:30.414 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
+14:24:24.474 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+14:24:27.043 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+14:24:28.037 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+14:24:28.039 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:28.040 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:28.041 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
+14:24:28.043 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 3 Name = DSPLY_NAME DataType: Rmtes Value: /EUR=
+14:24:28.044 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 15 Name = CURRENCY DataType: Enum Value: USD
+14:24:28.046 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 21 Name = HST_CLOSE DataType: Real Value: 39.0
+14:24:28.047 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.9
+14:24:28.048 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.94
+14:24:28.049 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 9.0
+14:24:28.050 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 19.0
+14:24:28.052 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:29.039 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:29.039 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:29.040 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:29.041 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.91
+14:24:29.042 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.94
+14:24:29.042 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 10.0
+14:24:29.043 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 19.0
+14:24:29.044 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:30.040 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:30.041 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:30.042 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:30.042 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.92
+14:24:30.043 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.95
+14:24:30.044 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 11.0
+14:24:30.044 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 20.0
+14:24:30.045 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:31.043 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:31.044 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:31.044 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:31.045 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.93
+14:24:31.046 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.96
+14:24:31.047 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 12.0
+14:24:31.049 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 21.0
+14:24:31.050 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:32.045 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:32.046 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:32.047 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:32.047 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.94
+14:24:32.048 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.97
+14:24:32.049 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 13.0
+14:24:32.049 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 22.0
+14:24:32.050 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:33.046 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:33.047 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:33.049 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:33.052 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.95
+14:24:33.052 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.98
+14:24:33.054 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 14.0
+14:24:33.055 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 23.0
+14:24:33.056 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:34.049 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:34.050 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:34.050 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:34.051 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.96
+14:24:34.052 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 39.99
+14:24:34.052 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 15.0
+14:24:34.053 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 24.0
+14:24:34.053 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:35.051 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:35.052 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:35.052 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:35.053 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.97
+14:24:35.053 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.0
+14:24:35.054 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 16.0
+14:24:35.055 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 25.0
+14:24:35.056 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:36.053 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:36.053 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:36.054 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:36.054 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.98
+14:24:36.055 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.01
+14:24:36.055 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 17.0
+14:24:36.056 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 26.0
+14:24:36.056 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:37.056 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:37.057 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:37.057 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:37.058 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 39.99
+14:24:37.058 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.02
+14:24:37.059 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 18.0
+14:24:37.059 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 27.0
+14:24:37.059 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:38.058 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:38.059 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:38.060 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:38.060 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.0
+14:24:38.061 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.03
+14:24:38.061 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 19.0
+14:24:38.062 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 28.0
+14:24:38.062 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:39.060 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+14:24:39.061 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:39.061 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:39.062 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 22 Name = BID DataType: Real Value: 40.01
+14:24:39.062 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 25 Name = ASK DataType: Real Value: 40.04
+14:24:39.063 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 30 Name = BIDSIZE DataType: Real Value: 20.0
+14:24:39.063 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Fid: 31 Name = ASKSIZE DataType: Real Value: 29.0
+14:24:39.064 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+14:24:39.976 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+14:24:39.977 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: DIRECT_FEED
+14:24:39.977 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Suspect / None / 'channel down.'
+14:24:39.978 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+

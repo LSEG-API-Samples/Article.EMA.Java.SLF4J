@@ -1660,3 +1660,490 @@ loggerMsgEnd
 loggerMsgEnd
 
 
+2019-10-11 14:23:58,682 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
+    ClientName: EmaConfig
+    Severity: Trace
+    Text:    reading configuration file [EmaConfig.xml]; working directory is [D:\Project\Code\SLF4J\esdk131_project\ema_example]
+loggerMsgEnd
+
+
+2019-10-11 14:23:58,682 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 10000
+	 serviceCountHint: 10000
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 500
+	 maxDispatchCountApiThread: 500
+	 maxDispatchCountUserThread: 500
+	 userDispatch: 0
+	 configuredName: Provider_1
+	 instanceName: Provider_1_1
+	 xmlTraceEnable: false
+	 defaultServiceName: 14002
+	 acceptMessageWithoutAcceptingRequests: false
+	 acceptDirMessageWithoutMinFilters: false
+	 acceptMessageWithoutBeingLogin: false
+	 acceptMessageSameKeyButDiffStream: false
+	 acceptMessageThatChangesService: false
+	 acceptMessageWithoutQosInRange: false
+	 operationModel: 1
+	 directoryAdminControl: 1
+	 dictionaryAdminControl: 1
+	 refreshFirstRequired: true
+	 maxFieldDictFragmentSize: 8192
+	 maxEnumTypeFragmentSize: 128000
+loggerMsgEnd
+
+
+2019-10-11 14:23:58,702 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Successfully open Selector.
+loggerMsgEnd
+
+
+2019-10-11 14:23:58,739 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Successfully created Reactor.
+loggerMsgEnd
+
+
+2019-10-11 14:23:58,929 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Created ItemCallbackClient
+loggerMsgEnd
+
+
+2019-10-11 14:23:58,955 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Provider bound on port = 14022.
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,664 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
+    ClientName: EmaConfig
+    Severity: Trace
+    Text:    reading configuration file [EmaConfig.xml]; working directory is [D:\Project\Code\SLF4J\esdk131_project\ema_example]
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,665 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 100000
+	 serviceCountHint: 513
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 0
+	 maxDispatchCountApiThread: 100
+	 maxDispatchCountUserThread: 100
+	 userDispatch: 1
+	 configuredName: Consumer_1
+	 instanceName: Consumer_1_1
+	 xmlTraceEnable: false
+	 obeyOpenWindow: 1
+	 postAckTimeout: 15000
+	 maxOutstandingPosts: 100000
+	 userDispatch: 1
+	 reconnectAttemptLimit: -1
+	 reconnectMinDelay: 1000
+	 reconnectMaxDelay: 5000
+	 msgKeyInUpdates: true
+	 directoryRequestTimeOut: 45000
+	 dictionaryRequestTimeOut: 45000
+	 loginRequestTimeOut: 45000
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,684 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Successfully open Selector.
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,715 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Successfully created Reactor.
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,719 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    Created LoginCallbackClient
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,719 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.LoginCallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    RDMLogin request message was populated with this info: 
+	LoginRequest: 
+	streamId: 1
+	userName: U8004042
+	streaming: true
+	nameType: 1
+	applicationId: 256
+	applicationName: ema
+	position: 10.42.68.16/U8004042-TPL-A
+
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,720 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: DictionaryCallbackClient
+    Severity: Trace
+    Text:    Created DictionaryCallbackClient
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,890 LEVEL-TRACE Thread-[main]  Method-loadDictionaryFromFile()   Class name-com.thomsonreuters.ema.access.DictionaryCallbackClient   Message-loggerMsg
+    ClientName: DictionaryCallbackClient
+    Severity: Trace
+    Text:    Successfully loaded local dictionaries: 
+	RDMFieldDictionary file named ./etc/RDMFieldDictionary
+	EnumTypeDef file named ./etc/enumtype.def
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,891 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    Created DirectoryCallbackClient
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,892 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    RDMDirectoryRequest message was populated with Filter(s)
+	RDM_DIRECTORY_SERVICE_INFO_FILTER
+	RDM_DIRECTORY_SERVICE_STATE_FILTER
+	RDM_DIRECTORY_SERVICE_GROUP_FILTER
+	RDM_DIRECTORY_SERVICE_LOAD_FILTER
+	RDM_DIRECTORY_SERVICE_DATA_FILTER
+	RDM_DIRECTORY_SERVICE_LINK_FILTER
+	requesting all services
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,896 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Created ItemCallbackClient
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,903 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Created ChannelCallbackClient
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,905 LEVEL-TRACE Thread-[main]  Method-initializeReactor()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Attempt to connect using 
+	1] SOCKET
+	Channel name Channel_1
+	Instance Name Consumer_1_1
+	RsslReactor @311bf055
+	InterfaceName 
+	hostName localhost
+	port 14022
+	CompressionType None
+	tcpNodelay true
+	reconnectAttemptLimit -1
+	reconnectMinDelay 1000 msec
+	reconnectMaxDelay 5000 msec
+	guaranteedOutputBuffers 5000
+	numInputBuffers 10
+	sysRecvBufSize 0
+	sysSendBufSize 0
+	connectionPingTimeout 30000 msec
+	initializationTimeout 5 sec
+	
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,925 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Received ChannelOpened on channel Channel_1
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2019-10-11 14:24:24,950 LEVEL-TRACE Thread-[main]  Method-initializeReactor()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Successfully created a Reactor and Channel(s)
+	 Channel name(s) 
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2019-10-11 14:24:25,124 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Info
+    Text:    Received ChannelUp event on channel Channel_1
+	Instance Name Consumer_1_1
+	Component Version UPA Java Edition|EMA Java Edition
+loggerMsgEnd
+
+
+2019-10-11 14:24:26,001 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.thomsonreuters.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Info
+    Text:    Received ChannelUp event on ClientHandle 1
+	Instance Name Provider_1_1
+	Component Version UPA Java Edition|EMA Java Edition
+loggerMsgEnd
+
+
+2019-10-11 14:24:26,001 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.thomsonreuters.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Trace
+    Text:    Received ChannelReady event on client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2019-10-11 14:24:26,011 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback()   Class name-com.thomsonreuters.ema.access.LoginHandler   Message-loggerMsg
+    ClientName: LoginHandler
+    Severity: Trace
+    Text:    Received login request message.
+	Stream Id 1
+	Instance Name Provider_1_1
+	Client handle 1
+loggerMsgEnd
+
+
+2019-10-11 14:24:26,012 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 1 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2019-10-11 14:24:26,033 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback()   Class name-com.thomsonreuters.ema.access.LoginCallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    RDMLogin stream was open with refresh message
+	LoginRefresh: 
+	streamId: 1
+	name: U8004042
+	nameType: 1
+	State: Open/Ok/None - text: "Login accepted"
+	isSolicited: true
+
+	
+loggerMsgEnd
+
+
+2019-10-11 14:24:27,032 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback()   Class name-com.thomsonreuters.ema.access.DirectoryHandler   Message-loggerMsg
+    ClientName: DirectoryHandler
+    Severity: Trace
+    Text:    Received directory request message.
+	Stream Id 2
+	Client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2019-10-11 14:24:27,032 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 2 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2019-10-11 14:24:27,042 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback()   Class name-com.thomsonreuters.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    RDMDirectory stream state was open with refresh message 
+	State: State: Open/Ok/None - text: "null"
+loggerMsgEnd
+
+
+2019-10-11 14:24:27,043 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Received ChannelReady event on channel Channel_1
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2019-10-11 14:24:27,045 LEVEL-TRACE Thread-[main]  Method-addToMap()   Class name-com.thomsonreuters.ema.access.ItemCallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Added Item 1 of StreamId 5 to item map
+	Instance name Consumer_1_1
+loggerMsgEnd
+
+
+2019-10-11 14:24:28,034 LEVEL-TRACE Thread-[main]  Method-defaultMsgCallback()   Class name-com.thomsonreuters.ema.access.MarketItemHandler   Message-loggerMsg
+    ClientName: MarketItemHandler
+    Severity: Trace
+    Text:    Received request message.
+	Stream Id 3
+	Client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2019-10-11 14:24:28,035 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 3 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2019-10-11 14:24:28,035 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received RefreshMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:29,037 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:30,039 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:31,042 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:32,044 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:33,046 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:34,048 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:35,050 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:36,052 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:37,054 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:38,057 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:39,059 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.thomsonreuters.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 3, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2019-10-11 14:24:39,974 LEVEL-WARN  Thread-[pool-3-thread-1]  Method-reactorChannelEventCallback()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Warning
+    Text:    Received ChannelDownReconnecting event on channel Channel_1
+	RsslReactor @311bf055
+	RsslChannel @473039
+	Error Id 0
+	Internal sysError 0
+	Error Location null
+	Error text An existing connection was forcibly closed by the remote host
+loggerMsgEnd
+
+
+2019-10-11 14:24:39,974 LEVEL-WARN  Thread-[pool-3-thread-1]  Method-rdmLoginMsgCallback()   Class name-com.thomsonreuters.ema.access.LoginCallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Warning
+    Text:    RDMLogin stream state was changed to suspect with status message
+	username <not set>
+	usernameType <not set>
+	
+	State: Open/Suspect/None - text: ""
+loggerMsgEnd
+
+
+2019-10-11 14:24:39,975 LEVEL-TRACE Thread-[pool-3-thread-1]  Method-rdmDirectoryMsgCallback()   Class name-com.thomsonreuters.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    Received RDMDirectory update message
+loggerMsgEnd
+
+
+2019-10-11 14:24:39,975 LEVEL-TRACE Thread-[pool-3-thread-1]  Method-processDirectoryPayload()   Class name-com.thomsonreuters.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    Received Delete action for RDMService
+	Service name DIRECT_FEED
+	Service id 1
+loggerMsgEnd
+
+
+2019-10-11 14:24:41,977 LEVEL-WARN  Thread-[pool-3-thread-1]  Method-reactorChannelEventCallback()   Class name-com.thomsonreuters.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Warning
+    Text:    Received ChannelDownReconnecting event on channel Channel_1
+	RsslReactor @311bf055
+	RsslChannel @20b88f7f
+	Error Id 0
+	Internal sysError 0
+	Error Location Reactor.processWorkerEvent
+	Error text Error initializing channel: errorId=-1 text=Connection refused: no further information
+loggerMsgEnd
+
+

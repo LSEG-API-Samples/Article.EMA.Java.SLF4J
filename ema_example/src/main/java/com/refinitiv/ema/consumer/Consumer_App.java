@@ -144,8 +144,9 @@ public class Consumer_App {
 			logger.info("Starting Consumer_App application");
 			AppClient appClient = new AppClient();
 
-			consumer = EmaFactory.createOmmConsumer(
-					EmaFactory.createOmmConsumerConfig().host("localhost:14022").username("emajava"));
+			//consumer = EmaFactory.createOmmConsumer(EmaFactory.createOmmConsumerConfig().host("localhost:14022").username("emajava"));
+			
+			consumer = EmaFactory.createOmmConsumer(EmaFactory.createOmmConsumerConfig().consumerName("Consumer_1"));
 
 			logger.info("Consumer_App: Send item request message");
 			consumer.registerClient(EmaFactory.createReqMsg().serviceName("DIRECT_FEED").name("/EUR="), appClient);
