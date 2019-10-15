@@ -3,7 +3,7 @@ mvn archetype:generate -DgroupId=com.refinitiv.ema -DartifactId=esdk131_maven -D
 # How to integrate Elektron Message API Java with Log4j Logging Framework using Maven
 ## Overview
  
-[Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Marven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK version 1.2, therefore this article will show how to intergrate your EMA Java 1.3.x application with Log4j in a Maven way.
+[Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Marven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
 
 <!--
 Even though the EMA Java API binds the logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default, developers can change the binding library and logging configuration files to bind the EMA Java aplication with Log4j or others framework that supported SLF4J without modify the application source code. 
@@ -88,12 +88,12 @@ The example file is saved as "\resource\log4j2.xml" file.
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
         </Console>
-        <File name="File" fileName="../logs/log4j.log" immediateFlush="false" append="false">
+        <File name="File" fileName="../logs/ema_log4j.log" immediateFlush="false" append="false">
             <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
         </File>
     </Appenders>
     <loggers>
-        <Logger name="org.apache.log4j.xml" level="TRACE"/>
+        <Logger name="com.thomsonreuters.ema" level="TRACE"/>
         <root level="TRACE">
             <appender-ref ref="Console"/>
             <appender-ref ref="File"/>
