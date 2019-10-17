@@ -21,12 +21,8 @@
 			<Dictionary value="Dictionary_3"/>
 			<XmlTraceToStdout value="0"/>
 		</Consumer>
-		
-		
-		
 	</ConsumerList>
 </ConsumerGroup>
-
 
 
 <!-- IProviderGroup provides set of detailed configurations to be used by named providers                -->
@@ -118,7 +114,7 @@
 <DirectoryGroup>
 
 	<!-- DefaultDirectory specifies Directory used as default if providers do not specify Directory name -->
-	<DefaultDirectory value="Directory_1"/>
+	<DefaultDirectory value="Directory_2"/>
 	<DirectoryList>
 		<!-- providers refer to the Directory by name													-->
 		<!-- Directory is a set of Services (one or more) on which a provider will provide item data	--> 
@@ -126,7 +122,7 @@
 		<Directory>
 			<Name value="Directory_2"/>
 			<Service>
-				<Name value="DIRECT_FEED"/>
+				<Name value="ELEKTRON_DD"/>
 				<InfoFilter>
 					<ServiceId value="1"/>
 					<DictionariesProvided>

@@ -23,6 +23,8 @@ import com.thomsonreuters.ema.access.OmmConsumer;
 import com.thomsonreuters.ema.access.OmmConsumerClient;
 import com.thomsonreuters.ema.access.OmmConsumerEvent;
 import com.thomsonreuters.ema.access.OmmException;
+import com.thomsonreuters.ema.rdm.EmaRdm;
+import com.thomsonreuters.ema.access.ReqMsg;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -140,6 +142,7 @@ public class Consumer_App {
 
 	public static void main(String[] args) {
 		OmmConsumer consumer = null;
+		String service_name = "ELEKTRON_DD";
 		try {
 
 			logger.info("Starting Consumer_App application");
@@ -149,8 +152,16 @@ public class Consumer_App {
 			
 			consumer = EmaFactory.createOmmConsumer(EmaFactory.createOmmConsumerConfig().consumerName("Consumer_1"));
 
+			ReqMsg reqMsg = EmaFactory.createReqMsg();
+
+			logger.info("Consumer_App: Register Login stream");
+			consumer.registerClient(reqMsg.domainType(EmaRdm.MMT_LOGIN), appClient);
+
+			logger.info("Consumer_App: Register Directory stream");
+			consumer.registerClient(reqMsg.domainType(EmaRdm.MMT_DIRECTORY).serviceName(service_name), appClient);
+
 			logger.info("Consumer_App: Send item request message");
-			consumer.registerClient(EmaFactory.createReqMsg().serviceName("DIRECT_FEED").name("/EUR="), appClient);
+			consumer.registerClient(reqMsg.clear().serviceName(service_name).name("/EUR="), appClient);
 
 			Thread.sleep(60000); // API calls onRefreshMsg(), onUpdateMsg() and onStatusMsg()
 		} catch (InterruptedException | OmmException excp) {

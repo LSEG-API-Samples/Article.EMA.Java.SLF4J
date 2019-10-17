@@ -1,13 +1,7 @@
-mvn archetype:generate -DgroupId=com.refinitiv.ema -DartifactId=esdk131_maven -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
-
 # How to integrate Elektron Message API Java with Log4j Logging Framework using Maven
 ## Overview
  
 [Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Marven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
-
-<!--
-Even though the EMA Java API binds the logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default, developers can change the binding library and logging configuration files to bind the EMA Java aplication with Log4j or others framework that supported SLF4J without modify the application source code. 
--->
 
 ## How to integrate EMA Java Application with Logging Framework in Maven
 The Elektron SDK Java are now available in [Maven Central Repository](https://search.maven.org/). The [EMA Java library](https://search.maven.org/artifact/com.thomsonreuters.ema/ema/) can be downloaded by defining the following dependency in Maven's POM.xml file.
@@ -22,7 +16,7 @@ Note: This article is based on EMA Java version 3.3.1 L1. You can change the lib
 
 The above POM.xml configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
 
-![](.\images\article15\ema_dependencies.png "EMA Java Dependencies")
+![](.\images\ema_dependencies.png "EMA Java Dependencies")
 
 You will see that Maven automatic downloads **slf4j-api** and **slf4j-jdk14** libraries for binding the logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
 1. Configure POM.xml file's EMA dependency declaration to not load slf4j-jdk14 libary.
@@ -107,48 +101,216 @@ Please find the full detail of Log4j configuration in [Log4j manual](https://log
 ### Running the application
 You can run the EMA Java example with JVM ```-Dlog4j.configurationFile``` option points to the log4j2.xml file. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
 
-### Build and running Demo
+### EMA Java application and Log4j Demo
 
-The EMA Java Interactive-Provider and Consumer demo examples are available in *ema_example* folder. The demo applications utlize Maven and Log4J to log EMA Java API and application activities to console and log file.
+This project contains the EMA Java demo examples that utilize Log4J to manage log and console messages in *ema_example* folder. The demo examples are following:
+- IProvider_App example: OMM Interactive-Provider application. 
+    - The application messages are printed in console and provider_log4j.log file.
+- Consumer_App example: OMM Consumer application that connects and consumes data from IProvider_App example.
+    - The application messages are printed in console and consumer_log4j.log file.
+
+All EMA Java API logs of both example are printed in ema_log4j.log file. 
+
+*Note*: The Consumer_App demo example can be configured to connect to your local TREP server.
+
+#### Prerequisite
+This example requires the following dependencies softwares and libraries.
+1. Oracle/Open JDK 8 or Oracle JDK 11.
+2. [Apache Maven](https://maven.apache.org/) project management and comprehension tool.
+3. Internet connection. 
+
+#### Building the demo
+
+Run ```$> mvn package``` to build the demo applications into single *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* in the project's target folder. Please note that Maven automatic download EMA Java and Log4J dependencies for the application.
+
+#### Running the demo
+
+You can run the IProvider_App demo with the following command:
 
 ```
-java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_log4j-1.0-jar-with-dependencies.jar com.thomsonreuters.ema.examples.training.consumer.series100.example100__MarketPrice__Streaming.Consumer
+$> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
 ```
-An example result log messages with Log4j 2 is shown below:
+
+Then run Consumer_App demo with the following command:
 
 ```
-current date-2019-09-17 17:43:23,228 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
+$> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+```
+
+The applications results are following:
+
+*Consumer_App running result*:
+
+```16:39:25.607 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+16:39:28.462 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+16:39:29.452 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+16:39:29.453 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+16:39:29.453 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+16:39:29.454 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
+16:39:29.457 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="5"
+    domain="MarketPrice Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / 'Refresh Completed'"
+    itemGroup="00 00"
+    name="/EUR="
+    serviceId="1"
+    serviceName="ELEKTRON_DD"
+    Payload dataType="FieldList"
+        FieldList
+            FieldEntry fid="3" name="DSPLY_NAME" dataType="Rmtes" value="/EUR="
+            FieldEntry fid="15" name="CURRENCY" dataType="Enum" value="840"
+            FieldEntry fid="21" name="HST_CLOSE" dataType="Real" value="39.0"
+            FieldEntry fid="22" name="BID" dataType="Real" value="39.9"
+            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
+            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="9.0"
+            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
+        FieldListEnd
+    PayloadEnd
+RefreshMsgEnd
+
+16:39:29.458 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+16:39:30.455 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+16:39:30.455 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+16:39:30.456 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+16:39:30.456 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+    streamId="5"
+    domain="MarketPrice Domain"
+    updateTypeNum="0"
+    name="/EUR="
+    serviceId="1"
+    serviceName="ELEKTRON_DD"
+    Payload dataType="FieldList"
+        FieldList
+            FieldEntry fid="22" name="BID" dataType="Real" value="39.91"
+            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
+            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="10.0"
+            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
+        FieldListEnd
+    PayloadEnd
+UpdateMsgEnd
+...
+```
+
+*IProvider_App running result*:
+
+```
+16:39:09.009 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
+16:39:29.451 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh messages
+16:39:30.453 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+16:39:31.456 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+```
+
+EMA Java log messages from both demo application will be in ema_log4j.log file.
+
+```
+2019-10-17 16:39:10,182 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
     ClientName: EmaConfig
     Severity: Trace
-    Text:    reading configuration file [EmaConfig.xml]; working directory is [D:\Project\Code\SLF4J\esdk131_project\maven_console]
+    Text:    reading configuration file [EmaConfig.xml]; working directory is [/home/api/project/slf4j/ema_example]
+loggerMsgEnd
+
+
+2019-10-17 16:39:10,183 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 10000
+	 serviceCountHint: 10000
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 500
+	 maxDispatchCountApiThread: 500
+	 maxDispatchCountUserThread: 500
+	 userDispatch: 0
+	 configuredName: Provider_1
+	 instanceName: Provider_1_1
+	 xmlTraceEnable: false
+	 defaultServiceName: 14002
+	 acceptMessageWithoutAcceptingRequests: false
+	 acceptDirMessageWithoutMinFilters: false
+	 acceptMessageWithoutBeingLogin: false
+	 acceptMessageSameKeyButDiffStream: false
+	 acceptMessageThatChangesService: false
+	 acceptMessageWithoutQosInRange: false
+	 operationModel: 1
+	 directoryAdminControl: 1
+	 dictionaryAdminControl: 1
+	 refreshFirstRequired: true
+	 maxFieldDictFragmentSize: 8192
+	 maxEnumTypeFragmentSize: 128000
 loggerMsgEnd
 
 ....
 
-current date-2019-09-17 17:43:23,344 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+2019-10-17 16:39:10,363 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Provider bound on port = 14022.
+loggerMsgEnd
+
+
+2019-10-17 16:39:25,758 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
+    ClientName: EmaConfig
+    Severity: Trace
+    Text:    reading configuration file [EmaConfig.xml]; working directory is [/home/api/project/slf4j/ema_example]
+loggerMsgEnd
+
+
+2019-10-17 16:39:25,758 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 100000
+	 serviceCountHint: 513
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 0
+	 maxDispatchCountApiThread: 100
+	 maxDispatchCountUserThread: 100
+	 userDispatch: 1
+	 configuredName: Consumer_1
+	 instanceName: Consumer_1_1
+	 xmlTraceEnable: false
+	 obeyOpenWindow: 1
+	 postAckTimeout: 15000
+	 maxOutstandingPosts: 100000
+	 userDispatch: 1
+	 reconnectAttemptLimit: -1
+	 reconnectMinDelay: 1000
+	 reconnectMaxDelay: 5000
+	 msgKeyInUpdates: true
+	 directoryRequestTimeOut: 45000
+	 dictionaryRequestTimeOut: 45000
+	 loginRequestTimeOut: 45000
+loggerMsgEnd
+
+...
+
+2019-10-17 16:39:25,787 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
     ClientName: LoginCallbackClient
     Severity: Trace
     Text:    Created LoginCallbackClient
 loggerMsgEnd
 
 
-current date-2019-09-17 17:43:23,345 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.LoginCallbackClient   Message-loggerMsg
+2019-10-17 16:39:25,788 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.LoginCallbackClient   Message-loggerMsg
     ClientName: LoginCallbackClient
     Severity: Trace
     Text:    RDMLogin request message was populated with this info: 
 	LoginRequest: 
 	streamId: 1
-	userName: user
+	userName: api
 	streaming: true
 	nameType: 1
 	applicationId: 256
 	applicationName: ema
-	position: 10.42.68.117/U8004042-TPL-A
+	position: 127.0.0.1/apis30
 
 loggerMsgEnd
 
 
-current date-2019-09-17 17:43:23,347 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+2019-10-17 16:39:25,789 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
     ClientName: DictionaryCallbackClient
     Severity: Trace
     Text:    Created DictionaryCallbackClient
@@ -156,7 +318,7 @@ loggerMsgEnd
 ```
 
 ## Conclusion
-The EMA Java API is implemented on top of SLF4J API as a facade for logging utility. It allows developers integrate EMA Java application with their prefer Logging framework by replacing the Logging library and configurations files without touching the application source code. 
+The EMA Java API is implemented on top of SLF4J API as a facade for logging utility. The API allows developers integrate EMA Java application with their prefer Logging framework by replacing the Logging library (both manual and via Maven ways) and configurations files without touching the application source code. 
 
 ## References
 For further details, please check out the following resources:
@@ -167,43 +329,3 @@ For further details, please check out the following resources:
 * [Developer Webinar: Introduction to Enterprise App Creation With Open-Source Elektron Message API](https://www.youtube.com/watch?v=2pyhYmgHxlU)
 
 For any question related to this article or Elektron Message API page, please use the Developer Community [Q&A Forum](https://community.developers.refinitiv.com/spaces/72/index.html).
-
-
-# Build and Compile Project
-
-```
-mvn clean dependency:copy-dependencies package
-```
-
-Then, all dependencies libraries will be downloaded to *target\dependency* folder.
-
-# Running Project
-
-```
-java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/dependency/commons-collections-3.2.2.jar;;target/dependency/commons-configuration-1.10.jar;target/dependency/commons-lang-2.6.jar;target/dependency/commons-logging-1.2.jar;target/dependency/slf4j-api-1.7.12.jar;target/dependency/log4j-api-2.12.1.jar;target/dependency/log4j-core-2.12.1.jar;target/dependency/log4j-slf4j-impl-2.12.1.jar;target/dependency/ema-3.3.1.0.jar;target/dependency/upa-3.3.1.0.jar;target/dependency/upaValueAdd-3.3.1.0.jar;target/dependency/;target/esdk131_log4j-1.0-SNAPSHOT.jar com.thomsonreuters.ema.examples.training.consumer.series100.example100__MarketPrice__Streaming.Consumer
-```
-
-```
-java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_log4j-1.0-jar-with-dependencies.jar com.thomsonreuters.ema.examples.training.consumer.series100.example100__MarketPrice__Streaming.Consumer
-```
-
-```
-java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_log4j-1.0-jar-with-dependencies.jar com.thomsonreuters.ema.examples.training.consumer.series100.example120__MarketPrice__FieldListWalk.Consumer
-```
-
-```
-java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_log4j-1.0-jar-with-dependencies.jar com.thomsonreuters.ema.examples.training.iprovider.series200.example200__MarketPrice__Streaming.IProvider
-```
-
-```
-java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
-```
-
-
-
-```
-java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
-```
-
-
-

@@ -1,0 +1,629 @@
+17:38:39.083 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+17:38:39.775 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
+17:38:39.776 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+17:38:39.776 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
+17:38:39.777 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
+17:38:39.777 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+17:38:39.777 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted by host apis11.'
+17:38:39.778 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+17:38:39.780 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="1"
+    domain="Login Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / 'Login accepted by host apis11.'"
+    itemGroup="00 00"
+    name="U8004042"
+    nameType="1"
+    Attrib dataType="ElementList"
+        ElementList
+            ElementEntry name="AllowSuspectData" dataType="UInt" value="1"
+            ElementEntry name="ApplicationId" dataType="Ascii" value="256"
+            ElementEntry name="ApplicationName" dataType="Ascii" value="ADS"
+            ElementEntry name="Position" dataType="Ascii" value="10.42.87.51/U8004042-TPL-A"
+            ElementEntry name="ProvidePermissionExpressions" dataType="UInt" value="1"
+            ElementEntry name="ProvidePermissionProfile" dataType="UInt" value="0"
+            ElementEntry name="SingleOpen" dataType="UInt" value="1"
+            ElementEntry name="SupportEnhancedSymbolList" dataType="UInt" value="1"
+            ElementEntry name="SupportOMMPost" dataType="UInt" value="1"
+            ElementEntry name="SupportPauseResume" dataType="UInt" value="1"
+            ElementEntry name="SupportStandby" dataType="UInt" value="1"
+            ElementEntry name="SupportBatchRequests" dataType="UInt" value="7"
+            ElementEntry name="SupportViewRequests" dataType="UInt" value="1"
+            ElementEntry name="SupportOptimizedPauseResume" dataType="UInt" value="1"
+        ElementListEnd
+    AttribEnd
+RefreshMsgEnd
+
+17:38:39.783 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+17:38:39.785 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+17:38:39.786 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: <not set>
+17:38:39.786 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+17:38:39.786 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / ''
+17:38:39.791 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="5"
+    domain="Directory Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / ''"
+    itemGroup="00 00"
+    filter="0"
+    Payload dataType="Map"
+        Map
+            MapEntry action="Add" key dataType="UInt" value="2114" dataType="FilterList"
+                FilterList
+                    FilterEntry action="Set" filterId="1 dataType="ElementList"
+                        ElementList
+                            ElementEntry name="Name" dataType="Ascii" value="ELEKTRON_DD"
+                            ElementEntry name="Vendor" dataType="Ascii" value="Thomson Reuters"
+                            ElementEntry name="Capabilities" dataType="OmmArray"
+                                OmmArray with entries of dataType="UInt"
+                                    value=""5"
+                                    value=""6"
+                                    value=""7"
+                                    value=""8"
+                                    value=""9"
+                                    value=""10"
+                                    value=""11"
+                                    value=""13"
+                                    value=""18"
+                                    value=""19"
+                                    value=""20"
+                                    value=""21"
+                                    value=""23"
+                                    value=""24"
+                                    value=""25"
+                                    value=""26"
+                                    value=""28"
+                                    value=""29"
+                                    value=""33"
+                                    value=""126"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="DictionariesProvided" dataType="OmmArray"
+                                OmmArray with entries of dataType="Ascii"
+                                    value=""RWFFld"
+                                    value=""RWFEnum"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="DictionariesUsed" dataType="OmmArray"
+                                OmmArray with entries of dataType="Ascii"
+                                    value=""RWFFld"
+                                    value=""RWFEnum"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="QoS" dataType="OmmArray"
+                                OmmArray with entries of dataType="Qos"
+                                    value=""RealTime/TickByTick"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="SupportsQoSRange" dataType="UInt" value="0"
+                        ElementListEnd
+                    FilterEntryEnd
+                    FilterEntry action="Set" filterId="4 dataType="ElementList"
+                        ElementList
+                            ElementEntry name="OpenLimit" dataType="UInt" value="600000"
+                        ElementListEnd
+                    FilterEntryEnd
+                    FilterEntry action="Set" filterId="2 dataType="ElementList"
+                        ElementList
+                            ElementEntry name="ServiceState" dataType="UInt" value="1"
+                            ElementEntry name="AcceptingRequests" dataType="UInt" value="1"
+                        ElementListEnd
+                    FilterEntryEnd
+                FilterListEnd
+            MapEntryEnd
+        MapEnd
+    PayloadEnd
+RefreshMsgEnd
+
+17:38:39.795 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+17:38:39.830 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+17:38:39.830 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+17:38:39.831 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+17:38:39.831 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'All is well'
+17:38:39.843 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="6"
+    domain="MarketPrice Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / 'All is well'"
+    itemGroup="00 01"
+    permissionData="03 08 42 36 3c"
+    name="/EUR="
+    nameType="1"
+    serviceId="2114"
+    serviceName="ELEKTRON_DD"
+    Payload dataType="FieldList"
+        FieldList FieldListNum="99" DictionaryId="1"
+            FieldEntry fid="1" name="PROD_PERM" dataType="UInt" value="363"
+            FieldEntry fid="2" name="RDNDISPLAY" dataType="UInt" value="153"
+            FieldEntry fid="3" name="DSPLY_NAME" dataType="Rmtes" value="RABOBANKGFM  L/d"
+            FieldEntry fid="5" name="TIMACT" dataType="Time" value="10:23:00:000:000:000"
+            FieldEntry fid="11" name="NETCHNG_1" dataType="Real" value="0.0051"
+            FieldEntry fid="12" name="HIGH_1" dataType="Real" value="1.1139"
+            FieldEntry fid="13" name="LOW_1" dataType="Real" value="1.1066"
+            FieldEntry fid="15" name="CURRENCY" dataType="Enum" value="840"
+            FieldEntry fid="17" name="ACTIV_DATE" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="19" name="OPEN_PRC" dataType="Real" value="1.1071"
+            FieldEntry fid="21" name="HST_CLOSE" dataType="Real" value="1.107"
+            FieldEntry fid="22" name="BID" dataType="Real" value="1.1121"
+            FieldEntry fid="23" name="BID_1" dataType="Real" value="1.1119"
+            FieldEntry fid="24" name="BID_2" dataType="Real" value="1.1114"
+            FieldEntry fid="25" name="ASK" dataType="Real" value="1.1123"
+            FieldEntry fid="26" name="ASK_1" dataType="Real" value="1.1121"
+            FieldEntry fid="27" name="ASK_2" dataType="Real" value="1.1118"
+            FieldEntry fid="32" name="ACVOL_1" dataType="Real" value="43042.0"
+            FieldEntry fid="53" name="TRD_UNITS" dataType="Enum" value="4"
+            FieldEntry fid="56" name="PCTCHNG" dataType="Real" value="0.46"
+            FieldEntry fid="57" name="OPEN_BID" dataType="Real" value="1.1071"
+            FieldEntry fid="59" name="OPEN_ASK" dataType="Real" value="1.1073"
+            FieldEntry fid="60" name="CLOSE_BID" dataType="Real" value="1.107"
+            FieldEntry fid="61" name="CLOSE_ASK" dataType="Real" value="1.1074"
+            FieldEntry fid="77" name="NUM_MOVES" dataType="Real" value="87186.0"
+            FieldEntry fid="78" name="OFFCL_CODE" dataType="Rmtes" value="RABX        "
+            FieldEntry fid="79" name="HSTCLSDATE" dataType="Date" value="16 OCT 2019"
+            FieldEntry fid="90" name="YRHIGH" dataType="Real" value="1.157"
+            FieldEntry fid="91" name="YRLOW" dataType="Real" value="1.088"
+            FieldEntry fid="105" name="BCKGRNDPAG" dataType="Rmtes" value="RAB1"
+            FieldEntry fid="114" name="BID_NET_CH" dataType="Real" value="0.0051"
+            FieldEntry fid="115" name="BID_TICK_1" dataType="Enum" value="1"
+            FieldEntry fid="131" name="PRC_QL2" dataType="Enum" value="164"
+            FieldEntry fid="134" name="MID_PRICE" dataType="Real" value="1.1122"
+            FieldEntry fid="135" name="MID_NET_CH" dataType="Real" value="0.005"
+            FieldEntry fid="136" name="MID_CLOSE" dataType="Real" value="1.1072"
+            FieldEntry fid="196" name="HIGHTP_1" dataType="Enum" value="1"
+            FieldEntry fid="197" name="LOWTP_1" dataType="Enum" value="1"
+            FieldEntry fid="203" name="BID_HIGH_1" dataType="Real" value="1.1139"
+            FieldEntry fid="204" name="BID_LOW_1" dataType="Real" value="1.1063"
+            FieldEntry fid="205" name="YRBIDHIGH" dataType="Real" value="1.157"
+            FieldEntry fid="206" name="YRBIDLOW" dataType="Real" value="1.0877"
+            FieldEntry fid="207" name="HST_CLSBID" dataType="Real" value="1.107"
+            FieldEntry fid="208" name="HSTCLBDDAT" dataType="Date" value="16 OCT 2019"
+            FieldEntry fid="211" name="NUM_BIDS" dataType="Real" value="43042.0"
+            FieldEntry fid="259" name="RECORDTYPE" dataType="UInt" value="209"
+            FieldEntry fid="270" name="ACT_TP_1" dataType="Enum" value="26"
+            FieldEntry fid="271" name="ACT_TP_2" dataType="Enum" value="27"
+            FieldEntry fid="272" name="ACT_TP_3" dataType="Enum" value="27"
+            FieldEntry fid="275" name="SEC_ACT_1" dataType="Real" value="1.1123"
+            FieldEntry fid="276" name="SEC_ACT_2" dataType="Real" value="1.1121"
+            FieldEntry fid="277" name="SEC_ACT_3" dataType="Real" value="1.1118"
+            FieldEntry fid="280" name="SC_ACT_TP1" dataType="Enum" value="17"
+            FieldEntry fid="281" name="SC_ACT_TP2" dataType="Enum" value="17"
+            FieldEntry fid="282" name="SC_ACT_TP3" dataType="Enum" value="17"
+            FieldEntry fid="285" name="OPEN_TIME" dataType="Time" value="21:00:00:000:000:000"
+            FieldEntry fid="286" name="HIGH_TIME" dataType="Time" value="09:39:00:000:000:000"
+            FieldEntry fid="287" name="LOW_TIME" dataType="Time" value="07:00:00:000:000:000"
+            FieldEntry fid="350" name="YRHIGHDAT" dataType="Date" value="10 JAN 2019"
+            FieldEntry fid="351" name="YRLOWDAT" dataType="Date" value="01 OCT 2019"
+            FieldEntry fid="372" name="IRGPRC" dataType="Real" value="0.46"
+            FieldEntry fid="375" name="TIMCOR" dataType="Time" value="07:00:39:000:000:000"
+            FieldEntry fid="393" name="PRIMACT_1" dataType="Real" value="1.1121"
+            FieldEntry fid="394" name="PRIMACT_2" dataType="Real" value="1.1119"
+            FieldEntry fid="395" name="PRIMACT_3" dataType="Real" value="1.1114"
+            FieldEntry fid="544" name="BASE_CCY" dataType="Rmtes" value="EUR"
+            FieldEntry fid="728" name="BCAST_REF" dataType="Rmtes" value="FX-W0-US"
+            FieldEntry fid="825" name="CROSS_SC" dataType="Enum" value="0"
+            FieldEntry fid="826" name="DLG_CODE1" dataType="Rmtes" value="RABX  "
+            FieldEntry fid="827" name="DLG_CODE2" dataType="Rmtes" value="RABX  "
+            FieldEntry fid="828" name="DLG_CODE3" dataType="Rmtes" value="      "
+            FieldEntry fid="831" name="CTBTR_1" dataType="Rmtes" value="RABOBANKGFM "
+            FieldEntry fid="832" name="CTBTR_2" dataType="Rmtes" value="RABOBANKGFM "
+            FieldEntry fid="833" name="CTBTR_3" dataType="Rmtes" value="BARCLAYS    "
+            FieldEntry fid="836" name="CTB_LOC1" dataType="Rmtes" value="LON"
+            FieldEntry fid="837" name="CTB_LOC2" dataType="Rmtes" value="LON"
+            FieldEntry fid="838" name="CTB_LOC3" dataType="Rmtes" value="LON"
+            FieldEntry fid="841" name="CTB_PAGE1" dataType="Rmtes" value="RAB1"
+            FieldEntry fid="842" name="CTB_PAGE2" dataType="Rmtes" value="RAB1"
+            FieldEntry fid="843" name="CTB_PAGE3" dataType="Rmtes" value="BCFX"
+            FieldEntry fid="875" name="VALUE_DT1" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="876" name="VALUE_DT2" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="877" name="VALUE_DT3" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="957" name="SEC_HIGH" dataType="Real" value="1.1142"
+            FieldEntry fid="958" name="SEC_HI_TP" dataType="Enum" value="1"
+            FieldEntry fid="959" name="SEC_LOW" dataType="Real" value="1.1066"
+            FieldEntry fid="960" name="SEC_LO_TP" dataType="Enum" value="4"
+            FieldEntry fid="962" name="OPEN_TYPE" dataType="Enum" value="1"
+            FieldEntry fid="964" name="CLOSE_TYPE" dataType="Enum" value="1"
+            FieldEntry fid="967" name="BKGD_REF" dataType="Ascii" value="Euro"
+            FieldEntry fid="995" name="GEN_TEXT16" dataType="Rmtes" value="<EUR/BKGDINFO>"
+            FieldEntry fid="998" name="GEN_VAL3" dataType="Real" value="1.1073"
+            FieldEntry fid="999" name="GEN_VAL4" dataType="Real" value="1.1116"
+            FieldEntry fid="1000" name="GV1_TEXT" dataType="Rmtes" value="SPOT"
+            FieldEntry fid="1001" name="GV2_TEXT" dataType="Rmtes" value="EURUSD"
+            FieldEntry fid="1003" name="GV4_TEXT" dataType="Rmtes" value="SPOT"
+            FieldEntry fid="1010" name="VALUE_TS1" dataType="Time" value="10:23:28:000:000:000"
+            FieldEntry fid="1011" name="VALUE_TS2" dataType="Time" value="10:22:28:000:000:000"
+            FieldEntry fid="1012" name="VALUE_TS3" dataType="Time" value="10:21:29:000:000:000"
+            FieldEntry fid="1025" name="QUOTIM" dataType="Time" value="10:23:28:000:000:000"
+            FieldEntry fid="1029" name="GEN_VAL5" dataType="Real" value="1.1031"
+            FieldEntry fid="1030" name="GEN_VAL6" dataType="Real" value="1.1085"
+            FieldEntry fid="1031" name="GEN_VAL7" dataType="Real" value="1.102"
+            FieldEntry fid="1032" name="GEN_VAL8" dataType="Real" value="1.1088"
+            FieldEntry fid="1033" name="GEN_VAL9" dataType="Real" value="1.1023"
+            FieldEntry fid="1034" name="GEN_VAL10" dataType="Real" value="1.1034"
+            FieldEntry fid="1035" name="GV5_TEXT" dataType="Rmtes" value="OP_BID"
+            FieldEntry fid="1036" name="GV6_TEXT" dataType="Rmtes" value="BID_HI"
+            FieldEntry fid="1037" name="GV7_TEXT" dataType="Rmtes" value="BID_LO"
+            FieldEntry fid="1038" name="GV8_TEXT" dataType="Rmtes" value="ASK_HI"
+            FieldEntry fid="1039" name="GV9_TEXT" dataType="Rmtes" value="ASK_LO"
+            FieldEntry fid="1040" name="GV10_TEXT" dataType="Rmtes" value="OP_ASK"
+            FieldEntry fid="1052" name="GN_TXT16_2" dataType="Rmtes" value="<EURVOL>"
+            FieldEntry fid="1061" name="GV1_TIME" dataType="Time" value="10:00:00:000:000:000"
+            FieldEntry fid="1080" name="PREF_DISP" dataType="UInt" value="6205"
+            FieldEntry fid="1271" name="GN_TXT24_1" dataType="Rmtes" value="<0#EURF=>"
+            FieldEntry fid="1709" name="RDN_EXCHD2" dataType="Enum" value="500"
+            FieldEntry fid="3263" name="PREV_DISP" dataType="UInt" value="60"
+            FieldEntry fid="3269" name="ASIA_CL_DT" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="3270" name="ASIA_CLOSE" dataType="Real" value="1.1076"
+            FieldEntry fid="3271" name="ASIA_HI_TM" dataType="Time" value="07:33:00:000:000:000"
+            FieldEntry fid="3272" name="ASIA_HIGH" dataType="Real" value="1.1086"
+            FieldEntry fid="3273" name="ASIA_LOW" dataType="Real" value="1.1066"
+            FieldEntry fid="3274" name="ASIA_LW_TM" dataType="Time" value="07:00:00:000:000:000"
+            FieldEntry fid="3275" name="ASIA_NETCH" dataType="Real" value="0.0042"
+            FieldEntry fid="3276" name="ASIA_OP_TM" dataType="Time" value="21:00:00:000:000:000"
+            FieldEntry fid="3277" name="ASIA_OPEN" dataType="Real" value="1.1071"
+            FieldEntry fid="3278" name="EURO_CL_DT" dataType="Date" value="16 OCT 2019"
+            FieldEntry fid="3279" name="EURO_CLOSE" dataType="Real" value="1.1073"
+            FieldEntry fid="3280" name="EURO_HI_TM" dataType="Time" value="09:39:00:000:000:000"
+            FieldEntry fid="3281" name="EURO_HIGH" dataType="Real" value="1.1139"
+            FieldEntry fid="3282" name="EURO_LOW" dataType="Real" value="1.1066"
+            FieldEntry fid="3283" name="EURO_LW_TM" dataType="Time" value="07:00:00:000:000:000"
+            FieldEntry fid="3284" name="EURO_NETCH" dataType="Real" value="0.0048"
+            FieldEntry fid="3285" name="EURO_OP_TM" dataType="Time" value="05:00:00:000:000:000"
+            FieldEntry fid="3286" name="EURO_OPEN" dataType="Real" value="1.1074"
+            FieldEntry fid="3287" name="US_CL_DT" dataType="Date" value="16 OCT 2019"
+            FieldEntry fid="3288" name="US_CLOSE" dataType="Real" value="1.107"
+            FieldEntry fid="3289" name="US_HI_TM" dataType="Time" value="16:45:00:000:000:000"
+            FieldEntry fid="3290" name="US_HIGH" dataType="Real" value="1.1085"
+            FieldEntry fid="3291" name="US_LOW" dataType="Real" value="1.1023"
+            FieldEntry fid="3292" name="US_LW_TM" dataType="Time" value="12:19:00:000:000:000"
+            FieldEntry fid="3293" name="US_NETCH" dataType="Real" value="0.0039"
+            FieldEntry fid="3294" name="US_OP_TM" dataType="Time" value="11:00:00:000:000:000"
+            FieldEntry fid="3295" name="US_OPEN" dataType="Real" value="1.1023"
+            FieldEntry fid="3296" name="ASK_SPREAD" dataType="Real" value="1.1063"
+            FieldEntry fid="3303" name="BID_SPREAD" dataType="Real" value="1.1063"
+            FieldEntry fid="3352" name="MID_SPREAD" dataType="Real" value="1.1021"
+            FieldEntry fid="3362" name="MONTH_HIGH" dataType="Real" value="1.1139"
+            FieldEntry fid="3363" name="MONTH_LOW" dataType="Real" value="1.088"
+            FieldEntry fid="3378" name="PCTCHG_3M" dataType="Real" value="-0.91"
+            FieldEntry fid="3379" name="PCTCHG_6M" dataType="Real" value="-1.53"
+            FieldEntry fid="3380" name="PCTCHG_MTD" dataType="Real" value="1.2"
+            FieldEntry fid="3381" name="PCTCHG_YTD" dataType="Real" value="-3.03"
+            FieldEntry fid="3386" name="QUOTE_DATE" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="3408" name="WEEK_HIGH" dataType="Real" value="1.1139"
+            FieldEntry fid="3409" name="WEEK_LOW" dataType="Real" value="1.0992"
+            FieldEntry fid="3512" name="ASK_HIGH_1" dataType="Real" value="1.1142"
+            FieldEntry fid="3513" name="ASK_HI_TME" dataType="Time" value="09:39:00:000:000:000"
+            FieldEntry fid="3514" name="ASK_LOW_1" dataType="Real" value="1.1066"
+            FieldEntry fid="3515" name="ASK_LO_TME" dataType="Time" value="07:00:00:000:000:000"
+            FieldEntry fid="3580" name="BID_ASK_DT" dataType="Date" value="16 OCT 2019"
+            FieldEntry fid="3621" name="HIGH_2" dataType="Real" value="1.1138"
+            FieldEntry fid="3622" name="HIGH_3" dataType="Real" value="1.1125"
+            FieldEntry fid="3623" name="HIGH_4" dataType="Real" value="1.1122"
+            FieldEntry fid="3624" name="HIGH_5" dataType="Real" value="1.1119"
+            FieldEntry fid="3625" name="HIGH_TIME2" dataType="Time" value="09:38:00:000:000:000"
+            FieldEntry fid="3626" name="HIGH_TIME3" dataType="Time" value="09:37:00:000:000:000"
+            FieldEntry fid="3627" name="HIGH_TIME4" dataType="Time" value="09:35:00:000:000:000"
+            FieldEntry fid="3628" name="HIGH_TIME5" dataType="Time" value="09:35:00:000:000:000"
+            FieldEntry fid="3629" name="LOW_2" dataType="Real" value="1.1068"
+            FieldEntry fid="3630" name="LOW_3" dataType="Real" value="1.1069"
+            FieldEntry fid="3631" name="LOW_4" dataType="Real" value="1.107"
+            FieldEntry fid="3632" name="LOW_5" dataType="Real" value="1.1071"
+            FieldEntry fid="3633" name="LOW_TIME2" dataType="Time" value="06:58:00:000:000:000"
+            FieldEntry fid="3634" name="LOW_TIME3" dataType="Time" value="06:18:00:000:000:000"
+            FieldEntry fid="3635" name="LOW_TIME4" dataType="Time" value="05:48:00:000:000:000"
+            FieldEntry fid="3636" name="LOW_TIME5" dataType="Time" value="05:48:00:000:000:000"
+            FieldEntry fid="3754" name="SCALING" dataType="Rmtes" value="1"
+            FieldEntry fid="3791" name="START_DT" dataType="Date" value="21 OCT 2019"
+            FieldEntry fid="3832" name="WKHI_DT" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="3833" name="WKLO_DT" dataType="Date" value="15 OCT 2019"
+            FieldEntry fid="3834" name="MTHHI_DT" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="3835" name="MTHLO_DT" dataType="Date" value="01 OCT 2019"
+            FieldEntry fid="3855" name="QUOTIM_MS" dataType="UInt" value="37408870"
+            FieldEntry fid="4350" name="MID_HIGH" dataType="Real" value="1.114"
+            FieldEntry fid="4351" name="MID_LOW" dataType="Real" value="1.1065"
+            FieldEntry fid="4352" name="MID_HTIM" dataType="Time" value="09:39:27:000:000:000"
+            FieldEntry fid="4353" name="MID_LTIM" dataType="Time" value="07:00:39:000:000:000"
+            FieldEntry fid="5291" name="MID_OPEN" dataType="Real" value="1.1072"
+            FieldEntry fid="5357" name="CONTEXT_ID" dataType="Real" value="3312.0"
+            FieldEntry fid="6076" name="BID_HIGH_2" dataType="Real" value="1.1138"
+            FieldEntry fid="6077" name="BID_HIGH_3" dataType="Real" value="1.1125"
+            FieldEntry fid="6078" name="BID_HIGH_4" dataType="Real" value="1.1122"
+            FieldEntry fid="6079" name="BID_HIGH_5" dataType="Real" value="1.1119"
+            FieldEntry fid="6080" name="BID_LOW_2" dataType="Real" value="1.1064"
+            FieldEntry fid="6081" name="BID_LOW_3" dataType="Real" value="1.1065"
+            FieldEntry fid="6082" name="BID_LOW_4" dataType="Real" value="1.1066"
+            FieldEntry fid="6083" name="BID_LOW_5" dataType="Real" value="1.1067"
+            FieldEntry fid="6084" name="ASK_HIGH_2" dataType="Real" value="1.1141"
+            FieldEntry fid="6085" name="ASK_HIGH_3" dataType="Real" value="1.1128"
+            FieldEntry fid="6086" name="ASK_HIGH_4" dataType="Real" value="1.1125"
+            FieldEntry fid="6087" name="ASK_HIGH_5" dataType="Real" value="1.1122"
+            FieldEntry fid="6088" name="ASK_LOW_2" dataType="Real" value="1.1068"
+            FieldEntry fid="6089" name="ASK_LOW_3" dataType="Real" value="1.1069"
+            FieldEntry fid="6090" name="ASK_LOW_4" dataType="Real" value="1.107"
+            FieldEntry fid="6091" name="ASK_LOW_5" dataType="Real" value="1.1071"
+            FieldEntry fid="6140" name="PRV_BID_H" dataType="Real" value="1.1085"
+            FieldEntry fid="6141" name="PRV_ASK_H" dataType="Real" value="1.1088"
+            FieldEntry fid="6142" name="PRV_BID_L" dataType="Real" value="1.102"
+            FieldEntry fid="6143" name="PRV_ASK_L" dataType="Real" value="1.1023"
+            FieldEntry fid="6401" name="DDS_DSO_ID" dataType="UInt" value="4216"
+            FieldEntry fid="6409" name="BR_LINK1" dataType="Ascii" value="(blank data)"
+            FieldEntry fid="6410" name="BR_LINK2" dataType="Ascii" value="(blank data)"
+            FieldEntry fid="6411" name="BR_LINK3" dataType="Ascii" value="(blank data)"
+            FieldEntry fid="6480" name="SPS_SP_RIC" dataType="Ascii" value=".[SPSCDSAS0404"
+            FieldEntry fid="6696" name="QUOTIM_2" dataType="Time" value="10:22:28:000:000:000"
+            FieldEntry fid="6697" name="QUOTIM_3" dataType="Time" value="10:21:29:000:000:000"
+            FieldEntry fid="6816" name="QUOTE_DT2" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="6817" name="QUOTE_DT3" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="6821" name="ASKYRHIDAT" dataType="Date" value="10 JAN 2019"
+            FieldEntry fid="6822" name="ASKYRLODAT" dataType="Date" value="01 OCT 2019"
+            FieldEntry fid="6833" name="BIDYRHIDAT" dataType="Date" value="10 JAN 2019"
+            FieldEntry fid="6834" name="BIDYRLODAT" dataType="Date" value="01 OCT 2019"
+            FieldEntry fid="6837" name="ASIABAC_DT" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="6838" name="EUBAC_DT" dataType="Date" value="16 OCT 2019"
+            FieldEntry fid="6839" name="USBAC_DT" dataType="Date" value="16 OCT 2019"
+            FieldEntry fid="6954" name="HST_NUMBID" dataType="Int" value="87186"
+            FieldEntry fid="7808" name="ASK_FWDOR" dataType="Real" value="(blank data)"
+            FieldEntry fid="7809" name="BID_FWDOR" dataType="Real" value="(blank data)"
+            FieldEntry fid="7838" name="AMERCL_ASK" dataType="Real" value="1.1074"
+            FieldEntry fid="7839" name="AMERCL_BID" dataType="Real" value="1.107"
+            FieldEntry fid="7840" name="AMERHI_ASK" dataType="Real" value="1.1088"
+            FieldEntry fid="7841" name="AMERHI_BID" dataType="Real" value="1.1085"
+            FieldEntry fid="7842" name="AMERLO_ASK" dataType="Real" value="1.1023"
+            FieldEntry fid="7843" name="AMERLO_BID" dataType="Real" value="1.1021"
+            FieldEntry fid="7844" name="AMEROP_ASK" dataType="Real" value="1.1027"
+            FieldEntry fid="7845" name="AMEROP_BID" dataType="Real" value="1.1023"
+            FieldEntry fid="7846" name="ASIACL_ASK" dataType="Real" value="1.108"
+            FieldEntry fid="7847" name="ASIACL_BID" dataType="Real" value="1.1076"
+            FieldEntry fid="7848" name="ASIAHI_ASK" dataType="Real" value="1.1089"
+            FieldEntry fid="7849" name="ASIAHI_BID" dataType="Real" value="1.1086"
+            FieldEntry fid="7850" name="ASIALO_ASK" dataType="Real" value="1.1066"
+            FieldEntry fid="7851" name="ASIALO_BID" dataType="Real" value="1.1063"
+            FieldEntry fid="7852" name="ASIAOP_ASK" dataType="Real" value="1.1073"
+            FieldEntry fid="7853" name="ASIAOP_BID" dataType="Real" value="1.1071"
+            FieldEntry fid="7854" name="BIDPCTCHNG" dataType="Real" value="0.46"
+            FieldEntry fid="7855" name="EURCL_ASK" dataType="Real" value="1.1076"
+            FieldEntry fid="7856" name="EURCL_BID" dataType="Real" value="1.1073"
+            FieldEntry fid="7857" name="EURHI_ASK" dataType="Real" value="1.1142"
+            FieldEntry fid="7858" name="EURHI_BID" dataType="Real" value="1.1139"
+            FieldEntry fid="7859" name="EURLO_ASK" dataType="Real" value="1.1066"
+            FieldEntry fid="7860" name="EURLO_BID" dataType="Real" value="1.1063"
+            FieldEntry fid="7861" name="EUROP_ASK" dataType="Real" value="1.1077"
+            FieldEntry fid="7862" name="EUROP_BID" dataType="Real" value="1.1074"
+            FieldEntry fid="7863" name="HST_HIMID" dataType="Real" value="1.1086"
+            FieldEntry fid="7864" name="HST_LOMID" dataType="Real" value="1.1022"
+            FieldEntry fid="7865" name="HST_OPNASK" dataType="Real" value="1.1034"
+            FieldEntry fid="7866" name="HST_OPNBID" dataType="Real" value="1.1031"
+            FieldEntry fid="7868" name="YRASKHIGH" dataType="Real" value="1.1572"
+            FieldEntry fid="7869" name="YRASKLOW" dataType="Real" value="1.088"
+            FieldEntry fid="7880" name="ASIA_BNC" dataType="Real" value="0.0042"
+            FieldEntry fid="7885" name="EURO_BNC" dataType="Real" value="0.0048"
+            FieldEntry fid="7886" name="MTH_ASK_LO" dataType="Real" value="1.088"
+            FieldEntry fid="7887" name="MTH_BID_HI" dataType="Real" value="1.1139"
+            FieldEntry fid="7888" name="US_BNC" dataType="Real" value="0.0039"
+            FieldEntry fid="7889" name="WK_ASK_LO" dataType="Real" value="1.0992"
+            FieldEntry fid="7890" name="WK_BID_HI" dataType="Real" value="1.1139"
+            FieldEntry fid="8107" name="BID_HOURLY" dataType="Real" value="1.1116"
+            FieldEntry fid="8635" name="RCS_AS_CL2" dataType="Rmtes" value="                        "
+            FieldEntry fid="9192" name="MTH_ALO_DT" dataType="Date" value="01 OCT 2019"
+            FieldEntry fid="9193" name="MTH_BHI_DT" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="9194" name="WK_ALO_DT" dataType="Date" value="15 OCT 2019"
+            FieldEntry fid="9195" name="WK_BHI_DT" dataType="Date" value="17 OCT 2019"
+            FieldEntry fid="13404" name="FXMM_TYPE" dataType="Enum" value="0"
+            FieldEntry fid="14162" name="ASIA_AH_MS" dataType="Time" value="07:33:19:525:000:000"
+            FieldEntry fid="14163" name="ASIA_AL_MS" dataType="Time" value="07:00:23:892:000:000"
+            FieldEntry fid="14164" name="ASIA_AO_MS" dataType="Time" value="21:00:01:799:000:000"
+            FieldEntry fid="14165" name="ASIA_BH_MS" dataType="Time" value="07:33:17:126:000:000"
+            FieldEntry fid="14166" name="ASIA_BL_MS" dataType="Time" value="07:00:39:943:000:000"
+            FieldEntry fid="14167" name="ASIA_BO_MS" dataType="Time" value="21:00:01:089:000:000"
+            FieldEntry fid="14168" name="EURO_AH_MS" dataType="Time" value="09:39:34:416:000:000"
+            FieldEntry fid="14169" name="EURO_AL_MS" dataType="Time" value="07:00:23:892:000:000"
+            FieldEntry fid="14170" name="EURO_AO_MS" dataType="Time" value="05:00:00:901:000:000"
+            FieldEntry fid="14171" name="EURO_BH_MS" dataType="Time" value="09:39:29:209:000:000"
+            FieldEntry fid="14172" name="EURO_BL_MS" dataType="Time" value="07:00:39:943:000:000"
+            FieldEntry fid="14173" name="EURO_BO_MS" dataType="Time" value="05:00:00:901:000:000"
+            FieldEntry fid="14174" name="US_AH_MS" dataType="Time" value="16:45:31:683:000:000"
+            FieldEntry fid="14175" name="US_AL_MS" dataType="Time" value="12:19:07:231:000:000"
+            FieldEntry fid="14176" name="US_AO_MS" dataType="Time" value="11:00:01:214:000:000"
+            FieldEntry fid="14177" name="US_BH_MS" dataType="Time" value="16:45:30:517:000:000"
+            FieldEntry fid="14178" name="US_BL_MS" dataType="Time" value="12:18:44:832:000:000"
+            FieldEntry fid="14179" name="US_BO_MS" dataType="Time" value="11:00:01:214:000:000"
+            FieldEntry fid="14180" name="OPN_BID_MS" dataType="Time" value="21:00:01:090:000:000"
+            FieldEntry fid="14181" name="ASKHI1_MS" dataType="Time" value="09:39:34:416:000:000"
+            FieldEntry fid="14182" name="ASKHI2_MS" dataType="Time" value="09:38:57:266:000:000"
+            FieldEntry fid="14183" name="ASKHI3_MS" dataType="Time" value="09:37:59:087:000:000"
+            FieldEntry fid="14184" name="ASKHI4_MS" dataType="Time" value="09:35:55:692:000:000"
+            FieldEntry fid="14185" name="ASKHI5_MS" dataType="Time" value="09:35:26:753:000:000"
+            FieldEntry fid="14186" name="ASKLO1_MS" dataType="Time" value="07:00:23:892:000:000"
+            FieldEntry fid="14187" name="ASKLO2_MS" dataType="Time" value="06:58:51:540:000:000"
+            FieldEntry fid="14188" name="ASKLO3_MS" dataType="Time" value="06:18:58:768:000:000"
+            FieldEntry fid="14189" name="ASKLO4_MS" dataType="Time" value="05:48:52:009:000:000"
+            FieldEntry fid="14190" name="ASKLO5_MS" dataType="Time" value="05:48:27:816:000:000"
+            FieldEntry fid="14191" name="BIDHI1_MS" dataType="Time" value="09:39:29:209:000:000"
+            FieldEntry fid="14192" name="BIDHI2_MS" dataType="Time" value="09:38:58:844:000:000"
+            FieldEntry fid="14193" name="BIDHI3_MS" dataType="Time" value="09:37:53:951:000:000"
+            FieldEntry fid="14194" name="BIDHI4_MS" dataType="Time" value="09:35:55:493:000:000"
+            FieldEntry fid="14195" name="BIDHI5_MS" dataType="Time" value="09:35:26:337:000:000"
+            FieldEntry fid="14196" name="BIDLO1_MS" dataType="Time" value="07:00:39:943:000:000"
+            FieldEntry fid="14197" name="BIDLO2_MS" dataType="Time" value="07:00:21:898:000:000"
+            FieldEntry fid="14198" name="BIDLO3_MS" dataType="Time" value="06:58:54:232:000:000"
+            FieldEntry fid="14199" name="BIDLO4_MS" dataType="Time" value="06:19:40:443:000:000"
+            FieldEntry fid="14200" name="BIDLO5_MS" dataType="Time" value="06:18:19:692:000:000"
+            FieldEntry fid="14201" name="MIDHI1_MS" dataType="Time" value="09:39:27:513:000:000"
+            FieldEntry fid="14202" name="MIDLO1_MS" dataType="Time" value="07:00:39:943:000:000"
+            FieldEntry fid="14208" name="BID_HR_MS" dataType="Time" value="10:00:00:785:000:000"
+        FieldListEnd
+    PayloadEnd
+RefreshMsgEnd
+
+17:38:39.871 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+17:39:54.261 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+17:39:56.824 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
+17:39:56.825 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
+17:39:56.825 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+17:39:56.826 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
+17:39:56.827 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+17:39:56.827 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
+17:39:56.829 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="1"
+    domain="Login Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / 'Login accepted'"
+    itemGroup="00 00"
+    name="U8004042"
+    nameType="1"
+    Attrib dataType="ElementList"
+        ElementList
+        ElementListEnd
+    AttribEnd
+RefreshMsgEnd
+
+17:39:56.831 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+17:39:56.831 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+17:39:56.834 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+17:39:56.834 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: <not set>
+17:39:56.835 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+17:39:56.835 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / ''
+17:39:56.840 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="5"
+    domain="Directory Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / ''"
+    itemGroup="00 00"
+    filter="0"
+    Payload dataType="Map"
+        Map
+            MapEntry action="Add" key dataType="UInt" value="1" dataType="FilterList"
+                FilterList
+                    FilterEntry action="Set" filterId="1 dataType="ElementList"
+                        ElementList
+                            ElementEntry name="Name" dataType="Ascii" value="ELEKTRON_DD"
+                            ElementEntry name="Vendor" dataType="Ascii" value="company name"
+                            ElementEntry name="IsSource" dataType="UInt" value="0"
+                            ElementEntry name="Capabilities" dataType="OmmArray"
+                                OmmArray with entries of dataType="UInt"
+                                    value=""6"
+                                    value=""7"
+                                    value=""8"
+                                    value=""5"
+                                    value=""200"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="DictionariesProvided" dataType="OmmArray"
+                                OmmArray with entries of dataType="Ascii"
+                                    value=""RWFFld"
+                                    value=""RWFEnum"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="DictionariesUsed" dataType="OmmArray"
+                                OmmArray with entries of dataType="Ascii"
+                                    value=""RWFFld"
+                                    value=""RWFEnum"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="QoS" dataType="OmmArray"
+                                OmmArray with entries of dataType="Qos"
+                                    value=""RealTime/TickByTick"
+                                    value=""Timeliness: 100/Rate: 100"
+                                OmmArrayEnd
+                            ElementEntryEnd
+                            ElementEntry name="SupportsQoSRange" dataType="UInt" value="0"
+                            ElementEntry name="ItemList" dataType="Ascii" value="#.itemlist"
+                            ElementEntry name="SupportsOutOfBandSnapshots" dataType="UInt" value="0"
+                            ElementEntry name="AcceptingConsumerStatus" dataType="UInt" value="0"
+                        ElementListEnd
+                    FilterEntryEnd
+                    FilterEntry action="Set" filterId="2 dataType="ElementList"
+                        ElementList
+                            ElementEntry name="ServiceState" dataType="UInt" value="1"
+                            ElementEntry name="AcceptingRequests" dataType="UInt" value="1"
+                        ElementListEnd
+                    FilterEntryEnd
+                FilterListEnd
+            MapEntryEnd
+        MapEnd
+    PayloadEnd
+RefreshMsgEnd
+
+17:39:56.844 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+17:39:57.817 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+17:39:57.817 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+17:39:57.818 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+17:39:57.818 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
+17:39:57.820 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="6"
+    domain="MarketPrice Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / 'Refresh Completed'"
+    itemGroup="00 00"
+    name="/EUR="
+    serviceId="1"
+    serviceName="ELEKTRON_DD"
+    Payload dataType="FieldList"
+        FieldList
+            FieldEntry fid="3" name="DSPLY_NAME" dataType="Rmtes" value="/EUR="
+            FieldEntry fid="15" name="CURRENCY" dataType="Enum" value="840"
+            FieldEntry fid="21" name="HST_CLOSE" dataType="Real" value="39.0"
+            FieldEntry fid="22" name="BID" dataType="Real" value="39.9"
+            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
+            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="9.0"
+            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
+        FieldListEnd
+    PayloadEnd
+RefreshMsgEnd
+
+17:39:57.822 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+17:39:58.818 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+17:39:58.818 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+17:39:58.819 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+17:39:58.820 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+    streamId="6"
+    domain="MarketPrice Domain"
+    updateTypeNum="0"
+    name="/EUR="
+    serviceId="1"
+    serviceName="ELEKTRON_DD"
+    Payload dataType="FieldList"
+        FieldList
+            FieldEntry fid="22" name="BID" dataType="Real" value="39.91"
+            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
+            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="10.0"
+            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
+        FieldListEnd
+    PayloadEnd
+UpdateMsgEnd
+
+17:39:58.821 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+17:39:59.820 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+17:39:59.821 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+17:39:59.821 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+17:39:59.822 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+    streamId="6"
+    domain="MarketPrice Domain"
+    updateTypeNum="0"
+    name="/EUR="
+    serviceId="1"
+    serviceName="ELEKTRON_DD"
+    Payload dataType="FieldList"
+        FieldList
+            FieldEntry fid="22" name="BID" dataType="Real" value="39.92"
+            FieldEntry fid="25" name="ASK" dataType="Real" value="39.95"
+            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="11.0"
+            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="20.0"
+        FieldListEnd
+    PayloadEnd
+UpdateMsgEnd
+
+17:39:59.823 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
