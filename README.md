@@ -107,6 +107,10 @@ Please find the full detail of Log4j configuration in [Log4j manual](https://log
 ### Running the application
 You can run the EMA Java example with JVM ```-Dlog4j.configurationFile``` option points to the log4j2.xml file. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
 
+### Build and running Demo
+
+The EMA Java Interactive-Provider and Consumer demo examples are available in *ema_example* folder. The demo applications utlize Maven and Log4J to log EMA Java API and application activities to console and log file.
+
 ```
 java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_log4j-1.0-jar-with-dependencies.jar com.thomsonreuters.ema.examples.training.consumer.series100.example100__MarketPrice__Streaming.Consumer
 ```
@@ -195,9 +199,7 @@ java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_log4j
 java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
 ```
 
-```
-java -Dlog4j.configurationFile=.\resources\log4j2.xml -cp .;.\target\esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.Consumer_App
-```
+
 
 ```
 java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App

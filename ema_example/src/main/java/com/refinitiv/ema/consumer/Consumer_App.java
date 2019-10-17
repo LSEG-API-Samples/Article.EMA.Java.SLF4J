@@ -39,9 +39,9 @@ class AppClient implements OmmConsumerClient {
 		logger.info("Item State: " + refreshMsg.state());
 
 		
-
-		if (DataType.DataTypes.FIELD_LIST == refreshMsg.payload().dataType())
-			decode(refreshMsg.payload().fieldList());
+		logger.info(String.format("%s",refreshMsg));
+		//if (DataType.DataTypes.FIELD_LIST == refreshMsg.payload().dataType())
+		//	decode(refreshMsg.payload().fieldList());
 
 		logger.info("\n");
 	}
@@ -53,8 +53,9 @@ class AppClient implements OmmConsumerClient {
 		logger.info("Item Name: " + (updateMsg.hasName() ? updateMsg.name() : "<not set>"));
 		logger.info("Service Name: " + (updateMsg.hasServiceName() ? updateMsg.serviceName() : "<not set>"));
 
-		if (DataType.DataTypes.FIELD_LIST == updateMsg.payload().dataType())
-			decode(updateMsg.payload().fieldList());
+		logger.info(String.format("%s",updateMsg));
+		//if (DataType.DataTypes.FIELD_LIST == updateMsg.payload().dataType())
+		//	decode(updateMsg.payload().fieldList());
 
 		logger.info("\n");
 	}
