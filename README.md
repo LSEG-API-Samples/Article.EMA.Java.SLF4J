@@ -18,7 +18,7 @@ Note: This article is based on EMA Java version 3.3.1 L1. You can change the lib
 
 The above configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
 
-![](.\images\ema_dependencies.png "EMA Java Dependencies")
+![figure1](.\images\ema_dependencies.png "EMA Java Dependencies")
 
 The EMA Java API binds the SLF4J logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default, so Maven automatic downloads **slf4j-api** and **slf4j-jdk14** libraries for the application. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
 1. Configure pom.xml file's EMA dependency declaration to not load slf4j-jdk14 libary.
