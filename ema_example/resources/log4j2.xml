@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="DEBUG">
+
     <Appenders>
         <Console name="LogToConsole" target="SYSTEM_OUT">
             <PatternLayout pattern="%d Class name-%C Message-%m%n"/>
@@ -23,6 +24,7 @@
             </PatternLayout>
         </File>
     </Appenders>
+
     <Loggers>
 		<!-- avoid duplicated logs with additivity=false -->
         <Logger name="com.thomsonreuters.ema" level="trace" additivity="false">
@@ -36,6 +38,5 @@
             <AppenderRef ref="LogToConsole"/>
             <AppenderRef ref="providerLogFile"/>
         </Logger>
-
     </Loggers>
 </Configuration>

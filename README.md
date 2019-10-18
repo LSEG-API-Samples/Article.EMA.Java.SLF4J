@@ -1,10 +1,11 @@
 # How to integrate Elektron Message API Java with Log4j Logging Framework using Maven
 ## Overview
  
-[Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Marven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
+[Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Marven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK Java version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
 
 ## How to integrate EMA Java Application with Logging Framework in Maven
-The Elektron SDK Java are now available in [Maven Central Repository](https://search.maven.org/). The [EMA Java library](https://search.maven.org/artifact/com.thomsonreuters.ema/ema/) can be downloaded by defining the following dependency in Maven's POM.xml file.
+The Elektron SDK Java are now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml fil to let Maven automatic download the [EMA Java library](https://search.maven.org/artifact/com.thomsonreuters.ema/ema/) for the application.
+
 ```
 <dependency>
   <groupId>com.thomsonreuters.ema</groupId>
@@ -12,19 +13,20 @@ The Elektron SDK Java are now available in [Maven Central Repository](https://se
   <version>3.3.1.0</version>
 </dependency>
 ``` 
+
 Note: This article is based on EMA Java version 3.3.1 L1. You can change the library version in ```<version>``` configuration to match your project.
 
-The above POM.xml configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
+The above configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
 
 ![](.\images\ema_dependencies.png "EMA Java Dependencies")
 
-You will see that Maven automatic downloads **slf4j-api** and **slf4j-jdk14** libraries for binding the logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
-1. Configure POM.xml file's EMA dependency declaration to not load slf4j-jdk14 libary.
-2. Add SLF4J-Log4j and Log4j dependencies in POM.xml file.
-3. Configure configurations file to Java classpath or JVM option.
+The EMA Java API binds the SLF4J logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default, so Maven automatic downloads **slf4j-api** and **slf4j-jdk14** libraries for the application. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
+1. Configure pom.xml file's EMA dependency declaration to not load slf4j-jdk14 libary.
+2. Add SLF4J-Log4j and Log4j dependencies in pom.xml file.
+3. Configure Log4j configurations file to Java classpath or JVM option.
 
 ## Integration with Log4j 2 framework
-Developers can configure the EMA Java dependency declaration in POM.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
+Developers can configure the EMA Java dependency declaration in pom.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
 
 ```
 <dependencies>
@@ -42,7 +44,7 @@ Developers can configure the EMA Java dependency declaration in POM.xml file to 
 </dependencies>
 ```
 
-The Log4j 2 framework requires the following dependencies to intergrate with SLF4J framework, so the applicaion needs to add the following Log4j and SLF4J binding dependencies in POM.xml file.
+The Log4j 2 framework requires the following dependencies to intergrate with SLF4J framework, so the applicaion needs to add the following Log4j and SLF4J binding dependencies in pom.xml file.
 - log4j-api
 - log4j-core
 - log4j-slf4j-impl
@@ -71,10 +73,10 @@ The Log4j 2 framework requires the following dependencies to intergrate with SLF
 
 Note: This article is based on Log4j version 2.12.1. You can change the library version in ```<version>``` configuration to match your project.
 
-Then developers can configure Log4j 2 configurations file to Java classpath or JVM option ```-Dlog4j.configurationFile``` at runtime to let the EMA Java application uses Log4j 2 configurations file. 
-
 ### Example Log4j 2 configurations file (in XML format)
+
 The example file is saved as "\resource\log4j2.xml" file.
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
@@ -99,21 +101,22 @@ The example file is saved as "\resource\log4j2.xml" file.
 Please find the full detail of Log4j configuration in [Log4j manual](https://logging.apache.org/log4j/2.x/manual/configuration.html).
 
 ### Running the application
-You can run the EMA Java example with JVM ```-Dlog4j.configurationFile``` option points to the log4j2.xml file. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
+
+Developers can configure Log4j 2 configurations file to Java classpath or JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime to let the EMA Java application uses Log4j 2 configurations file. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
 
 ### EMA Java application and Log4j Demo
 
-This project contains the EMA Java demo examples that utilize Log4J to manage log and console messages in *ema_example* folder. The demo examples are following:
-- IProvider_App example: OMM Interactive-Provider application. 
+This project contains the EMA Java demo examples that utilize Log4j to manage logs and console messages in *ema_example* folder. The demo examples are following:
+- *IProvider_App example*: OMM Interactive-Provider application. 
     - The application messages are printed in console and provider_log4j.log file.
-- Consumer_App example: OMM Consumer application that connects and consumes data from IProvider_App example.
+- *Consumer_App example*: OMM Consumer application that connects and consumes data from IProvider_App example.
     - The application messages are printed in console and consumer_log4j.log file.
 
-All EMA Java API logs of both example are printed in ema_log4j.log file. 
+All EMA Java API logs of both examples are printed in ema_log4j.log file. 
 
 *Note*: The Consumer_App demo example can be configured to connect to your local TREP server.
 
-#### Prerequisite
+#### Demo prerequisite
 This example requires the following dependencies softwares and libraries.
 1. Oracle/Open JDK 8 or Oracle JDK 11.
 2. [Apache Maven](https://maven.apache.org/) project management and comprehension tool.
@@ -121,7 +124,28 @@ This example requires the following dependencies softwares and libraries.
 
 #### Building the demo
 
-Run ```$> mvn package``` to build the demo applications into single *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* in the project's target folder. Please note that Maven automatic download EMA Java and Log4J dependencies for the application.
+Run ```$> mvn package``` command to build the demo applications into single-all-depencies *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file. The file will be available in the project's *target* folder.
+
+```
+$> mvn package
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/D:/Project/Compilers/maven/bin/../lib/maven-slf4j-provider-3.5.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/D:/Project/Compilers/maven/bin/../lib/maven-slf4j-provider-3.5.4.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+...
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building esdk131_maven 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.385 s
+[INFO] Finished at: 2019-10-18T13:45:53+07:00
+[INFO] Final Memory: 20M/323M
+[INFO] ------------------------------------------------------------------------
+```
 
 #### Running the demo
 
@@ -318,7 +342,7 @@ loggerMsgEnd
 ```
 
 ## Conclusion
-The EMA Java API is implemented on top of SLF4J API as a facade for logging utility. The API allows developers integrate EMA Java application with their prefer Logging framework by replacing the Logging library (both manual and via Maven ways) and configurations files without touching the application source code. 
+The EMA Java API is implemented on top of SLF4J API as a facade for logging utility. The latest version of API allows developers integrate EMA Java application with their prefer Logging framework by changing the repository and log configuration files without touching the application source code. 
 
 ## References
 For further details, please check out the following resources:

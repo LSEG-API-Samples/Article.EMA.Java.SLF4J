@@ -40,10 +40,7 @@ class AppClient implements OmmConsumerClient {
 
 		logger.info("Item State: " + refreshMsg.state());
 
-		
 		logger.info(String.format("%s",refreshMsg));
-		//if (DataType.DataTypes.FIELD_LIST == refreshMsg.payload().dataType())
-		//	decode(refreshMsg.payload().fieldList());
 
 		logger.info("\n");
 	}
@@ -56,8 +53,6 @@ class AppClient implements OmmConsumerClient {
 		logger.info("Service Name: " + (updateMsg.hasServiceName() ? updateMsg.serviceName() : "<not set>"));
 
 		logger.info(String.format("%s",updateMsg));
-		//if (DataType.DataTypes.FIELD_LIST == updateMsg.payload().dataType())
-		//	decode(updateMsg.payload().fieldList());
 
 		logger.info("\n");
 	}
@@ -81,59 +76,6 @@ class AppClient implements OmmConsumerClient {
 	public void onAllMsg(Msg msg, OmmConsumerEvent consumerEvent) {
 	}
 
-	void decode(FieldList fieldList) {
-		for (FieldEntry fieldEntry : fieldList) {
-			//logger.info("Fid: " + fieldEntry.fieldId() + " Name = " + fieldEntry.name() + " DataType: "+ DataType.asString(fieldEntry.load().dataType()) + " Value: ");
-			
-			String msg = "Fid: " + fieldEntry.fieldId() + " Name = " + fieldEntry.name() + " DataType: "
-					+ DataType.asString(fieldEntry.load().dataType()) + " Value: ";
-
-			if (Data.DataCode.BLANK == fieldEntry.code())
-				logger.info(String.format("%s%s",msg," blank"));
-			else
-				switch (fieldEntry.loadType()) {
-				case DataTypes.REAL:
-					logger.info(String.format("%s%s",msg,fieldEntry.real().asDouble()));
-					break;
-				case DataTypes.DATE:
-					logger.info(String.format("%s%s",msg,fieldEntry.date().day() + " / " + fieldEntry.date().month() + " / "
-							+ fieldEntry.date().year()));
-					break;
-				case DataTypes.TIME:
-					logger.info(String.format("%s%s",msg,fieldEntry.time().hour() + ":" + fieldEntry.time().minute() + ":"
-							+ fieldEntry.time().second() + ":" + fieldEntry.time().millisecond()));
-					break;
-				case DataTypes.DATETIME:
-					logger.info(String.format("%s%s",msg,fieldEntry.dateTime().day() + " / " + fieldEntry.dateTime().month() + " / "
-							+ fieldEntry.dateTime().year() + "." + fieldEntry.dateTime().hour() + ":"
-							+ fieldEntry.dateTime().minute() + ":" + fieldEntry.dateTime().second() + ":"
-							+ fieldEntry.dateTime().millisecond() + ":" + fieldEntry.dateTime().microsecond() + ":"
-							+ fieldEntry.dateTime().nanosecond()));
-					break;
-				case DataTypes.INT:
-					logger.info(String.format("%s%s",msg,fieldEntry.intValue()));
-					break;
-				case DataTypes.UINT:
-					logger.info(String.format("%s%s",msg,fieldEntry.uintValue()));
-					break;
-				case DataTypes.ASCII:
-					logger.info(String.format("%s%s",msg,fieldEntry.ascii()));
-					break;
-				case DataTypes.ENUM:
-					logger.info(String.format("%s%s",msg,fieldEntry.hasEnumDisplay() ? fieldEntry.enumDisplay() : fieldEntry.enumValue()));
-					break;
-				case DataTypes.RMTES:
-					logger.info(String.format("%s%s",msg,fieldEntry.rmtes()));
-					break;
-				case DataTypes.ERROR:
-					logger.error(String.format("%s%s",msg,"(" + fieldEntry.error().errorCodeAsString() + ")"));
-					break;
-				default:
-					//logger.info("\n");
-					break;
-				}
-		}
-	}
 }
 
 public class Consumer_App {
