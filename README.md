@@ -165,7 +165,8 @@ The applications results are following:
 
 *Consumer_App running result*:
 
-```16:39:25.607 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+```
+16:39:25.607 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
 16:39:28.462 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
 16:39:29.452 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
 16:39:29.453 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
@@ -236,7 +237,6 @@ EMA Java log messages from both demo application will be in ema_log4j.log file.
     Text:    reading configuration file [EmaConfig.xml]; working directory is [/home/api/project/slf4j/ema_example]
 loggerMsgEnd
 
-
 2019-10-17 16:39:10,183 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
@@ -280,7 +280,6 @@ loggerMsgEnd
     Severity: Trace
     Text:    reading configuration file [EmaConfig.xml]; working directory is [/home/api/project/slf4j/ema_example]
 loggerMsgEnd
-
 
 2019-10-17 16:39:25,758 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmBaseImpl   Message-loggerMsg
     ClientName: Consumer_1_1
