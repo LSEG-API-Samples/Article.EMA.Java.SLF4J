@@ -14,7 +14,7 @@ The Elektron SDK Java are now available in [Maven Central Repository](https://se
 </dependency>
 ``` 
 
-Note: This article is based on EMA Java version 3.3.1 L1. You can change the library version in ```<version>``` configuration to match your project.
+Note: This article is based on EMA Java version 3.3.1 L1 (Elektron SDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
 
 The above configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
 
@@ -25,7 +25,7 @@ The EMA Java API binds the SLF4J logging mechanism with [Java Logging API](https
 2. Add SLF4J-Log4j and Log4j dependencies in pom.xml file.
 3. Configure Log4j configurations file to Java classpath or JVM option.
 
-## Integration with Log4j 2 framework
+### Maven pom.xml setting for EMA JAva and Log4j 
 Developers can configure the EMA Java dependency declaration in pom.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
 
 ```
@@ -44,10 +44,12 @@ Developers can configure the EMA Java dependency declaration in pom.xml file to 
 </dependencies>
 ```
 
-The Log4j 2 framework requires the following dependencies to intergrate with SLF4J framework, so the applicaion needs to add the following Log4j and SLF4J binding dependencies in pom.xml file.
+The Log4j 2 framework requires the following dependencies to intergrate with SLF4J framework. 
 - log4j-api
 - log4j-core
 - log4j-slf4j-impl
+
+The above dependencies can be configured in the pom.xml file.
 
 ```
 <dependencies>
@@ -73,9 +75,9 @@ The Log4j 2 framework requires the following dependencies to intergrate with SLF
 
 Note: This article is based on Log4j version 2.12.1. You can change the library version in ```<version>``` configuration to match your project.
 
-### Example Log4j 2 configurations file (in XML format)
+### Example Log4j 2 configurations file
 
-The example file is saved as "\resource\log4j2.xml" file.
+The example of Log4j 2 configuration file for EMA Java application is following.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -98,73 +100,101 @@ The example file is saved as "\resource\log4j2.xml" file.
 </Configuration>
 ```
 
-Please find the full detail of Log4j configuration in [Log4j manual](https://logging.apache.org/log4j/2.x/manual/configuration.html).
+The above configurations example set the Log4j to print all EMA Java API ("com.thomsonreuters.ema" package) log messages to console and "ema_log4j.log" log file. Please find a full detail of Log4j configuration parameters in [Log4j manual page](https://logging.apache.org/log4j/2.x/manual/configuration.html).
 
-### Running the application
+### Running the application with Log4j configuration
 
-Developers can configure Log4j 2 configurations file to Java classpath or JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime to let the EMA Java application uses Log4j 2 configurations file. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
+To let the EMA Java application uses Log4j configurations file, developers can add the Log4j configurations file to the Java classpath or set the JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
 
-### EMA Java application and Log4j Demo
+## EMA Java application and Log4j Demo
 
-This project contains the EMA Java demo examples that utilize Log4j to manage logs and console messages in *ema_example* folder. The demo examples are following:
+This project contains the EMA Java demo examples in *ema_example* folder. The demo applications utilize Log4j to manage logs and console messages. The demo examples are following:
 - *IProvider_App example*: OMM Interactive-Provider application. 
-    - The application messages are printed in console and provider_log4j.log file.
 - *Consumer_App example*: OMM Consumer application that connects and consumes data from IProvider_App example.
-    - The application messages are printed in console and consumer_log4j.log file.
-
-All EMA Java API logs of both examples are printed in ema_log4j.log file. 
 
 *Note*: The Consumer_App demo example can be configured to connect to your local TREP server.
 
-#### Demo prerequisite
+### Demo log4j configurations file
+
+The demo applications separate the applications logic and EMA Java API log messages to different consoles and log files. 
+- The IProvider_App application messages are printed in console and provider_log4j.log file. 
+- The Consumer_App application messages are printed in console and consumer_log4j.log file.
+- The EMA Java API logs from both applications are printed in ema_log4j.log file. 
+
+The applications just use SLF4J's ```logger.info()``` and ```logger.error()``` functions in the source codes to set the application messages, then Log4j will do the rest for application based on the following log4j.xml configuration file.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d Class name-%C Message-%m%n"/>
+        </Console>
+        <File name="emaLogFile" fileName="logs/ema_log4j.log">
+            <PatternLayout>
+                <Pattern>%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n
+                </Pattern>
+            </PatternLayout>
+        </File>
+        <File name="consumerLogFile" fileName="logs/consumer_log4j.log">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+                </Pattern>
+            </PatternLayout>
+        </File>
+        <File name="providerLogFile" fileName="logs/provider_log4j.log">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+                </Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+    <Loggers>
+		<!-- avoid duplicated logs with additivity=false -->
+        <Logger name="com.thomsonreuters.ema" level="trace" additivity="false">
+            <AppenderRef ref="emaLogFile"/>
+        </Logger>
+        <Logger name="com.refinitiv.ema.consumer" level="info" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="consumerLogFile"/>
+        </Logger>
+        <Logger name="com.refinitiv.ema.provider" level="info" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="providerLogFile"/>
+        </Logger>
+    </Loggers>
+</Configuration>
+```
+
+### Demo prerequisite
 This example requires the following dependencies softwares and libraries.
 1. Oracle/Open JDK 8 or Oracle JDK 11.
 2. [Apache Maven](https://maven.apache.org/) project management and comprehension tool.
 3. Internet connection. 
 
-#### Building the demo
+*Note:* 
+The Elektron SDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other verions of Elektron SDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Elektron-SDK/blob/master/Java/README.md) file regarding the supported Java version.
 
-Run ```$> mvn package``` command to build the demo applications into single-all-depencies *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file. The file will be available in the project's *target* folder.
+### Running the demo applications
 
-```
-$> mvn package
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/D:/Project/Compilers/maven/bin/../lib/maven-slf4j-provider-3.5.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/D:/Project/Compilers/maven/bin/../lib/maven-slf4j-provider-3.5.4.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-...
-[INFO] Scanning for projects...
-[INFO]
-[INFO] ------------------------------------------------------------------------
-[INFO] Building esdk131_maven 1.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-...
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 17.385 s
-[INFO] Finished at: 2019-10-18T13:45:53+07:00
-[INFO] Final Memory: 20M/323M
-[INFO] ------------------------------------------------------------------------
-```
+1. Unzip or download the project into a directory of your choice. 
+3. Enter the *ema_example* project folder.
+2. Run ```$> mvn package``` command in a console to build the demo applications into a single-all-depencies *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
+3. The applications jar file will be available in the project's *target* folder.
+5. Then you can run IProvider_App demo with the following command:
+    ```
+    $> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    ```
+6. In order to run Consumer_App demo, open another console for ema_example folder and run the following command:
+    ```
+    $> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    ```
 
-#### Running the demo
+### Demo Example Results
 
-You can run the IProvider_App demo with the following command:
-
-```
-$> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
-```
-
-Then run Consumer_App demo with the following command:
-
-```
-$> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
-```
-
-The applications results are following:
-
-*Consumer_App running result*:
-
+#### Consumer_App result
 ```
 16:39:25.607 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
 16:39:28.462 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
@@ -218,8 +248,7 @@ RefreshMsgEnd
 UpdateMsgEnd
 ...
 ```
-
-*IProvider_App running result*:
+#### IProvider_App result
 
 ```
 16:39:09.009 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
@@ -228,7 +257,9 @@ UpdateMsgEnd
 16:39:31.456 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
 ```
 
-EMA Java log messages from both demo application will be in ema_log4j.log file.
+#### EMA Java result
+
+EMA Java log messages from both demo applications will be in ema_log4j.log file.
 
 ```
 2019-10-17 16:39:10,182 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
@@ -345,9 +376,9 @@ The EMA Java API is implemented on top of SLF4J API as a facade for logging util
 
 ## References
 For further details, please check out the following resources:
-* [Elektron Java API page](https://developers.refinitiv.com/elektron/elektron-sdk-java/) on the [Thomson Reuters Developer Community](https://developers.refinitiv.com/) web site.
-* [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) web site.
-* [Apache Log4j 2](https://logging.apache.org/log4j/2.x/) web site.
+* [Elektron Java API page](https://developers.refinitiv.com/elektron/elektron-sdk-java/) on the [Refinitiv Developer Community](https://developers.refinitiv.com/) web site.
+* [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) website.
+* [Apache Log4j 2](https://logging.apache.org/log4j/2.x/) website.
 * [Elektron Message API Java Quick Start](https://developers.refinitiv.com/elektron/elektron-sdk-java/quick-start)
 * [Developer Webinar: Introduction to Enterprise App Creation With Open-Source Elektron Message API](https://www.youtube.com/watch?v=2pyhYmgHxlU)
 
