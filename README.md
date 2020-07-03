@@ -14,7 +14,9 @@ The Elektron SDK Java are now available in [Maven Central Repository](https://se
 </dependency>
 ``` 
 
-Note: This article is based on EMA Java version 3.3.1 L1 (Elektron SDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
+Note: 
+- This article is based on EMA Java version 3.3.1 L1 (Elektron SDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
+- The demo application project has been tested with Elektron SDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
 
 The above configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
 
@@ -56,24 +58,24 @@ The above dependencies can be configured in the pom.xml file.
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-api</artifactId>
-        <version>2.12.1</version>
+        <version>2.13.2</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.12.1</version>
+        <version>2.13.2</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j-impl</artifactId>
-        <version>2.12.1</version>
+        <version>2.13.2</version>
     </dependency>
 </dependencies>
 ```
 
-Note: This article is based on Log4j version 2.12.1. You can change the library version in ```<version>``` configuration to match your project.
+Note: This article is based on Log4j version 2.13.2. You can change the library version in ```<version>``` configuration to match your project.
 
 ### Example Log4j 2 configurations file
 
@@ -175,7 +177,10 @@ This example requires the following dependencies softwares and libraries.
 3. Internet connection. 
 
 *Note:* 
-The Elektron SDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other verions of Elektron SDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Elektron-SDK/blob/master/Java/README.md) file regarding the supported Java version.
+The Elektron SDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other versions of Elektron SDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Elektron-SDK/blob/master/Java/README.md) file regarding the supported Java version.
+
+The demo application project has been tested with Elektron SDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
+
 
 ### Running the demo applications
 
