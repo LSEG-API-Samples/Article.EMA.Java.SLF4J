@@ -1,7 +1,7 @@
 # How to integrate Elektron Message API Java with Log4j Logging Framework using Maven
 ## Overview
  
-[Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Marven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK Java version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
+[Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK Java version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
 
 ## How to integrate EMA Java Application with Logging Framework in Maven
 The Elektron SDK Java are now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml fil to let Maven automatic download the [EMA Java library](https://search.maven.org/artifact/com.thomsonreuters.ema/ema/) for the application.
@@ -14,14 +14,16 @@ The Elektron SDK Java are now available in [Maven Central Repository](https://se
 </dependency>
 ``` 
 
-Note: This article is based on EMA Java version 3.3.1 L1 (Elektron SDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
+Note: 
+- This article is based on EMA Java version 3.3.1 L1 (Elektron SDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
+- The demo application project has been tested with Elektron SDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
 
 The above configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
 
 ![figure1](images/ema_dependencies.png "EMA Java Dependencies")
 
 The EMA Java API binds the SLF4J logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default, so Maven automatic downloads **slf4j-api** and **slf4j-jdk14** libraries for the application. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
-1. Configure pom.xml file's EMA dependency declaration to not load slf4j-jdk14 libary.
+1. Configure pom.xml file's EMA dependency declaration to not load slf4j-jdk14 library.
 2. Add SLF4J-Log4j and Log4j dependencies in pom.xml file.
 3. Configure Log4j configurations file to Java classpath or JVM option.
 
@@ -44,7 +46,7 @@ Developers can configure the EMA Java dependency declaration in pom.xml file to 
 </dependencies>
 ```
 
-The Log4j 2 framework requires the following dependencies to intergrate with SLF4J framework. 
+The Log4j 2 framework requires the following dependencies to integrate with SLF4J framework. 
 - log4j-api
 - log4j-core
 - log4j-slf4j-impl
@@ -56,24 +58,24 @@ The above dependencies can be configured in the pom.xml file.
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-api</artifactId>
-        <version>2.12.1</version>
+        <version>2.13.2</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.12.1</version>
+        <version>2.13.2</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j-impl</artifactId>
-        <version>2.12.1</version>
+        <version>2.13.2</version>
     </dependency>
 </dependencies>
 ```
 
-Note: This article is based on Log4j version 2.12.1. You can change the library version in ```<version>``` configuration to match your project.
+Note: This article is based on Log4j version 2.13.2. You can change the library version in ```<version>``` configuration to match your project.
 
 ### Example Log4j 2 configurations file
 
@@ -175,21 +177,36 @@ This example requires the following dependencies softwares and libraries.
 3. Internet connection. 
 
 *Note:* 
-The Elektron SDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other verions of Elektron SDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Elektron-SDK/blob/master/Java/README.md) file regarding the supported Java version.
+The Elektron SDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other versions of Elektron SDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Elektron-SDK/blob/master/Java/README.md) file regarding the supported Java version.
+
+The demo application project has been tested with Elektron SDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
+
 
 ### Running the demo applications
 
 1. Unzip or download the project into a directory of your choice. 
 3. Enter the *ema_example* project folder.
-2. Run ```$> mvn package``` command in a console to build the demo applications into a single-all-depencies *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
+2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-depencies *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
 3. The applications jar file will be available in the project's *target* folder.
 5. Then you can run IProvider_App demo with the following command:
+    
+    *Windows*
     ```
-    $> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    ```
+    *Linux*
+    ```
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
     ```
 6. In order to run Consumer_App demo, open another console for ema_example folder and run the following command:
+
+    *Windows*
     ```
-    $> java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    ```
+    *Linux*
+    ```
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
     ```
 
 ### Demo Example Results
