@@ -2,3 +2,5 @@ Code/
 maven_console/
 ema_example/result.txt
 ema_example/create_project.md
+target/
+.vscode/
