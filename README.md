@@ -1,10 +1,10 @@
-# How to integrate Elektron Message API Java with Log4j Logging Framework using Maven
+# How to integrate Enterprise Message API Java with Log4j Logging Framework using Maven
 ## Overview
  
-[Elektron Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Elektron SDK Java version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
+[Enterprise Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) (formerly known as Elektron Message API) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Refinitiv Real-Time SDK (RTSDK) Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
 
 ## How to integrate EMA Java Application with Logging Framework in Maven
-The Elektron SDK Java are now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml fil to let Maven automatic download the [EMA Java library](https://search.maven.org/artifact/com.thomsonreuters.ema/ema/) for the application.
+The Refinitiv Real-Time SDK Java are now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml fil to let Maven automatic download the [EMA Java library](https://search.maven.org/artifact/com.thomsonreuters.ema/ema/) for the application.
 
 ```
 <dependency>
@@ -15,8 +15,8 @@ The Elektron SDK Java are now available in [Maven Central Repository](https://se
 ``` 
 
 Note: 
-- This article is based on EMA Java version 3.3.1 L1 (Elektron SDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
-- The demo application project has been tested with Elektron SDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
+- This article is based on EMA Java version 3.3.1 L1 (RTSDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
+- The demo application project has been tested with RTSDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
 
 The above configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
 
@@ -114,7 +114,7 @@ This project contains the EMA Java demo examples in *ema_example* folder. The de
 - *IProvider_App example*: OMM Interactive-Provider application. 
 - *Consumer_App example*: OMM Consumer application that connects and consumes data from IProvider_App example.
 
-*Note*: The Consumer_App demo example can be configured to connect to your local TREP server.
+*Note*: The Consumer_App demo example can be configured to connect to your local ADS server.
 
 ### Demo log4j configurations file
 
@@ -177,9 +177,9 @@ This example requires the following dependencies softwares and libraries.
 3. Internet connection. 
 
 *Note:* 
-The Elektron SDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other versions of Elektron SDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Elektron-SDK/blob/master/Java/README.md) file regarding the supported Java version.
+The RTSDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
 
-The demo application project has been tested with Elektron SDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
+The demo application project has been tested with RTSDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
 
 
 ### Running the demo applications
@@ -190,9 +190,13 @@ The demo application project has been tested with Elektron SDK Java version 1.5.
 3. The applications jar file will be available in the project's *target* folder.
 5. Then you can run IProvider_App demo with the following command:
     
-    *Windows*
+    *Windows Command Prompt*
     ```
     $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    ```
+    *Windows Powershell*
+    ```
+    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.provider.IProvider_App
     ```
     *Linux*
     ```
@@ -203,6 +207,10 @@ The demo application project has been tested with Elektron SDK Java version 1.5.
     *Windows*
     ```
     $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    ```
+    *Windows Powershell*
+    ```
+    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.consumer.Consumer_App
     ```
     *Linux*
     ```
@@ -393,10 +401,10 @@ The EMA Java API is implemented on top of SLF4J API as a facade for logging util
 
 ## References
 For further details, please check out the following resources:
-* [Elektron Java API page](https://developers.refinitiv.com/elektron/elektron-sdk-java/) on the [Refinitiv Developer Community](https://developers.refinitiv.com/) web site.
+* [Enterprise Java API page](https://developers.refinitiv.com/elektron/elektron-sdk-java/) on the [Refinitiv Developer Community](https://developers.refinitiv.com/) web site.
 * [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) website.
 * [Apache Log4j 2](https://logging.apache.org/log4j/2.x/) website.
-* [Elektron Message API Java Quick Start](https://developers.refinitiv.com/elektron/elektron-sdk-java/quick-start)
-* [Developer Webinar: Introduction to Enterprise App Creation With Open-Source Elektron Message API](https://www.youtube.com/watch?v=2pyhYmgHxlU)
+* [Enterprise Message API Java Quick Start](https://developers.refinitiv.com/elektron/elektron-sdk-java/quick-start)
+* [Developer Webinar: Introduction to Enterprise App Creation With Open-Source Enterprise Message API](https://www.youtube.com/watch?v=2pyhYmgHxlU)
 
-For any question related to this article or Elektron Message API page, please use the Developer Community [Q&A Forum](https://community.developers.refinitiv.com/spaces/72/index.html).
+For any question related to this article or Enterprise Message API page, please use the Developer Community [Q&A Forum](https://community.developers.refinitiv.com/spaces/72/index.html).
