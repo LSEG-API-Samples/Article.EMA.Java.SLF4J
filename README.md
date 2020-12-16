@@ -125,7 +125,8 @@ This project contains the EMA Java demo examples in *ema_example* folder. The de
 - *IProvider_App example*: OMM Interactive-Provider application. 
 - *Consumer_App example*: OMM Consumer application that connects and consumes data from IProvider_App example.
 
-*Note*: The Consumer_App demo example can be configured to connect to your local ADS server.
+*Note*: The Consumer_App demo example can be configured to connect to your local Refinitiv Real-Time Advanced Distribution
+Server.
 
 ### Demo log4j configurations file
 
