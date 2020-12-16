@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.refinitiv.ema</groupId>
-  <artifactId>esdk131_maven</artifactId>
+  <artifactId>rtsdk200_maven</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>esdk131_maven</name>
+  <name>rtsdk200_maven</name>
   <!-- FIXME change it to the project's website -->
   <url>https://developers.refinitiv.com/</url>
 
@@ -28,10 +28,22 @@
         </dependency>
 
         <dependency>
-            <groupId>com.thomsonreuters.ema</groupId>
+            <groupId>com.refinitiv.ema</groupId>
             <artifactId>ema</artifactId>
-            <version>3.3.1.0</version>
-            <exclusions>
+            <version>3.6.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.refinitiv.eta</groupId>
+            <artifactId>eta</artifactId>
+            <version>3.6.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.refinitiv.eta.valueadd</groupId>
+            <artifactId>etaValueAdd</artifactId>
+            <version>3.6.0.0</version>
+             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-jdk14</artifactId>
@@ -40,27 +52,15 @@
         </dependency>
 
         <dependency>
-            <groupId>com.thomsonreuters.upa</groupId>
-            <artifactId>upa</artifactId>
-            <version>3.3.1.0</version>
+            <groupId>com.refinitiv.eta.valueadd.cache</groupId>
+            <artifactId>etaValueAddCache</artifactId>
+            <version>3.6.0.0</version>
         </dependency>
 
         <dependency>
-            <groupId>com.thomsonreuters.upa.valueadd</groupId>
-            <artifactId>upaValueAdd</artifactId>
-            <version>3.3.1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.thomsonreuters.upa.valueadd.cache</groupId>
-            <artifactId>upaValueAddCache</artifactId>
-            <version>3.3.1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.thomsonreuters.upa.ansi</groupId>
+            <groupId>com.refinitiv.eta.ansi</groupId>
             <artifactId>ansipage</artifactId>
-            <version>3.3.1.0</version>
+            <version>3.6.0.0</version>
         </dependency>
 
         <!-- Log4J - SLF4J -->
@@ -69,22 +69,22 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.28</version>
         </dependency>-->
-
+       
        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.13.2</version>
+            <version>2.14.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.13.2</version>
+            <version>2.14.0</version>
         </dependency>
-
+        
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.13.2</version>
+            <version>2.14.0</version>
         </dependency>
 
     </dependencies>

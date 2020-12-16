@@ -27,7 +27,7 @@
 
     <Loggers>
 		<!-- avoid duplicated logs with additivity=false -->
-        <Logger name="com.thomsonreuters.ema" level="trace" additivity="false">
+        <Logger name="com.refinitiv.ema" level="trace" additivity="false">
             <AppenderRef ref="emaLogFile"/>
         </Logger>
         <Logger name="com.refinitiv.ema.consumer" level="info" additivity="false">
