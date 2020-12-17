@@ -10,7 +10,8 @@
 Starting with version RTSDK 2.0.0.L1 (same as EMA/ETA 3.6.0.L1), there are namespace changes and library name changes. Please note that all interfaces remain the same as prior releases of RTSDK and Elektron SDK and will remain fully wire compatible. Along with RTSDK 2.X version, a [REBRAND.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/REBRAND.md) is published to detail impact to existing applications and how to quickly adapt to the re-branded libraries. Existing applications will continue to work indefinitely as-is.  Applications should be proactively rebranded to be able to utilize new features, security updates or fixes post 2.X release. Please see [PCN](https://my.refinitiv.com/content/mytr/en/pcnpage/12072.html?_ga=2.103280071.632863608.1606731450-325683966.1598503157) for more details on support. 
 
 ## How to integrate EMA Java Application with Logging Framework in Maven
-The Refinitiv Real-Time SDK Java is now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml file to let Maven automatically download the [EMA Java library](https://search.maven.org/artifact/com.refinitiv.ema/ema/) and [ETA Java library](https://search.maven.org/artifact/com.refinitiv.eta.valueadd/etaValueAdd) for the application.
+
+The Refinitiv Real-Time SDK Java is now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml file to let Maven automatically download the [EMA Java library](https://search.maven.org/artifact/com.refinitiv.ema/ema/) and [ETA Java library](https://search.maven.org/artifact/com.refinitiv.eta/eta) for the application.
 
 ```
 <dependency>
@@ -24,12 +25,18 @@ The Refinitiv Real-Time SDK Java is now available in [Maven Central Repository](
     <artifactId>etaValueAdd</artifactId>
     <version>3.6.0.0</version>
 </dependency>
+
+<dependency>
+  <groupId>com.refinitiv.eta.valueadd</groupId>
+  <artifactId>etaValueAdd</artifactId>
+  <version>3.6.0.0</version>
+</dependency>
 ``` 
 
 Note: 
 - This article is based on EMA Java version 3.6.0 L1 (RTSDK Java Edition 2.0.0 L1). You can change the library version in ```<version>``` configuration to match your project.
 
-The above ETA Java ValueAdd configuration automatically resolves the API dependencies by downloading the following required libraries for the application. 
+The [ETA Java ValueAdd](https://search.maven.org/search?q=a:etaValueAdd) configuration automatically resolves the API dependencies by downloading the following required libraries for the application.
 
 ![figure1](images/eta_dependencies.png "EMA Java Dependencies")
 
@@ -38,8 +45,9 @@ Since RTSDK 1.5.1, The EMA uses ETA Java ValueAdd API to bind the SLF4J logging 
 2. Add SLF4J-Log4j and Log4j dependencies in pom.xml file.
 3. Configure Log4j configurations file to Java classpath or JVM option.
 
-### Maven pom.xml setting for EMA JAva and Log4j 
-Developers can configure the EMA Java dependency declaration in pom.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
+### Maven pom.xml setting for EMA Java and Log4j 
+
+Developers can configure the ETA Java ValueAdd Java dependency declaration in the pom.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
 
 ```
 <dependency>
@@ -55,7 +63,7 @@ Developers can configure the EMA Java dependency declaration in pom.xml file to 
 </dependency>
 ```
 
-Note: If you are using the RTSDK version 1.5.0 and earlier, the ```exclusions``` must be declared in EMA library ```<dependency>``` node.
+Note: If you are using the RTSDK 1.5.0 and earlier versions, the ```exclusions``` must be declared in EMA library ```<dependency>``` node.
 
 The Log4j 2 framework requires the following dependencies to integrate with SLF4J framework. 
 - log4j-api
@@ -90,7 +98,7 @@ Note: This article is based on Log4j version 2.14.0. You can change the library 
 
 ### Example Log4j 2 configurations file
 
-The example of Log4j 2 configuration file for EMA Java application is following.
+The example of Log4j 2 configuration file for EMA Java application is the following.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -117,7 +125,7 @@ The above configurations example set the Log4j to print all EMA Java API ("com.r
 
 ### Running the application with Log4j configuration
 
-To let the EMA Java application uses Log4j configurations file, developers can add the Log4j configurations file to the Java classpath or set the JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
+To let the EMA Java application uses Log4j configurations file, developers can add the Log4j configurations file to the Java classpath or set the JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime. Please note that if you do not build the application into a single-all-dependencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
 
 ## EMA Java application and Log4j Demo
 
@@ -189,13 +197,13 @@ This example requires the following dependencies software and libraries.
 3. Internet connection. 
 
 *Note:* 
-The RTSDK Java version 2.0.0 L1 (EMA Java 3.6.0) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
+The RTSDK Java version 2.0.0 L1 (EMA Java 3.6.0) supports Oracle JDK versions 8, 11, and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
 
 ### Running the demo applications
 
 1. Unzip or download the project into a directory of your choice. 
 3. Enter the *ema_example* project folder.
-2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-depencies *rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
+2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-dependencies *rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
 3. The applications jar file will be available in the project's *target* folder.
 5. Then you can run IProvider_App demo with the following command:
     
