@@ -1,50 +1,69 @@
 # How to integrate Enterprise Message API Java with Log4j Logging Framework using Maven
 ## Overview
+
+**Update**: December 2020
  
-[Enterprise Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) (formerly known as Elektron Message API) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Refinitiv Real-Time SDK (RTSDK) Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate  your EMA Java 1.3.x application with Log4j in a Maven way.
+[Enterprise Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) (formerly known as Elektron Message API) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Refinitiv Real-Time SDK (RTSDK) Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate your EMA Java 1.3.x application with Log4j in a Maven way.
+
+## IMPORTANT Rebranding Announcement: 
+
+Starting with version RTSDK 2.0.0.L1 (same as EMA/ETA 3.6.0.L1), there are namespace changes and library name changes. Please note that all interfaces remain the same as prior releases of RTSDK and Elektron SDK and will remain fully wire compatible. Along with RTSDK 2.X version, a [REBRAND.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/REBRAND.md) is published to detail impact to existing applications and how to quickly adapt to the re-branded libraries. Existing applications will continue to work indefinitely as-is.  Applications should be proactively rebranded to be able to utilize new features, security updates or fixes post 2.X release. Please see [PCN](https://my.refinitiv.com/content/mytr/en/pcnpage/12072.html?_ga=2.103280071.632863608.1606731450-325683966.1598503157) for more details on support. 
 
 ## How to integrate EMA Java Application with Logging Framework in Maven
-The Refinitiv Real-Time SDK Java are now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml fil to let Maven automatic download the [EMA Java library](https://search.maven.org/artifact/com.thomsonreuters.ema/ema/) for the application.
+
+The Refinitiv Real-Time SDK Java is now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml file to let Maven automatically download the [EMA Java library](https://search.maven.org/artifact/com.refinitiv.ema/ema/) and [ETA Java library](https://search.maven.org/artifact/com.refinitiv.eta/eta) for the application.
 
 ```
 <dependency>
-  <groupId>com.thomsonreuters.ema</groupId>
-  <artifactId>ema</artifactId>
-  <version>3.3.1.0</version>
+    <groupId>com.refinitiv.ema</groupId>
+    <artifactId>ema</artifactId>
+    <version>3.6.0.0</version>
+</dependency>
+
+<dependency>
+    <groupId>com.refinitiv.eta.valueadd</groupId>
+    <artifactId>etaValueAdd</artifactId>
+    <version>3.6.0.0</version>
+</dependency>
+
+<dependency>
+  <groupId>com.refinitiv.eta.valueadd</groupId>
+  <artifactId>etaValueAdd</artifactId>
+  <version>3.6.0.0</version>
 </dependency>
 ``` 
 
 Note: 
-- This article is based on EMA Java version 3.3.1 L1 (RTSDK Java Edition 1.3.1). You can change the library version in ```<version>``` configuration to match your project.
-- The demo application project has been tested with RTSDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
+- This article is based on EMA Java version 3.6.0 L1 (RTSDK Java Edition 2.0.0 L1). You can change the library version in ```<version>``` configuration to match your project.
 
-The above configuration automatic resolves the API dependencies by downloading the following required libraries for the application. 
+The [ETA Java ValueAdd](https://search.maven.org/search?q=a:etaValueAdd) configuration automatically resolves the API dependencies by downloading the following required libraries for the application.
 
-![figure1](images/ema_dependencies.png "EMA Java Dependencies")
+![figure1](images/eta_dependencies.png "EMA Java Dependencies")
 
-The EMA Java API binds the SLF4J logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) by default, so Maven automatic downloads **slf4j-api** and **slf4j-jdk14** libraries for the application. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
-1. Configure pom.xml file's EMA dependency declaration to not load slf4j-jdk14 library.
+Since RTSDK 1.5.1, The EMA uses ETA Java ValueAdd API to bind the SLF4J logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) as a default logger instead of the EMA API itself (the previous versions EMA API binds SLF4J-Java Logging API directly). The Maven automatically downloads **slf4j-api** and **slf4j-jdk14** libraries for the application. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
+1. Configure pom.xml file's ETA Java ValueAdd dependency declaration to not load slf4j-jdk14 library.
 2. Add SLF4J-Log4j and Log4j dependencies in pom.xml file.
 3. Configure Log4j configurations file to Java classpath or JVM option.
 
-### Maven pom.xml setting for EMA JAva and Log4j 
-Developers can configure the EMA Java dependency declaration in pom.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
+### Maven pom.xml setting for EMA Java and Log4j 
+
+Developers can configure the ETA Java ValueAdd Java dependency declaration in the pom.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
 
 ```
-<dependencies>
-    <dependency>
-        <groupId>com.thomsonreuters.ema</groupId>
-        <artifactId>ema</artifactId>
-        <version>3.3.1.0</version>
-        <exclusions>
-            <exclusion>
-                <groupId>org.slf4j</groupId>
+<dependency>
+    <groupId>com.refinitiv.eta.valueadd</groupId>
+    <artifactId>etaValueAdd</artifactId>
+    <version>3.6.0.0</version>
+    <exclusions>
+        <exclusion>
+            <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-jdk14</artifactId>
-            </exclusion>
-        </exclusions>
-    </dependency>
-</dependencies>
+        </exclusion>
+    </exclusions>
+</dependency>
 ```
+
+Note: If you are using the RTSDK 1.5.0 and earlier versions, the ```exclusions``` must be declared in EMA library ```<dependency>``` node.
 
 The Log4j 2 framework requires the following dependencies to integrate with SLF4J framework. 
 - log4j-api
@@ -58,28 +77,28 @@ The above dependencies can be configured in the pom.xml file.
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-api</artifactId>
-        <version>2.13.2</version>
+        <version>2.14.0</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.13.2</version>
+        <version>2.14.0</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j-impl</artifactId>
-        <version>2.13.2</version>
+        <version>2.14.0</version>
     </dependency>
 </dependencies>
 ```
 
-Note: This article is based on Log4j version 2.13.2. You can change the library version in ```<version>``` configuration to match your project.
+Note: This article is based on Log4j version 2.14.0. You can change the library version in ```<version>``` configuration to match your project.
 
 ### Example Log4j 2 configurations file
 
-The example of Log4j 2 configuration file for EMA Java application is following.
+The example of Log4j 2 configuration file for EMA Java application is the following.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -93,7 +112,7 @@ The example of Log4j 2 configuration file for EMA Java application is following.
         </File>
     </Appenders>
     <loggers>
-        <Logger name="com.thomsonreuters.ema" level="TRACE"/>
+        <Logger name="com.refinitiv.ema" level="TRACE"/>
         <root level="TRACE">
             <appender-ref ref="Console"/>
             <appender-ref ref="File"/>
@@ -102,28 +121,29 @@ The example of Log4j 2 configuration file for EMA Java application is following.
 </Configuration>
 ```
 
-The above configurations example set the Log4j to print all EMA Java API ("com.thomsonreuters.ema" package) log messages to console and "ema_log4j.log" log file. Please find a full detail of Log4j configuration parameters in [Log4j manual page](https://logging.apache.org/log4j/2.x/manual/configuration.html).
+The above configurations example set the Log4j to print all EMA Java API ("com.refinitiv.ema" package) log messages to console and "ema_log4j.log" log file. Please find a full detail of Log4j configuration parameters in [Log4j manual page](https://logging.apache.org/log4j/2.x/manual/configuration.html).
 
 ### Running the application with Log4j configuration
 
-To let the EMA Java application uses Log4j configurations file, developers can add the Log4j configurations file to the Java classpath or set the JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime. Please note that if you do not build the application in to a single-all-depencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
+To let the EMA Java application uses Log4j configurations file, developers can add the Log4j configurations file to the Java classpath or set the JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime. Please note that if you do not build the application into a single-all-dependencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
 
 ## EMA Java application and Log4j Demo
 
-This project contains the EMA Java demo examples in *ema_example* folder. The demo applications utilize Log4j to manage logs and console messages. The demo examples are following:
+This project contains the EMA Java demo examples in *ema_example* folder. The demo applications utilize Log4j to manage logs and console messages. The demo examples are the following:
 - *IProvider_App example*: OMM Interactive-Provider application. 
 - *Consumer_App example*: OMM Consumer application that connects and consumes data from IProvider_App example.
 
-*Note*: The Consumer_App demo example can be configured to connect to your local ADS server.
+*Note*: The Consumer_App demo example can be configured to connect to your local Refinitiv Real-Time Advanced Distribution
+Server.
 
 ### Demo log4j configurations file
 
-The demo applications separate the applications logic and EMA Java API log messages to different consoles and log files. 
+The demo applications separate the application  logic and EMA Java API log messages to different consoles and log files. 
 - The IProvider_App application messages are printed in console and provider_log4j.log file. 
 - The Consumer_App application messages are printed in console and consumer_log4j.log file.
 - The EMA Java API logs from both applications are printed in ema_log4j.log file. 
 
-The applications just use SLF4J's ```logger.info()``` and ```logger.error()``` functions in the source codes to set the application messages, then Log4j will do the rest for application based on the following log4j.xml configuration file.
+The applications just use SLF4J's ```logger.info()``` and ```logger.error()``` functions in the source codes to set the application messages, then Log4j will do the rest for the application based on the following log4j.xml configuration file.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -155,7 +175,7 @@ The applications just use SLF4J's ```logger.info()``` and ```logger.error()``` f
 
     <Loggers>
 		<!-- avoid duplicated logs with additivity=false -->
-        <Logger name="com.thomsonreuters.ema" level="trace" additivity="false">
+        <Logger name="com.refinitiv.ema" level="trace" additivity="false">
             <AppenderRef ref="emaLogFile"/>
         </Logger>
         <Logger name="com.refinitiv.ema.consumer" level="info" additivity="false">
@@ -171,64 +191,84 @@ The applications just use SLF4J's ```logger.info()``` and ```logger.error()``` f
 ```
 
 ### Demo prerequisite
-This example requires the following dependencies softwares and libraries.
+This example requires the following dependencies software and libraries.
 1. Oracle/Open JDK 8 or Oracle JDK 11.
 2. [Apache Maven](https://maven.apache.org/) project management and comprehension tool.
 3. Internet connection. 
 
 *Note:* 
-The RTSDK Java version 1.3.1 (EMA Java 3.3.1) supports Oracle JDK versions 8, 11 and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
-
-The demo application project has been tested with RTSDK Java version 1.5.0 (EMA Java 3.5.0 - pom.xml dependency: ```<version>3.5.0.0</version>```).
-
+The RTSDK Java version 2.0.0 L1 (EMA Java 3.6.0) supports Oracle JDK versions 8, 11, and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
 
 ### Running the demo applications
 
 1. Unzip or download the project into a directory of your choice. 
 3. Enter the *ema_example* project folder.
-2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-depencies *esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
+2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-dependencies *rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
 3. The applications jar file will be available in the project's *target* folder.
 5. Then you can run IProvider_App demo with the following command:
     
     *Windows Command Prompt*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
     ```
     *Windows Powershell*
     ```
-    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.provider.IProvider_App
+    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.provider.IProvider_App
     ```
     *Linux*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
     ```
-6. In order to run Consumer_App demo, open another console for ema_example folder and run the following command:
+6. To run Consumer_App demo, open another console for ema_example folder and run the following command:
 
     *Windows*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
     ```
     *Windows Powershell*
     ```
-    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.consumer.Consumer_App
+    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.consumer.Consumer_App
     ```
     *Linux*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/esdk131_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
     ```
 
 ### Demo Example Results
 
 #### Consumer_App result
 ```
-16:39:25.607 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
-16:39:28.462 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
-16:39:29.452 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-16:39:29.453 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:39:29.453 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:39:29.454 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
-16:39:29.457 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
-    streamId="5"
+15:10:45.983 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+15:10:48.678 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
+15:10:48.680 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
+15:10:48.680 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+15:10:48.681 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+15:10:48.690 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
+15:10:48.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+15:10:48.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
+15:10:48.701 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="1"
+    domain="Login Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / 'Login accepted'"
+    itemGroup="00 00"
+    name="U8004042"
+    nameType="1"
+    Attrib dataType="ElementList"
+        ElementList
+        ElementListEnd
+    AttribEnd
+RefreshMsgEnd
+
+15:10:48.733 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+15:10:49.672 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+15:10:49.673 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:49.683 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:49.684 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
+15:10:49.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="6"
     domain="MarketPrice Domain"
     solicited
     RefreshComplete
@@ -250,13 +290,13 @@ The demo application project has been tested with RTSDK Java version 1.5.0 (EMA 
     PayloadEnd
 RefreshMsgEnd
 
-16:39:29.458 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:49.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:39:30.455 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:39:30.455 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:39:30.456 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:39:30.456 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="5"
+15:10:50.674 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:50.675 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:50.677 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:50.688 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+    streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
     name="/EUR="
@@ -271,15 +311,17 @@ RefreshMsgEnd
         FieldListEnd
     PayloadEnd
 UpdateMsgEnd
+
 ...
 ```
 #### IProvider_App result
 
 ```
-16:39:09.009 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
-16:39:29.451 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh messages
-16:39:30.453 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-16:39:31.456 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+15:10:33.972 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
+15:10:49.671 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh messages
+15:10:50.674 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+15:10:51.674 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+15:10:52.675 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
 ```
 
 #### EMA Java result
@@ -287,13 +329,7 @@ UpdateMsgEnd
 EMA Java log messages from both demo applications will be in ema_log4j.log file.
 
 ```
-2019-10-17 16:39:10,182 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
-    ClientName: EmaConfig
-    Severity: Trace
-    Text:    reading configuration file [EmaConfig.xml]; working directory is [/home/api/project/slf4j/ema_example]
-loggerMsgEnd
-
-2019-10-17 16:39:10,183 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2020-12-16 15:10:34,565 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Print out active configuration detail.
@@ -307,6 +343,11 @@ loggerMsgEnd
 	 configuredName: Provider_1
 	 instanceName: Provider_1_1
 	 xmlTraceEnable: false
+	 globalConfig.reactorChannelEventPoolLimit: -1
+	 globalConfig.reactorMsgEventPoolLimit: -1
+	 globalConfig.workerEventPoolLimit: -1
+	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
+	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
 	 defaultServiceName: 14002
 	 acceptMessageWithoutAcceptingRequests: false
 	 acceptDirMessageWithoutMinFilters: false
@@ -314,6 +355,7 @@ loggerMsgEnd
 	 acceptMessageSameKeyButDiffStream: false
 	 acceptMessageThatChangesService: false
 	 acceptMessageWithoutQosInRange: false
+	 enforceAckIDValidation: false
 	 operationModel: 1
 	 directoryAdminControl: 1
 	 dictionaryAdminControl: 1
@@ -324,20 +366,14 @@ loggerMsgEnd
 
 ....
 
-2019-10-17 16:39:10,363 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2020-12-16 15:10:35,612 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Provider bound on port = 14022.
 loggerMsgEnd
 
 
-2019-10-17 16:39:25,758 LEVEL-TRACE Thread-[main]  Method-log()   Class name-com.thomsonreuters.ema.access.ConfigErrorTracker   Message-loggerMsg
-    ClientName: EmaConfig
-    Severity: Trace
-    Text:    reading configuration file [EmaConfig.xml]; working directory is [/home/api/project/slf4j/ema_example]
-loggerMsgEnd
-
-2019-10-17 16:39:25,758 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.OmmBaseImpl   Message-loggerMsg
+2020-12-16 15:10:46,102 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
     ClientName: Consumer_1_1
     Severity: Trace
     Text:    Print out active configuration detail.
@@ -351,6 +387,11 @@ loggerMsgEnd
 	 configuredName: Consumer_1
 	 instanceName: Consumer_1_1
 	 xmlTraceEnable: false
+	 globalConfig.reactorChannelEventPoolLimit: -1
+	 globalConfig.reactorMsgEventPoolLimit: -1
+	 globalConfig.workerEventPoolLimit: -1
+	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
+	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
 	 obeyOpenWindow: 1
 	 postAckTimeout: 15000
 	 maxOutstandingPosts: 100000
@@ -361,50 +402,57 @@ loggerMsgEnd
 	 msgKeyInUpdates: true
 	 directoryRequestTimeOut: 45000
 	 dictionaryRequestTimeOut: 45000
+	 reissueTokenAttemptLimit: -1
+	 reissueTokenAttemptInterval: 5000
+	 restRequestTimeOut: 45000
+	 tokenReissueRatio: 0.8
 	 loginRequestTimeOut: 45000
 loggerMsgEnd
 
 ...
 
-2019-10-17 16:39:25,787 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+2020-12-16 15:10:46,371 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
     ClientName: LoginCallbackClient
     Severity: Trace
     Text:    Created LoginCallbackClient
 loggerMsgEnd
 
 
-2019-10-17 16:39:25,788 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.thomsonreuters.ema.access.LoginCallbackClient   Message-loggerMsg
+2020-12-16 15:10:46,371 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
     ClientName: LoginCallbackClient
     Severity: Trace
     Text:    RDMLogin request message was populated with this info: 
 	LoginRequest: 
 	streamId: 1
-	userName: api
+	userName: U8004042
 	streaming: true
 	nameType: 1
 	applicationId: 256
 	applicationName: ema
-	position: 127.0.0.1/apis30
+	position: 192.168.68.113/WIN-V793K3HCLOL
 
 loggerMsgEnd
 
 
-2019-10-17 16:39:25,789 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.thomsonreuters.ema.access.CallbackClient   Message-loggerMsg
+2020-12-16 15:10:46,372 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
     ClientName: DictionaryCallbackClient
     Severity: Trace
     Text:    Created DictionaryCallbackClient
 loggerMsgEnd
+...
 ```
 
 ## Conclusion
-The EMA Java API is implemented on top of SLF4J API as a facade for logging utility. The latest version of API allows developers integrate EMA Java application with their prefer Logging framework by changing the repository and log configuration files without touching the application source code. 
+
+The EMA Java API is implemented on top of SLF4J API as a facade for logging utility. The latest version of API allows developers to integrate EMA Java application with the preferred Logging framework by changing the repository, dependencies via their Java project management (Maven or Gradle), and then set the log configuration files without touching the application source code. 
 
 ## References
 For further details, please check out the following resources:
-* [Enterprise Java API page](https://developers.refinitiv.com/elektron/elektron-sdk-java/) on the [Refinitiv Developer Community](https://developers.refinitiv.com/) web site.
-* [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) website.
-* [Apache Log4j 2](https://logging.apache.org/log4j/2.x/) website.
-* [Enterprise Message API Java Quick Start](https://developers.refinitiv.com/elektron/elektron-sdk-java/quick-start)
+* [Refinitiv Real-time Java API page](https://developers.refinitiv.com/en/api-catalog/elektron/elektron-sdk-java) on the [Refinitiv Developer Community](https://developers.refinitiv.com/) web site.
+* [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) web site.
+* [Apache Log4j 2](https://logging.apache.org/log4j/2.x/) web site.
+For further details, please check out the following resources:
+* [Enterprise Message API Java Quick Start](https://developers.refinitiv.com/en/api-catalog/elektron/elektron-sdk-java/quick-start)
 * [Developer Webinar: Introduction to Enterprise App Creation With Open-Source Enterprise Message API](https://www.youtube.com/watch?v=2pyhYmgHxlU)
 
 For any question related to this article or Enterprise Message API page, please use the Developer Community [Q&A Forum](https://community.developers.refinitiv.com/spaces/72/index.html).

@@ -1,12 +1,12 @@
-16:20:16.837 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
-16:20:19.262 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
-16:20:19.264 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
-16:20:19.264 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-16:20:19.266 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
-16:20:19.275 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
-16:20:19.276 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
-16:20:19.277 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
-16:20:19.278 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+15:10:45.983 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+15:10:48.678 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
+15:10:48.680 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
+15:10:48.680 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+15:10:48.681 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+15:10:48.690 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
+15:10:48.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+15:10:48.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
+15:10:48.701 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
     streamId="1"
     domain="Login Domain"
     solicited
@@ -21,13 +21,13 @@
     AttribEnd
 RefreshMsgEnd
 
-16:20:19.291 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:48.703 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:19.295 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-16:20:19.301 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: <not set>
-16:20:19.302 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
-16:20:19.303 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / ''
-16:20:19.306 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+15:10:48.713 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+15:10:48.714 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: <not set>
+15:10:48.725 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+15:10:48.727 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / ''
+15:10:48.730 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
     streamId="5"
     domain="Directory Domain"
     solicited
@@ -89,13 +89,13 @@ RefreshMsgEnd
     PayloadEnd
 RefreshMsgEnd
 
-16:20:19.342 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:48.733 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:20.257 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-16:20:20.258 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:20.258 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:20.259 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
-16:20:20.260 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+15:10:49.672 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+15:10:49.673 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:49.683 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:49.684 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
+15:10:49.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
     streamId="6"
     domain="MarketPrice Domain"
     solicited
@@ -118,12 +118,12 @@ RefreshMsgEnd
     PayloadEnd
 RefreshMsgEnd
 
-16:20:20.271 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:49.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:21.259 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:21.259 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:21.260 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:21.261 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:50.674 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:50.675 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:50.677 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:50.688 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -140,12 +140,12 @@ RefreshMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:21.272 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:50.689 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:22.263 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:22.263 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:22.264 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:22.264 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:51.675 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:51.676 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:51.683 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:51.690 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -162,12 +162,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:22.276 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:51.691 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:23.266 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:23.266 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:23.267 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:23.267 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:52.676 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:52.676 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:52.682 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:52.683 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -184,12 +184,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:23.286 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:52.692 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:24.269 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:24.269 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:24.270 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:24.271 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:53.686 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:53.687 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:53.698 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:53.698 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -206,12 +206,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:24.288 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:53.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:25.272 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:25.273 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:25.273 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:25.274 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:54.689 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:54.690 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:54.702 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:54.703 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -228,12 +228,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:25.280 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:54.709 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:26.274 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:26.275 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:26.276 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:26.277 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:55.690 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:55.690 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:55.702 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:55.706 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -250,12 +250,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:26.288 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:55.708 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:27.277 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:27.277 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:27.278 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:27.279 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:56.692 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:56.692 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:56.704 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:56.707 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -272,12 +272,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:27.293 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:56.707 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:28.280 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:28.280 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:28.281 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:28.282 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:57.692 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:57.693 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:57.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:57.695 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -294,12 +294,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:28.294 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:57.705 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:29.898 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:29.899 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:29.899 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:29.899 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:58.693 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:58.693 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:58.706 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:58.706 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -316,12 +316,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:29.907 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:58.708 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:30.902 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:30.903 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:30.903 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:30.904 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:10:59.693 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:10:59.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:10:59.705 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:10:59.706 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -338,12 +338,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:30.921 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:10:59.706 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:31.905 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:31.905 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:31.906 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:31.906 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:00.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:00.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:00.697 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:00.708 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -360,12 +360,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:31.917 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:00.709 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:32.907 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:32.907 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:32.908 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:32.909 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:01.696 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:01.696 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:01.700 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:01.711 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -382,12 +382,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:32.920 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:01.721 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:33.909 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:33.910 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:33.911 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:33.920 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:02.697 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:02.698 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:02.709 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:02.710 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -404,12 +404,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:33.925 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:02.710 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:34.913 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:34.913 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:34.914 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:34.915 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:03.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:03.700 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:03.713 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:03.716 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -426,12 +426,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:34.928 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:03.723 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:35.916 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:35.918 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:35.918 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:35.919 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:04.700 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:04.701 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:04.714 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:04.716 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -448,12 +448,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:35.935 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:04.717 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:36.919 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:36.920 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:36.921 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:36.922 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:05.703 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:05.704 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:05.718 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:05.720 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -470,12 +470,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:36.934 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:05.727 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:37.922 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:37.922 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:37.923 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:37.923 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:06.705 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:06.706 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:06.720 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:06.721 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -492,12 +492,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:37.936 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:06.728 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:38.925 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:38.925 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:38.926 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:38.926 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:07.707 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:07.707 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:07.720 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:07.723 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -514,12 +514,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:38.942 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:07.723 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:39.926 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:39.927 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:39.928 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:39.928 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:08.708 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:08.708 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:08.720 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:08.720 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -536,12 +536,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:39.939 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:08.721 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:40.930 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:40.930 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:40.931 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:40.931 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:09.709 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:09.710 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:09.721 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:09.726 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -558,12 +558,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:40.949 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:09.726 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:41.932 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:41.932 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:41.933 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:41.934 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:10.710 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:10.710 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:10.724 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:10.725 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -580,12 +580,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:41.947 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:10.734 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:42.936 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:42.938 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:42.939 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:42.948 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:11.711 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:11.711 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:11.715 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:11.728 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -602,12 +602,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:42.954 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:11.730 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:43.938 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:43.938 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:43.939 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:43.940 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:12.713 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:12.715 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:12.731 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:12.734 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -624,12 +624,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:43.954 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:12.741 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:44.941 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:44.941 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:44.942 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:44.942 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:13.714 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:13.715 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:13.724 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:13.725 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -646,12 +646,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:44.955 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:13.726 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:45.943 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:45.944 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:45.945 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:45.946 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:14.714 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:14.715 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:14.728 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:14.733 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -668,12 +668,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:45.963 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:14.740 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:46.946 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:46.946 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:46.947 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:46.948 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:15.717 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:15.718 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:15.721 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:15.731 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -690,12 +690,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:46.965 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:15.733 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:47.948 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:47.949 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:47.949 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:47.951 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:16.717 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:16.718 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:16.730 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:16.731 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -712,12 +712,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:47.965 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:16.738 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:48.951 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:48.951 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:48.952 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:48.952 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:17.720 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:17.721 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:17.738 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:17.740 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -734,12 +734,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:48.965 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:17.748 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:49.953 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:49.954 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:49.954 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:49.956 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:18.722 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:18.722 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:18.735 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:18.736 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -756,12 +756,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:49.970 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:18.736 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-16:20:50.957 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-16:20:50.959 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-16:20:50.960 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-16:20:50.965 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:19.724 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:19.725 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:19.741 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:19.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -778,794 +778,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-16:20:50.979 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:41.815 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
-18:13:44.848 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
-18:13:44.857 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
-18:13:44.857 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-18:13:44.857 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
-18:13:44.858 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
-18:13:44.858 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
-18:13:44.859 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
-18:13:44.864 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
-    streamId="1"
-    domain="Login Domain"
-    solicited
-    RefreshComplete
-    state="Open / Ok / None / 'Login accepted'"
-    itemGroup="00 00"
-    name="U8004042"
-    nameType="1"
-    Attrib dataType="ElementList"
-        ElementList
-        ElementListEnd
-    AttribEnd
-RefreshMsgEnd
-
-18:13:44.865 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:44.866 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-18:13:44.867 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: <not set>
-18:13:44.867 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
-18:13:44.868 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / ''
-18:13:44.873 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
-    streamId="5"
-    domain="Directory Domain"
-    solicited
-    RefreshComplete
-    state="Open / Ok / None / ''"
-    itemGroup="00 00"
-    filter="0"
-    Payload dataType="Map"
-        Map
-            MapEntry action="Add" key dataType="UInt" value="1" dataType="FilterList"
-                FilterList
-                    FilterEntry action="Set" filterId="1 dataType="ElementList"
-                        ElementList
-                            ElementEntry name="Name" dataType="Ascii" value="ELEKTRON_DD"
-                            ElementEntry name="Vendor" dataType="Ascii" value="company name"
-                            ElementEntry name="IsSource" dataType="UInt" value="0"
-                            ElementEntry name="Capabilities" dataType="OmmArray"
-                                OmmArray with entries of dataType="UInt"
-                                    value=""6"
-                                    value=""7"
-                                    value=""8"
-                                    value=""5"
-                                    value=""200"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="DictionariesProvided" dataType="OmmArray"
-                                OmmArray with entries of dataType="Ascii"
-                                    value=""RWFFld"
-                                    value=""RWFEnum"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="DictionariesUsed" dataType="OmmArray"
-                                OmmArray with entries of dataType="Ascii"
-                                    value=""RWFFld"
-                                    value=""RWFEnum"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="QoS" dataType="OmmArray"
-                                OmmArray with entries of dataType="Qos"
-                                    value=""RealTime/TickByTick"
-                                    value=""Timeliness: 100/Rate: 100"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="SupportsQoSRange" dataType="UInt" value="0"
-                            ElementEntry name="ItemList" dataType="Ascii" value="#.itemlist"
-                            ElementEntry name="SupportsOutOfBandSnapshots" dataType="UInt" value="0"
-                            ElementEntry name="AcceptingConsumerStatus" dataType="UInt" value="0"
-                        ElementListEnd
-                    FilterEntryEnd
-                    FilterEntry action="Set" filterId="2 dataType="ElementList"
-                        ElementList
-                            ElementEntry name="ServiceState" dataType="UInt" value="1"
-                            ElementEntry name="AcceptingRequests" dataType="UInt" value="1"
-                        ElementListEnd
-                    FilterEntryEnd
-                FilterListEnd
-            MapEntryEnd
-        MapEnd
-    PayloadEnd
-RefreshMsgEnd
-
-18:13:44.874 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:45.845 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-18:13:45.846 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:45.859 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:45.861 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
-18:13:45.874 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    solicited
-    RefreshComplete
-    state="Open / Ok / None / 'Refresh Completed'"
-    itemGroup="00 00"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="3" name="DSPLY_NAME" dataType="Rmtes" value="/EUR="
-            FieldEntry fid="15" name="CURRENCY" dataType="Enum" value="840"
-            FieldEntry fid="21" name="HST_CLOSE" dataType="Real" value="39.0"
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.9"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="9.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
-        FieldListEnd
-    PayloadEnd
-RefreshMsgEnd
-
-18:13:45.876 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:46.847 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:46.848 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:46.858 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:46.859 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.91"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="10.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:46.859 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:47.849 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:47.849 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:47.851 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:47.862 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.92"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.95"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="11.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="20.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:47.870 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:48.852 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:48.852 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:48.863 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:48.864 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.93"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.96"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="12.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="21.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:48.864 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:49.854 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:49.854 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:49.857 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:49.865 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.94"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.97"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="13.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="22.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:49.867 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:50.857 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:50.857 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:50.859 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:50.869 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.95"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.98"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="14.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="23.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:50.870 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:51.859 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:51.860 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:51.862 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:51.870 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.96"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.99"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="15.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="24.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:51.872 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:52.862 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:52.862 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:52.874 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:52.874 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.97"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.0"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="16.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="25.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:52.875 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:53.864 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:53.864 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:53.876 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:53.876 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.98"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.01"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="17.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="26.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:53.883 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:54.865 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:54.866 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:54.877 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:54.878 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.99"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.02"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="18.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="27.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:54.883 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:55.868 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:55.869 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:55.878 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:55.882 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.0"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.03"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="19.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="28.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:55.882 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:56.871 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:56.873 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:56.884 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:56.885 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.01"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.04"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="20.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="29.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:56.889 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:57.874 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:57.874 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:57.888 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:57.889 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.02"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.05"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="21.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="30.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:57.890 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:58.877 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:58.877 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:58.888 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:58.888 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.03"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.06"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="22.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="31.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:58.889 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:13:59.878 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:13:59.879 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:13:59.881 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:13:59.892 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.04"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.07"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="23.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="32.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:13:59.898 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:00.880 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:00.881 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:00.893 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:00.894 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.05"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.08"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="24.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="33.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:00.897 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:01.882 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:01.883 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:01.896 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:01.897 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.06"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.09"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="25.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="34.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:01.897 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:02.886 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:02.886 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:02.897 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:02.898 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.07"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.1"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="26.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="35.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:02.898 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:03.888 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:03.888 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:03.891 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:03.900 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.08"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.11"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="27.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="36.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:03.907 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:04.891 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:04.892 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:04.894 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:04.905 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.09"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.12"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="28.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="37.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:04.909 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:05.893 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:05.894 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:05.904 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:05.905 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.1"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.13"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="29.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="38.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:05.906 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:06.895 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:06.896 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:06.898 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:06.908 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.11"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.14"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="30.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="39.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:06.909 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:07.898 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:07.899 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:07.912 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:07.914 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.12"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.15"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="31.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="40.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:07.916 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:08.902 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:08.902 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:08.918 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:08.919 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.13"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.16"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="32.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="41.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:08.923 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:09.905 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:09.908 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:09.918 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:09.923 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.14"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.17"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="33.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="42.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:09.925 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:10.908 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:10.908 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:10.910 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:10.921 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.15"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.18"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="34.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="43.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:10.922 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:11.910 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:11.911 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:11.927 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:11.928 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.16"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.19"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="35.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="44.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:11.930 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:12.913 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:12.914 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:12.915 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:12.926 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.17"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.2"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="36.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="45.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:12.934 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:13.917 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:13.918 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:13.931 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:13.934 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.18"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.21"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="37.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="46.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:13.935 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:14.922 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:14.923 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:14.934 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:14.939 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.19"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.22"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="38.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="47.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:14.940 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:15.923 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:15.926 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:15.929 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:15.940 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.2"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.23"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="39.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="48.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-18:14:15.944 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-18:14:16.928 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:16.930 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:16.943 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:16.944 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:19.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+15:11:20.726 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:20.726 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:20.729 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:20.739 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1582,12 +800,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:16.944 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:20.740 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:17.931 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:17.932 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:17.934 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:17.944 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:21.729 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:21.730 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:21.747 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:21.748 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1604,12 +822,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:17.945 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:21.754 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:18.936 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:18.938 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:18.952 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:18.953 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:22.732 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:22.733 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:22.748 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:22.749 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1626,12 +844,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:18.958 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:22.749 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:19.939 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:19.940 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:19.951 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:19.952 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:23.734 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:23.735 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:23.747 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:23.748 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1648,12 +866,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:19.952 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:23.749 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:20.943 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:20.945 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:20.950 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:20.961 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:24.734 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:24.735 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:24.747 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:24.748 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1670,12 +888,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:20.961 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:24.755 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:21.945 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:21.947 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:21.960 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:21.961 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:25.736 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:25.737 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:25.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:25.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1692,12 +910,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:21.961 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:25.749 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:22.949 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:22.950 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:22.953 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:22.961 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:26.738 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:26.739 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:26.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:26.755 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1714,12 +932,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:22.962 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:26.756 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:23.952 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:23.955 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:23.960 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:23.968 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:27.740 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:27.741 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:27.756 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:27.757 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1736,12 +954,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:23.970 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:27.757 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:24.955 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:24.955 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:24.966 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:24.967 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:28.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:28.743 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:28.754 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:28.757 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1758,12 +976,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:24.967 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:28.757 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:25.959 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:25.961 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:25.969 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:25.974 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:29.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:29.742 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:29.744 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:29.756 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1780,12 +998,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:25.974 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:29.756 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:26.961 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:26.964 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:26.969 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:26.976 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:30.744 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:30.745 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:30.761 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:30.762 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1802,12 +1020,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:26.978 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:30.762 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:27.965 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:27.965 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:27.979 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:27.980 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:31.747 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:31.748 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:31.763 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:31.764 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1824,12 +1042,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:27.980 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:31.771 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:28.967 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:28.968 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:28.980 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:28.981 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:32.748 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:32.749 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:32.753 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:32.765 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1846,12 +1064,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:28.981 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:32.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:29.972 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:29.974 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:29.982 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:29.982 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:33.750 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:33.750 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:33.763 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:33.763 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1868,12 +1086,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:29.988 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:33.764 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:30.974 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:30.977 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:30.990 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:30.991 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:34.750 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:34.751 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:34.764 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:34.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1890,12 +1108,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:30.991 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:34.773 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:31.977 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:31.978 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:31.988 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:31.992 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:35.751 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:35.751 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:35.762 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:35.763 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1912,12 +1130,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:31.993 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:35.763 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:32.982 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:32.983 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:32.995 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:32.996 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:36.751 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:36.752 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:36.764 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:36.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1934,12 +1152,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:32.997 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:36.773 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:33.985 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:33.987 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:33.998 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:34.002 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:37.752 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:37.754 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:37.758 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:37.759 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1956,12 +1174,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:34.003 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:37.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:34.988 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:34.991 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:35.002 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:35.003 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:38.753 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:38.754 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:38.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:38.774 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -1978,12 +1196,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:35.003 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:38.775 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:35.993 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:35.995 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:36.010 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:36.011 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:39.754 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:39.755 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:39.767 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:39.769 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2000,12 +1218,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:36.015 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:39.777 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:36.995 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:36.998 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:37.014 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:37.017 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:40.756 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:40.757 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:40.768 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:40.769 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2022,12 +1240,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:37.023 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:40.769 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:37.998 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:38.001 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:38.006 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:38.014 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:41.758 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:41.758 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:41.769 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:41.777 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2044,12 +1262,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:38.018 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:41.777 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:39.003 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:39.005 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:39.009 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:39.016 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:42.758 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:42.759 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:42.769 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:42.770 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2066,12 +1284,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:39.016 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:42.770 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:40.004 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:40.005 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:40.007 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:40.020 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:43.761 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:43.762 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:43.767 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:43.775 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2088,12 +1306,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:40.022 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:43.776 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:41.008 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:41.010 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:41.025 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:41.026 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:44.761 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:44.762 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:44.768 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:44.778 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2110,12 +1328,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:41.026 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:44.779 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:42.010 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:42.012 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:42.018 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:42.021 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:45.764 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:45.765 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:45.779 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:45.780 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2132,12 +1350,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:42.025 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:45.787 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:43.012 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:43.013 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:43.029 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:43.031 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:46.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:46.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:46.780 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:46.780 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2154,12 +1372,12 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:43.031 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:46.781 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:44.015 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-18:14:44.016 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:44.019 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:44.030 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+15:11:47.768 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+15:11:47.769 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:47.782 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:47.788 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -2176,418 +1394,10 @@ UpdateMsgEnd
     PayloadEnd
 UpdateMsgEnd
 
-18:14:44.032 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:47.795 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-18:14:44.861 [main] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-18:14:44.861 [main] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-18:14:44.863 [main] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Closed / Suspect / None / 'Login stream was closed.'
-18:14:44.868 [main] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:38.930 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
-11:56:42.319 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
-11:56:42.320 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
-11:56:42.321 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-11:56:42.322 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
-11:56:42.325 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
-11:56:42.326 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
-11:56:42.326 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
-11:56:42.327 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
-    streamId="1"
-    domain="Login Domain"
-    solicited
-    RefreshComplete
-    state="Open / Ok / None / 'Login accepted'"
-    itemGroup="00 00"
-    name="U8004042"
-    nameType="1"
-    Attrib dataType="ElementList"
-        ElementList
-        ElementListEnd
-    AttribEnd
-RefreshMsgEnd
-
-11:56:42.328 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:42.330 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-11:56:42.334 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: <not set>
-11:56:42.334 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
-11:56:42.335 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / ''
-11:56:42.338 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
-    streamId="5"
-    domain="Directory Domain"
-    solicited
-    RefreshComplete
-    state="Open / Ok / None / ''"
-    itemGroup="00 00"
-    filter="0"
-    Payload dataType="Map"
-        Map
-            MapEntry action="Add" key dataType="UInt" value="1" dataType="FilterList"
-                FilterList
-                    FilterEntry action="Set" filterId="1 dataType="ElementList"
-                        ElementList
-                            ElementEntry name="Name" dataType="Ascii" value="ELEKTRON_DD"
-                            ElementEntry name="Vendor" dataType="Ascii" value="company name"
-                            ElementEntry name="IsSource" dataType="UInt" value="0"
-                            ElementEntry name="Capabilities" dataType="OmmArray"
-                                OmmArray with entries of dataType="UInt"
-                                    value=""6"
-                                    value=""7"
-                                    value=""8"
-                                    value=""5"
-                                    value=""200"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="DictionariesProvided" dataType="OmmArray"
-                                OmmArray with entries of dataType="Ascii"
-                                    value=""RWFFld"
-                                    value=""RWFEnum"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="DictionariesUsed" dataType="OmmArray"
-                                OmmArray with entries of dataType="Ascii"
-                                    value=""RWFFld"
-                                    value=""RWFEnum"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="QoS" dataType="OmmArray"
-                                OmmArray with entries of dataType="Qos"
-                                    value=""RealTime/TickByTick"
-                                    value=""Timeliness: 100/Rate: 100"
-                                OmmArrayEnd
-                            ElementEntryEnd
-                            ElementEntry name="SupportsQoSRange" dataType="UInt" value="0"
-                            ElementEntry name="ItemList" dataType="Ascii" value="#.itemlist"
-                            ElementEntry name="SupportsOutOfBandSnapshots" dataType="UInt" value="0"
-                            ElementEntry name="AcceptingConsumerStatus" dataType="UInt" value="0"
-                        ElementListEnd
-                    FilterEntryEnd
-                    FilterEntry action="Set" filterId="2 dataType="ElementList"
-                        ElementList
-                            ElementEntry name="ServiceState" dataType="UInt" value="1"
-                            ElementEntry name="AcceptingRequests" dataType="UInt" value="1"
-                        ElementListEnd
-                    FilterEntryEnd
-                FilterListEnd
-            MapEntryEnd
-        MapEnd
-    PayloadEnd
-RefreshMsgEnd
-
-11:56:42.339 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:43.316 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-11:56:43.316 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:43.318 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:43.321 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
-11:56:43.323 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    solicited
-    RefreshComplete
-    state="Open / Ok / None / 'Refresh Completed'"
-    itemGroup="00 00"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="3" name="DSPLY_NAME" dataType="Rmtes" value="/EUR="
-            FieldEntry fid="15" name="CURRENCY" dataType="Enum" value="840"
-            FieldEntry fid="21" name="HST_CLOSE" dataType="Real" value="39.0"
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.9"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="9.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
-        FieldListEnd
-    PayloadEnd
-RefreshMsgEnd
-
-11:56:43.324 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:44.319 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:44.319 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:44.325 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:44.326 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.91"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="10.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:44.326 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:45.323 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:45.324 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:45.335 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:45.336 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.92"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.95"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="11.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="20.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:45.337 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:46.325 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:46.326 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:46.332 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:46.334 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.93"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.96"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="12.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="21.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:46.334 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:47.328 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:47.329 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:47.335 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:47.335 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.94"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.97"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="13.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="22.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:47.340 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:48.330 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:48.332 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:48.342 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:48.344 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.95"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.98"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="14.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="23.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:48.345 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:49.332 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:49.333 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:49.336 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:49.337 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.96"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="39.99"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="15.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="24.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:49.342 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:50.336 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:50.337 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:50.350 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:50.352 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.97"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.0"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="16.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="25.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:50.352 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:51.339 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:51.341 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:51.355 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:51.355 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.98"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.01"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="17.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="26.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:51.357 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:52.343 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:52.343 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:52.346 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:52.354 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.99"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.02"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="18.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="27.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:52.359 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:53.345 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:53.345 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:53.354 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:53.355 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.0"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.03"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="19.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="28.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:53.355 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:54.349 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:54.350 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:54.366 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:54.367 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.01"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.04"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="20.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="29.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:54.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:55.353 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:55.354 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:55.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:55.370 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.02"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.05"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="21.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="30.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:55.377 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
-
-11:56:56.356 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-11:56:56.356 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-11:56:56.367 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-11:56:56.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
-    streamId="6"
-    domain="MarketPrice Domain"
-    updateTypeNum="0"
-    name="/EUR="
-    serviceId="1"
-    serviceName="ELEKTRON_DD"
-    Payload dataType="FieldList"
-        FieldList
-            FieldEntry fid="22" name="BID" dataType="Real" value="40.03"
-            FieldEntry fid="25" name="ASK" dataType="Real" value="40.06"
-            FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="22.0"
-            FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="31.0"
-        FieldListEnd
-    PayloadEnd
-UpdateMsgEnd
-
-11:56:56.368 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+15:11:48.696 [main] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+15:11:48.696 [main] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+15:11:48.702 [main] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Closed / Suspect / None / 'Login stream was closed.'
+15:11:48.709 [main] INFO  com.refinitiv.ema.consumer.AppClient - 
 
