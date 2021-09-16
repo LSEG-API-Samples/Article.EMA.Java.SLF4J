@@ -1,9 +1,9 @@
 # How to integrate Enterprise Message API Java with Log4j Logging Framework using Maven
 ## Overview
 
-**Update**: December 2020
+**Update**: September 2021
  
-[Enterprise Message API - Java Edition (EMA API)](https://developers.refinitiv.com/elektron/elektron-sdk-java) (formerly known as Elektron Message API) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Refinitiv Real-Time SDK (RTSDK) Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate your EMA Java 1.3.x application with Log4j in a Maven way.
+[Enterprise Message API - Java Edition (EMA API)](https://developers.refinitiv.com/en/api-catalog/refinitiv-real-time-opnsrc/rt-sdk-java) (formerly known as Elektron Message API) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Refinitiv Real-Time SDK (RTSDK) Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate your EMA Java 1.3.x application with Log4j in a Maven way.
 
 ## IMPORTANT Rebranding Announcement: 
 
@@ -21,9 +21,9 @@ The Refinitiv Real-Time SDK Java is now available in [Maven Central Repository](
 </dependency>
 
 <dependency>
-    <groupId>com.refinitiv.eta.valueadd</groupId>
-    <artifactId>etaValueAdd</artifactId>
-    <version>3.6.0.0</version>
+  <groupId>com.refinitiv.eta</groupId>
+  <artifactId>eta</artifactId>
+  <version>3.6.0.0</version>
 </dependency>
 
 <dependency>
@@ -448,11 +448,11 @@ The EMA Java API is implemented on top of SLF4J API as a facade for logging util
 
 ## References
 For further details, please check out the following resources:
-* [Refinitiv Real-time Java API page](https://developers.refinitiv.com/en/api-catalog/elektron/elektron-sdk-java) on the [Refinitiv Developer Community](https://developers.refinitiv.com/) web site.
+* [Refinitiv Real-time Java API page](https://developers.refinitiv.com/en/api-catalog/refinitiv-real-time-opnsrc/rt-sdk-java) on the [Refinitiv Developer Community](https://developers.refinitiv.com/) web site.
 * [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) web site.
 * [Apache Log4j 2](https://logging.apache.org/log4j/2.x/) web site.
 For further details, please check out the following resources:
-* [Enterprise Message API Java Quick Start](https://developers.refinitiv.com/en/api-catalog/elektron/elektron-sdk-java/quick-start)
+* [Enterprise Message API Java Quick Start](https://developers.refinitiv.com/en/api-catalog/refinitiv-real-time-opnsrc/rt-sdk-java/quick-start)
 * [Developer Webinar: Introduction to Enterprise App Creation With Open-Source Enterprise Message API](https://www.youtube.com/watch?v=2pyhYmgHxlU)
 
 For any question related to this article or Enterprise Message API page, please use the Developer Community [Q&A Forum](https://community.developers.refinitiv.com/spaces/72/index.html).
