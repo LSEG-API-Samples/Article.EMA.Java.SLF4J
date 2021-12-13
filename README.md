@@ -1,7 +1,9 @@
 # How to integrate Enterprise Message API Java with Log4j Logging Framework using Maven
 ## Overview
 
-**Update**: September 2021
+**Update**: December 2021
+
+**As of December 2021**: There is a new serious vulnerability was identified impacting Apache Log4j utility ([CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)). The issue is fixed in Apache Log4j version **2.15**. Please see more detail from the [Apache Log4j Security Vulnerabilities](https://logging.apache.org/log4j/2.x/security.html) page.
  
 [Enterprise Message API - Java Edition (EMA API)](https://developers.refinitiv.com/en/api-catalog/refinitiv-real-time-opnsrc/rt-sdk-java) (formerly known as Elektron Message API) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. The [previous article](https://developers.refinitiv.com/article/how-integrate-elektron-message-api-java-edition-log4j-logging-framework) shows how to integrate Log4j with EMA Java application in a manual way which is suitable for earlier versions of EMA Java API. However, the API has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Refinitiv Real-Time SDK (RTSDK) Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate your EMA Java 1.3.x application with Log4j in a Maven way.
 
@@ -77,24 +79,24 @@ The above dependencies can be configured in the pom.xml file.
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-api</artifactId>
-        <version>2.14.0</version>
+        <version>2.15.0</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.14.0</version>
+        <version>2.15.0</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j-impl</artifactId>
-        <version>2.14.0</version>
+        <version>2.15.0</version>
     </dependency>
 </dependencies>
 ```
 
-Note: This article is based on Log4j version 2.14.0. You can change the library version in ```<version>``` configuration to match your project.
+Note: This article is based on Log4j version 2.15.0. You can change the library version in ```<version>``` configuration to match your project.
 
 ### Example Log4j 2 configurations file
 
