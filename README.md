@@ -16,27 +16,24 @@ Starting with version RTSDK 2.0.0.L1 (same as EMA/ETA 3.6.0.L1), there are names
 The Refinitiv Real-Time SDK Java is now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml file to let Maven automatically download the [EMA Java library](https://search.maven.org/artifact/com.refinitiv.ema/ema/) and [ETA Java library](https://search.maven.org/artifact/com.refinitiv.eta/eta) for the application.
 
 ```
-<dependency>
-    <groupId>com.refinitiv.ema</groupId>
-    <artifactId>ema</artifactId>
-    <version>3.6.0.0</version>
-</dependency>
+<properties>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <rtsdk.version>3.6.3.1</rtsdk.version>
+</properties>
 
-<dependency>
-  <groupId>com.refinitiv.eta</groupId>
-  <artifactId>eta</artifactId>
-  <version>3.6.0.0</version>
-</dependency>
-
-<dependency>
-  <groupId>com.refinitiv.eta.valueadd</groupId>
-  <artifactId>etaValueAdd</artifactId>
-  <version>3.6.0.0</version>
-</dependency>
+<dependencies>
+    <dependency>
+        <groupId>com.refinitiv.ema</groupId>
+        <artifactId>ema</artifactId>
+        <version>${rtsdk.version}</version>
+    </dependency>
+</dependencies>
 ``` 
 
 Note: 
-- This article is based on EMA Java version 3.6.0 L1 (RTSDK Java Edition 2.0.0 L1). You can change the library version in ```<version>``` configuration to match your project.
+- This article is based on EMA Java version 3.6.3 L2 (RTSDK Java Edition 2.0.3 L2). You can change the library version in ```<version>``` configuration to match your project.
+- Please notice that I use the  [Maven variables](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html#project-interpolation-and-variables) ```<rtsdk.version>3.6.1.0</rtsdk.version>``` to set the library version in a single place in the pom.xml file.
 
 The [ETA Java ValueAdd](https://search.maven.org/search?q=a:etaValueAdd) configuration automatically resolves the API dependencies by downloading the following required libraries for the application.
 
@@ -55,7 +52,7 @@ Developers can configure the ETA Java ValueAdd Java dependency declaration in th
 <dependency>
     <groupId>com.refinitiv.eta.valueadd</groupId>
     <artifactId>etaValueAdd</artifactId>
-    <version>3.6.0.0</version>
+    <version>${rtsdk.version}</version>
     <exclusions>
         <exclusion>
             <groupId>org.slf4j</groupId>
@@ -64,6 +61,8 @@ Developers can configure the ETA Java ValueAdd Java dependency declaration in th
     </exclusions>
 </dependency>
 ```
+
+
 
 Note: If you are using the RTSDK 1.5.0 and earlier versions, the ```exclusions``` must be declared in EMA library ```<dependency>``` node.
 
@@ -75,23 +74,30 @@ The Log4j 2 framework requires the following dependencies to integrate with SLF4
 The above dependencies can be configured in the pom.xml file.
 
 ```
+<properties>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <rtsdk.version>3.6.3.1</rtsdk.version>
+    <log4j.version>2.15.0</log4j.version>
+</properties>
+
 <dependencies>
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-api</artifactId>
-        <version>2.15.0</version>
+        <version>${log4j.version}</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.15.0</version>
+        <version>${log4j.version}</version>
     </dependency>
 
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j-impl</artifactId>
-        <version>2.15.0</version>
+        <version>${log4j.version}</version>
     </dependency>
 </dependencies>
 ```
@@ -199,41 +205,41 @@ This example requires the following dependencies software and libraries.
 3. Internet connection. 
 
 *Note:* 
-The RTSDK Java version 2.0.0 L1 (EMA Java 3.6.0) supports Oracle JDK versions 8, 11, and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
+The RTSDK Java version 2.0.3 L2 (EMA Java 3.6.3 L2) supports Oracle JDK versions 8, 11, and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
 
 ### Running the demo applications
 
 1. Unzip or download the project into a directory of your choice. 
 3. Enter the *ema_example* project folder.
-2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-dependencies *rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
+2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-dependencies *rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
 3. The applications jar file will be available in the project's *target* folder.
 5. Then you can run IProvider_App demo with the following command:
     
     *Windows Command Prompt*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
     ```
     *Windows Powershell*
     ```
-    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.provider.IProvider_App
+    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.provider.IProvider_App
     ```
     *Linux*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
     ```
 6. To run Consumer_App demo, open another console for ema_example folder and run the following command:
 
     *Windows*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
     ```
     *Windows Powershell*
     ```
-    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.consumer.Consumer_App
+    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.consumer.Consumer_App
     ```
     *Linux*
     ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk200_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
+    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
     ```
 
 ### Demo Example Results

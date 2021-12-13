@@ -2127,3 +2127,696 @@ loggerMsgEnd
 loggerMsgEnd
 
 
+2021-12-13 15:35:42,704 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 10000
+	 serviceCountHint: 10000
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 500
+	 maxDispatchCountApiThread: 500
+	 maxDispatchCountUserThread: 500
+	 userDispatch: 0
+	 configuredName: Provider_1
+	 instanceName: Provider_1_1
+	 xmlTraceEnable: false
+	 defaultConverterServiceId: 1
+	 jsonExpandedEnumFields: false
+	 catchUnknownJsonKeys: false
+	 catchUnknownJsonFids: true
+	 closeChannelFromFailure: true
+	 globalConfig.reactorChannelEventPoolLimit: -1
+	 globalConfig.reactorMsgEventPoolLimit: -1
+	 globalConfig.workerEventPoolLimit: -1
+	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
+	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
+	 defaultServiceName: 14002
+	 acceptMessageWithoutAcceptingRequests: false
+	 acceptDirMessageWithoutMinFilters: false
+	 acceptMessageWithoutBeingLogin: false
+	 acceptMessageSameKeyButDiffStream: false
+	 acceptMessageThatChangesService: false
+	 acceptMessageWithoutQosInRange: false
+	 enforceAckIDValidation: false
+	 operationModel: 1
+	 directoryAdminControl: 1
+	 dictionaryAdminControl: 1
+	 refreshFirstRequired: true
+	 maxFieldDictFragmentSize: 8192
+	 maxEnumTypeFragmentSize: 12800
+loggerMsgEnd
+
+
+2021-12-13 15:35:43,310 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Successfully open Selector.
+loggerMsgEnd
+
+
+2021-12-13 15:35:44,110 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Successfully created Reactor.
+loggerMsgEnd
+
+
+2021-12-13 15:35:44,238 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Created ItemCallbackClient
+loggerMsgEnd
+
+
+2021-12-13 15:35:44,364 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Provider bound on port = 14022.
+loggerMsgEnd
+
+
+2021-12-13 15:35:46,434 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Info
+    Text:    Received ChannelUp event on ClientHandle 1
+	Instance Name Provider_1_1
+	Component Version ads3.5.3.L1.linux.rrg 64-bit
+loggerMsgEnd
+
+
+2021-12-13 15:35:46,434 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Trace
+    Text:    Received ChannelReady event on client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:46,441 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback()   Class name-com.refinitiv.ema.access.LoginHandler   Message-loggerMsg
+    ClientName: LoginHandler
+    Severity: Trace
+    Text:    Received login request message.
+	Stream Id 1
+	Instance Name Provider_1_1
+	Client handle 1
+loggerMsgEnd
+
+
+2021-12-13 15:35:46,442 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 1 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2021-12-13 15:35:47,465 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback()   Class name-com.refinitiv.ema.access.DirectoryHandler   Message-loggerMsg
+    ClientName: DirectoryHandler
+    Severity: Trace
+    Text:    Received directory request message.
+	Stream Id 2
+	Client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:47,465 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 2 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,060 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 100000
+	 serviceCountHint: 513
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 0
+	 maxDispatchCountApiThread: 100
+	 maxDispatchCountUserThread: 100
+	 userDispatch: 1
+	 configuredName: Consumer_1
+	 instanceName: Consumer_1_1
+	 xmlTraceEnable: false
+	 defaultConverterServiceId: 1
+	 jsonExpandedEnumFields: false
+	 catchUnknownJsonKeys: false
+	 catchUnknownJsonFids: true
+	 closeChannelFromFailure: true
+	 globalConfig.reactorChannelEventPoolLimit: -1
+	 globalConfig.reactorMsgEventPoolLimit: -1
+	 globalConfig.workerEventPoolLimit: -1
+	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
+	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
+	 obeyOpenWindow: 1
+	 postAckTimeout: 15000
+	 maxOutstandingPosts: 100000
+	 userDispatch: 1
+	 reconnectAttemptLimit: -1
+	 reconnectMinDelay: 1000
+	 reconnectMaxDelay: 5000
+	 msgKeyInUpdates: true
+	 directoryRequestTimeOut: 45000
+	 dictionaryRequestTimeOut: 45000
+	 reissueTokenAttemptLimit: -1
+	 reissueTokenAttemptInterval: 5000
+	 restRequestTimeOut: 45000
+	 tokenReissueRatio: 0.8
+	 loginRequestTimeOut: 45000
+	 wsProtocols: tr_json2, rssl.rwf, rssl.json.v2
+	 wsMaxMsgSize: 61440
+	 maxFragmentSize: 6144
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,793 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Successfully open Selector.
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,808 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Successfully created Reactor.
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,840 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    Created LoginCallbackClient
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,840 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    RDMLogin request message was populated with this info: 
+	LoginRequest: 
+	streamId: 1
+	userName: U8004042
+	streaming: true
+	nameType: 1
+	applicationId: 256
+	applicationName: ema
+	position: 192.168.68.115/WIN-V793K3HCLOL
+
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,840 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: DictionaryCallbackClient
+    Severity: Trace
+    Text:    Created DictionaryCallbackClient
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,924 LEVEL-TRACE Thread-[main]  Method-loadDictionaryFromFile()   Class name-com.refinitiv.ema.access.DictionaryCallbackClient   Message-loggerMsg
+    ClientName: DictionaryCallbackClient
+    Severity: Trace
+    Text:    Successfully loaded local dictionaries: 
+	RDMFieldDictionary file named ./etc/RDMFieldDictionary
+	EnumTypeDef file named ./etc/enumtype.def
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,924 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    Created DirectoryCallbackClient
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,924 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    RDMDirectoryRequest message was populated with Filter(s)
+	RDM_DIRECTORY_SERVICE_INFO_FILTER
+	RDM_DIRECTORY_SERVICE_STATE_FILTER
+	RDM_DIRECTORY_SERVICE_GROUP_FILTER
+	RDM_DIRECTORY_SERVICE_LOAD_FILTER
+	RDM_DIRECTORY_SERVICE_DATA_FILTER
+	RDM_DIRECTORY_SERVICE_LINK_FILTER
+	requesting all services
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,924 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Created ItemCallbackClient
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,988 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Created ChannelCallbackClient
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,991 LEVEL-TRACE Thread-[main]  Method-socketProxyConfiguration()   Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Successfully set a tunneling 
+	 Channel name Channel_1
+	Instance Name Consumer_1_1
+	with the following tunneling configurations:
+	TunnelingInfo
+			tunnelingType: None
+			HTTPproxy: false
+			HTTPproxyHostName: null
+			HTTPproxyPort: 0
+			objectName: 
+			KeystoreType: JKS
+			KeystoreFile: null
+			KeystorePasswd: null
+			SecurityProtocol: TLS
+			SecurityProvider: SunJSSE
+			KeyManagerAlgorithm: SunX509
+			TrustManagerAlgorithm: PKIX
+
+	CredentialsInfo
+			HTTPproxyUsername: null
+			HTTPproxyPasswd: null
+			HTTPproxyDomain: null
+			HTTPproxyLocalHostname: null
+			HTTPproxyKRB5configFile: null
+	
+loggerMsgEnd
+
+
+2021-12-13 15:35:50,991 LEVEL-TRACE Thread-[main]  Method-initializeReactor()   Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Attempt to connect using 
+	1] SOCKET
+	Channel name Channel_1
+	Instance Name Consumer_1_1
+	RsslReactor @7a67e3c6
+	InterfaceName 
+	hostName localhost
+	port 14022
+	CompressionType None
+	tcpNodelay true
+	reconnectAttemptLimit -1
+	reconnectMinDelay 1000 msec
+	reconnectMaxDelay 5000 msec
+	guaranteedOutputBuffers 5000
+	numInputBuffers 10
+	sysRecvBufSize 65535
+	sysSendBufSize 65535
+	connectionPingTimeout 30000 msec
+	initializationTimeout 5 sec
+	
+loggerMsgEnd
+
+
+2021-12-13 15:35:51,007 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Received ChannelOpened on channel Channel_1
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:51,027 LEVEL-TRACE Thread-[main]  Method-initializeReactor()   Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Successfully created a Reactor and Channel(s)
+	 Channel name(s) 
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:51,545 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Info
+    Text:    Received ChannelUp event on channel Channel_1
+	Instance Name Consumer_1_1
+	Component Version ETA Java Edition|EMA Java Edition
+loggerMsgEnd
+
+
+2021-12-13 15:35:52,533 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Info
+    Text:    Received ChannelUp event on ClientHandle 2
+	Instance Name Provider_1_1
+	Component Version ETA Java Edition|EMA Java Edition
+loggerMsgEnd
+
+
+2021-12-13 15:35:52,533 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Trace
+    Text:    Received ChannelReady event on client handle 2
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:52,533 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback()   Class name-com.refinitiv.ema.access.LoginHandler   Message-loggerMsg
+    ClientName: LoginHandler
+    Severity: Trace
+    Text:    Received login request message.
+	Stream Id 1
+	Instance Name Provider_1_1
+	Client handle 2
+loggerMsgEnd
+
+
+2021-12-13 15:35:52,533 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 3 to ItemInfoMap
+	Client handle 2
+loggerMsgEnd
+
+
+2021-12-13 15:35:52,533 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback()   Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    RDMLogin stream was open with refresh message
+	LoginRefresh: 
+	streamId: 1
+	name: U8004042
+	nameType: 1
+	State: Open/Ok/None - text: "Login accepted"
+	isSolicited: true
+
+	
+loggerMsgEnd
+
+
+2021-12-13 15:35:53,551 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback()   Class name-com.refinitiv.ema.access.DirectoryHandler   Message-loggerMsg
+    ClientName: DirectoryHandler
+    Severity: Trace
+    Text:    Received directory request message.
+	Stream Id 2
+	Client handle 2
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:53,551 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 4 to ItemInfoMap
+	Client handle 2
+loggerMsgEnd
+
+
+2021-12-13 15:35:53,551 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback()   Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    RDMDirectory stream state was open with refresh message 
+	State: State: Open/Ok/None - text: "null"
+loggerMsgEnd
+
+
+2021-12-13 15:35:53,551 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Received ChannelReady event on channel Channel_1
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:53,568 LEVEL-TRACE Thread-[main]  Method-addToItemMap()   Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Added Item 1 to item map
+	Instance name Consumer_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:53,569 LEVEL-TRACE Thread-[main]  Method-addToMap()   Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Added Item 2 of StreamId 5 to item map
+	Instance name Consumer_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:53,571 LEVEL-TRACE Thread-[main]  Method-addToMap()   Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Added Item 3 of StreamId 6 to item map
+	Instance name Consumer_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:54,553 LEVEL-TRACE Thread-[main]  Method-logReceivedMessage()   Class name-com.refinitiv.ema.access.MarketItemHandler   Message-loggerMsg
+    ClientName: MarketItemHandler
+    Severity: Trace
+    Text:    Received request message.
+	Stream Id 3
+	Client handle 2
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2021-12-13 15:35:54,553 LEVEL-TRACE Thread-[main]  Method-addItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 5 to ItemInfoMap
+	Client handle 2
+loggerMsgEnd
+
+
+2021-12-13 15:35:54,553 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received RefreshMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:35:55,557 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:35:56,559 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:35:57,570 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:35:58,578 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:35:59,581 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:00,590 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:01,593 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:02,607 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:03,618 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:04,622 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:05,636 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:06,651 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:07,662 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:08,679 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:09,680 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:10,688 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:11,704 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:12,715 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:13,727 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:14,741 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:15,742 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:16,751 LEVEL-TRACE Thread-[main]  Method-submit()   Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2021-12-13 15:36:17,752 LEVEL-ERROR Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Warning
+    Text:    Received ChannelDown event on client handle 2
+	Instance Name Provider_1_1
+	RsslReactor @5adb0db3
+	RsslChannel @3f270e0a
+	Error Id 0
+	Internal sysError 0
+	Error Location null
+	Error text An existing connection was forcibly closed by the remote host
+loggerMsgEnd
+
+
+2021-12-13 15:36:17,753 LEVEL-TRACE Thread-[main]  Method-removeItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 3 from ItemInfoMap
+	Client handle 2
+loggerMsgEnd
+
+
+2021-12-13 15:36:17,753 LEVEL-TRACE Thread-[main]  Method-removeItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 4 from ItemInfoMap
+	Client handle 2
+loggerMsgEnd
+
+
+2021-12-13 15:36:17,754 LEVEL-TRACE Thread-[main]  Method-removeItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 5 from ItemInfoMap
+	Client handle 2
+loggerMsgEnd
+
+
+2021-12-13 15:36:17,755 LEVEL-ERROR Thread-[main]  Method-reactorChannelEventCallback()   Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Warning
+    Text:    Received ChannelDown event on client handle 1
+	Instance Name Provider_1_1
+	RsslReactor @5adb0db3
+	RsslChannel @70f59913
+	Error Id 0
+	Internal sysError 0
+	Error Location null
+	Error text Reactor shutting down...
+loggerMsgEnd
+
+
+2021-12-13 15:36:17,755 LEVEL-TRACE Thread-[main]  Method-removeItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 1 from ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2021-12-13 15:36:17,758 LEVEL-TRACE Thread-[main]  Method-removeItemInfo()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 2 from ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
