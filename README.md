@@ -1,7 +1,7 @@
 # How to integrate Enterprise Message API Java with Log4j Logging Framework using Maven
 ## Overview
 
-**Update**: December 2021
+**Update**: January 2022
 
 **As of December 2021**: There are new serious vulnerabilities that were identified impacting the Apache Log4j utility. Please update the library to the latest version. You can find more detail regarding the vulnerability and the fix from the [Apache Log4j Security Vulnerabilities](https://logging.apache.org/log4j/2.x/security.html) page.
  
@@ -78,7 +78,7 @@ The above dependencies can be configured in the pom.xml file.
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
     <rtsdk.version>3.6.3.1</rtsdk.version>
-    <log4j.version>2.17.0</log4j.version>
+    <log4j.version>2.17.1</log4j.version>
 </properties>
 
 <dependencies>
