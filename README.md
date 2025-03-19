@@ -5,249 +5,88 @@
 
 **As of December 2021**: There are new serious vulnerabilities that were identified impacting the Apache Log4j utility. Please update the library to the latest version. You can find more detail regarding the vulnerability and the fix from the [Apache Log4j Security Vulnerabilities](https://logging.apache.org/log4j/2.x/security.html) page.
  
-[Enterprise Message API - Java Edition (EMA API)](https://developers.lseg.com/en/api-catalog/real-time-opnsrc/rt-sdk-java) (formerly known as Elektron Message API) allows developers integrate the EMA Java application with [Apache Log4j](https://logging.apache.org/log4j/2.x/) which is a de facto standard logging framework for Java-based application at deployment time by using the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) API as a facade for logging utility. 
+The [Enterprise Message API - Java Edition (EMA API)](https://developers.lseg.com/en/api-catalog/real-time-opnsrc/rt-sdk-java) (formerly known as Elektron Message API) implements the logging mechanism with the [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) as a facade for logging utility and bind it to the [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) as a default logger. The usage of SLF4J allows developers integrate the EMA Java application with other Logging APIs like a de facto standard logging framework for Java-based application [Apache Log4j2](https://logging.apache.org/log4j/2.x/index.html) at deployment time.
 
-The EMA API Java edition has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Refinitiv Real-Time SDK (RTSDK) Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate your EMA Java 1.3.x application with Log4j in a Maven way.
+The EMA API Java edition has been mavenized to support [Apache Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) build tools since Real-Time SDK Java (formerly known as Elektron SDK) version 1.2, therefore this article will show how to integrate your EMA Java 2.x application with Log4j2 using Maven.
 
-## IMPORTANT Rebranding Announcement: 
+## Introduction to SLF4J
 
-Starting with version RTSDK 2.0.0.L1 (same as EMA/ETA 3.6.0.L1), there are namespace changes and library name changes. Please note that all interfaces remain the same as prior releases of RTSDK and Elektron SDK and will remain fully wire compatible. Along with RTSDK 2.X version, a [REBRAND.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/REBRAND.md) is published to detail impact to existing applications and how to quickly adapt to the re-branded libraries. Existing applications will continue to work indefinitely as-is.  Applications should be proactively rebranded to be able to utilize new features, security updates or fixes post 2.X release. Please see [PCN](https://myaccount.lseg.com/en/pcnpage/12072?_ga=2.103280071.632863608.1606731450-325683966.1598503157) for more details on support. 
+Let’s start with overview of SLF4J framework. [SLF4J](https://www.slf4j.org/) or Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks such as [java.util.logging](https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/package-summary.html), [logback](https://logback.qos.ch/), [log4j2](https://logging.apache.org/log4j/2.x/), etc. allowing the end user to plug in the desired logging framework at deployment time.
 
-## How to integrate EMA Java Application with Logging Framework in Maven
+## Introduction to Log4J version 2
 
-The Real-Time SDK Java is now available in [Maven Central Repository](https://search.maven.org/). You can define the following dependency in Maven's pom.xml file to let Maven automatically download the [EMA Java library](https://search.maven.org/artifact/com.refinitiv.ema/ema/) and [ETA Java library](https://search.maven.org/artifact/com.refinitiv.eta/eta) for the application.
+As part of [Apache Logging Services](https://logging.apache.org/), [Apache Log4j](https://logging.apache.org/log4j/2.x/) is a Java-based logging framework. It is versatile, industrial-grade framework that has been widely-used by developers for both open-source and enterprise projects.
 
-```
-<properties>
-    <maven.compiler.source>8</maven.compiler.source>
-    <maven.compiler.target>8</maven.compiler.target>
-    <rtsdk.version>3.6.3.1</rtsdk.version>
-</properties>
+Log4j is one of the first logging framework on Java.
 
-<dependencies>
-    <dependency>
-        <groupId>com.refinitiv.ema</groupId>
-        <artifactId>ema</artifactId>
-        <version>${rtsdk.version}</version>
-    </dependency>
-</dependencies>
-``` 
+That’s all I have to say about the logging framework.
 
-Note: 
-- This article is based on EMA Java version 3.6.3 L2 (RTSDK Java Edition 2.0.3 L2). You can change the library version in ```<version>``` configuration to match your project.
-- Please notice that I use the  [Maven variables](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html#project-interpolation-and-variables) ```<rtsdk.version>3.6.1.0</rtsdk.version>``` to set the library version in a single place in the pom.xml file.
+## <a id="prerequisite"></a>Demo Prerequisite
 
-The [ETA Java ValueAdd](https://search.maven.org/search?q=a:etaValueAdd) configuration automatically resolves the API dependencies by downloading the following required libraries for the application.
+Before I am going further, there is some prerequisite, dependencies, and libraries that the project is needed.
 
-![figure1](images/eta_dependencies.png "EMA Java Dependencies")
+### Docker Desktop Application
 
-Since RTSDK 1.5.1, The EMA uses ETA Java ValueAdd API to bind the SLF4J logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) as a default logger instead of the EMA API itself (the previous versions EMA API binds SLF4J-Java Logging API directly). The Maven automatically downloads **slf4j-api** and **slf4j-jdk14** libraries for the application. Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
-1. Configure pom.xml file's ETA Java ValueAdd dependency declaration to not load slf4j-jdk14 library.
-2. Add SLF4J-Log4j and Log4j dependencies in pom.xml file.
-3. Configure Log4j configurations file to Java classpath or JVM option.
+You can build and run each EMA Java Provider and Consumer applications manually. However, it is easier to build and run with a simple ```docker compose``` command. 
 
-### Maven pom.xml setting for EMA Java and Log4j 
+The [Docker Desktop](https://www.docker.com/products/docker-desktop/) application is required to run all projects.
 
-Developers can configure the ETA Java ValueAdd Java dependency declaration in the pom.xml file to exclude the SLF4J-JDK14 library using [Maven Dependency Exclusions](https://maven.apache.org/guides/introduction/introduction-to-optional-and-excludes-dependencies.html) feature.
+### Internet Access
 
-```
-<dependency>
-    <groupId>com.refinitiv.eta.valueadd</groupId>
-    <artifactId>etaValueAdd</artifactId>
-    <version>${rtsdk.version}</version>
-    <exclusions>
-        <exclusion>
-            <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-jdk14</artifactId>
-        </exclusion>
-    </exclusions>
-</dependency>
-```
+The EMA Java library is also available on the [Maven Central](https://central.sonatype.com/) repository.
 
+This project downloads the EMA libraries over internet to build and run applications.
 
+### Java SDK
 
-Note: If you are using the RTSDK 1.5.0 and earlier versions, the ```exclusions``` must be declared in EMA library ```<dependency>``` node.
+For the Java project, you need Java SDK version 11, 17, or 21 (either Oracle JDK or OpenJDK). Please see more detail on the [API Compatibility Matrix](https://developers.lseg.com/en/api-catalog/real-time-opnsrc/rt-sdk-java/documentation#api-compatibility-matrix) page.
 
-The Log4j 2 framework requires the following dependencies to integrate with SLF4J framework. 
-- log4j-api
-- log4j-core
-- log4j-slf4j-impl
+### Apache Maven
 
-The above dependencies can be configured in the pom.xml file.
+The Java project uses [Apache Maven](https://maven.apache.org/) as a project build automation tool. 
 
-```
-<properties>
-    <maven.compiler.source>8</maven.compiler.source>
-    <maven.compiler.target>8</maven.compiler.target>
-    <rtsdk.version>3.6.3.1</rtsdk.version>
-    <log4j.version>2.17.1</log4j.version>
-</properties>
+That covers the prerequisite of this project.
 
-<dependencies>
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-        <version>${log4j.version}</version>
-    </dependency>
+## <a id="run"></a>How to run
 
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>${log4j.version}</version>
-    </dependency>
+Now we come to running a demo project. Firstly, open the ```docker-compose.yml``` file in the *ema_example*, and edit the ```volumes``` to match your machine project logs folder path (example: ```C:\\logs```).
 
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-slf4j-impl</artifactId>
-        <version>${log4j.version}</version>
-    </dependency>
-</dependencies>
+```yml
+name: emajava_log4j
+
+services:
+  provider:
+    build:
+      dockerfile: Dockerfile-provider
+    volumes:
+      - "<Path>\\logs:/app/logs"
+  consumer:
+    build:
+      dockerfile: Dockerfile-consumer
+    volumes:
+      - "<Path>\\logs:/app/logs"
+    depends_on:
+      provider:
+        condition: service_started
 ```
 
-Note: You can change the library version in ```<version>``` configuration to match your project.
+Then, build and run the Provider and Consumer projects with Docker. Please go to the *ema_example* folder via a command prompt application and run the following [Docker Compose](https://docs.docker.com/compose/) command.
 
-### Example Log4j 2 configurations file
-
-The example of Log4j 2 configuration file for EMA Java application is the following.
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
-    <Appenders>
-        <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
-        </Console>
-        <File name="File" fileName="../logs/ema_log4j.log" immediateFlush="false" append="false">
-            <PatternLayout pattern="current date-%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n"/>
-        </File>
-    </Appenders>
-    <loggers>
-        <Logger name="com.refinitiv.ema" level="TRACE"/>
-        <root level="TRACE">
-            <appender-ref ref="Console"/>
-            <appender-ref ref="File"/>
-        </root>
-    </loggers>
-</Configuration>
+```bash
+docker compose up
 ```
 
-The above configurations example set the Log4j to print all EMA Java API ("com.refinitiv.ema" package) log messages to console and "ema_log4j.log" log file. Please find a full detail of Log4j configuration parameters in [Log4j manual page](https://logging.apache.org/log4j/2.x/manual/configuration.html).
+To stop the projects, use the following Docker Compose command inside the same folder on a command prompt.
 
-### Running the application with Log4j configuration
-
-To let the EMA Java application uses Log4j configurations file, developers can add the Log4j configurations file to the Java classpath or set the JVM option ```-Dlog4j.configurationFile``` points to the log4j2.xml file at runtime. Please note that if you do not build the application into a single-all-dependencies jar file, you need to include the Log4j 2 libraries files in the Java classpath too. 
-
-## EMA Java application and Log4j Demo
-
-This project contains the EMA Java demo examples in *ema_example* folder. The demo applications utilize Log4j to manage logs and console messages. The demo examples are the following:
-- *IProvider_App example*: OMM Interactive-Provider application. 
-- *Consumer_App example*: OMM Consumer application that connects and consumes data from IProvider_App example.
-
-*Note*: The Consumer_App demo example can be configured to connect to your local Real-Time Advanced Distribution
-Server.
-
-### Demo log4j configurations file
-
-The demo applications separate the application  logic and EMA Java API log messages to different consoles and log files. 
-- The IProvider_App application messages are printed in console and provider_log4j.log file. 
-- The Consumer_App application messages are printed in console and consumer_log4j.log file.
-- The EMA Java API logs from both applications are printed in ema_log4j.log file. 
-
-The applications just use SLF4J's ```logger.info()``` and ```logger.error()``` functions in the source codes to set the application messages, then Log4j will do the rest for the application based on the following log4j.xml configuration file.
-
+```bash
+docker compose down
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="DEBUG">
-
-    <Appenders>
-        <Console name="LogToConsole" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d Class name-%C Message-%m%n"/>
-        </Console>
-        <File name="emaLogFile" fileName="logs/ema_log4j.log">
-            <PatternLayout>
-                <Pattern>%d LEVEL-%-5p Thread-[%t]  Method-%M()   Class name-%C   Message-%m%n
-                </Pattern>
-            </PatternLayout>
-        </File>
-        <File name="consumerLogFile" fileName="logs/consumer_log4j.log">
-            <PatternLayout>
-                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
-                </Pattern>
-            </PatternLayout>
-        </File>
-        <File name="providerLogFile" fileName="logs/provider_log4j.log">
-            <PatternLayout>
-                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
-                </Pattern>
-            </PatternLayout>
-        </File>
-    </Appenders>
-
-    <Loggers>
-		<!-- avoid duplicated logs with additivity=false -->
-        <Logger name="com.refinitiv.ema" level="trace" additivity="false">
-            <AppenderRef ref="emaLogFile"/>
-        </Logger>
-        <Logger name="com.refinitiv.ema.consumer" level="info" additivity="false">
-            <AppenderRef ref="LogToConsole"/>
-            <AppenderRef ref="consumerLogFile"/>
-        </Logger>
-        <Logger name="com.refinitiv.ema.provider" level="info" additivity="false">
-            <AppenderRef ref="LogToConsole"/>
-            <AppenderRef ref="providerLogFile"/>
-        </Logger>
-    </Loggers>
-</Configuration>
-```
-
-### Demo prerequisite
-This example requires the following dependencies software and libraries.
-1. Oracle/Open JDK 8 or Oracle JDK 11.
-2. [Apache Maven](https://maven.apache.org/) project management and comprehension tool.
-3. Internet connection. 
-
-*Note:* 
-The RTSDK Java version 2.0.3 L2 (EMA Java 3.6.3 L2) supports Oracle JDK versions 8, 11, and Open JDK version 8. If you are using other versions of RTSDK Java, please check the SDK's [README.md](https://github.com/Refinitiv/Real-Time-SDK/blob/master/Java/README.md) file regarding the supported Java version.
-
-### Running the demo applications
-
-1. Unzip or download the project into a directory of your choice. 
-3. Enter the *ema_example* project folder.
-2. Run ```$>mvn package``` command in a console to build the demo applications into a single-all-dependencies *rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar* file.
-3. The applications jar file will be available in the project's *target* folder.
-5. Then you can run IProvider_App demo with the following command:
-    
-    *Windows Command Prompt*
-    ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
-    ```
-    *Windows Powershell*
-    ```
-    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.provider.IProvider_App
-    ```
-    *Linux*
-    ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.provider.IProvider_App
-    ```
-6. To run Consumer_App demo, open another console for ema_example folder and run the following command:
-
-    *Windows*
-    ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .;target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
-    ```
-    *Windows Powershell*
-    ```
-    $>java "-Dlog4j.configurationFile=.\resources\log4j2.xml" -cp '.;target\rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar' com.refinitiv.ema.consumer.Consumer_App
-    ```
-    *Linux*
-    ```
-    $>java -Dlog4j.configurationFile=./resources/log4j2.xml -cp .:target/rtsdk203L2_maven-1.0-SNAPSHOT-jar-with-dependencies.jar com.refinitiv.ema.consumer.Consumer_App
-    ```
 
 ### Demo Example Results
 
 #### Consumer_App result
-```
+
+```bash
 15:10:45.983 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
 15:10:48.678 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
 15:10:48.680 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
@@ -321,12 +160,12 @@ RefreshMsgEnd
         FieldListEnd
     PayloadEnd
 UpdateMsgEnd
-
 ...
 ```
+
 #### IProvider_App result
 
-```
+```bash
 15:10:33.972 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
 15:10:49.671 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh messages
 15:10:50.674 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
@@ -338,7 +177,7 @@ UpdateMsgEnd
 
 EMA Java log messages from both demo applications will be in ema_log4j.log file.
 
-```
+```bash
 2020-12-16 15:10:34,565 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
@@ -456,7 +295,10 @@ loggerMsgEnd
 
 The EMA Java API is implemented on top of SLF4J API as a facade for logging utility. The latest version of API allows developers to integrate EMA Java application with the preferred Logging framework by changing the repository, dependencies via their Java project management (Maven or Gradle), and then set the log configuration files without touching the application source code. 
 
+That covers all I wanted to say today.
+
 ## References
+
 For further details, please check out the following resources:
 
 - [Real-time Java API page](https://developers.lseg.com/en/api-catalog/real-time-opnsrc/rt-sdk-java) on the [LSEG Developer Community](https://developers.lseg.com/) website.

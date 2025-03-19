@@ -2,7 +2,7 @@
 // *|            This source code is provided under the Apache 2.0 license      --
 // *|  and is provided AS IS with no warranty or guarantee of fit for purpose.  --
 // *|                See the project's LICENSE.md for details.                  --
-// *|           Copyright Refinitiv 2019. All rights reserved.                  --
+// *|           Copyright LSEG 2025. All rights reserved.                       --
 ///*|-----------------------------------------------------------------------------
 
 package com.refinitiv.ema.consumer;
@@ -83,6 +83,7 @@ public class Consumer_App {
 	private static final Logger logger = LoggerFactory.getLogger(Consumer_App.class);
 
 	public static void main(String[] args) {
+		//BasicConfigurator.configure();
 		OmmConsumer consumer = null;
 		String service_name = "ELEKTRON_DD";
 		try {

@@ -4,3 +4,5 @@ ema_example/result.txt
 ema_example/create_project.md
 target/
 .vscode/
+ema_example/provider.bat
+ema_example/consumer.bat

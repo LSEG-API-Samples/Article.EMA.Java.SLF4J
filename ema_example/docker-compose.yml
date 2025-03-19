@@ -1,0 +1,16 @@
+name: emajava_log4j
+
+services:
+  provider:
+    build:
+      dockerfile: Dockerfile-provider
+    volumes:
+      - "C:\\Projects\\Code\\SLF4J\\esdk131_project\\ema_example\\logs:/app/logs"
+  consumer:
+    build:
+      dockerfile: Dockerfile-consumer
+    volumes:
+      - "C:\\Projects\\Code\\SLF4J\\esdk131_project\\ema_example\\logs:/app/logs"
+    depends_on:
+      provider:
+        condition: service_started

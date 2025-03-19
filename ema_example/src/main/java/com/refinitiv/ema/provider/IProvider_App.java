@@ -2,7 +2,7 @@
 // *|            This source code is provided under the Apache 2.0 license      --
 // *|  and is provided AS IS with no warranty or guarantee of fit for purpose.  --
 // *|                See the project's LICENSE.md for details.                  --
-// *|           Copyright Refinitiv 2019. All rights reserved.                  --
+// *|           Copyright LSEG 2025. All rights reserved.                       --
 ///*|-----------------------------------------------------------------------------
 
 package com.refinitiv.ema.provider;
@@ -27,6 +27,7 @@ import com.refinitiv.ema.rdm.EmaRdm;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+//import org.apache.log4j.BasicConfigurator;
 
 class AppClient implements OmmProviderClient {
 
@@ -116,6 +117,7 @@ public class IProvider_App {
 	private static final Logger logger = LoggerFactory.getLogger(IProvider_App.class);
 
 	public static void main(String[] args) {
+		//BasicConfigurator.configure();
 		OmmProvider provider = null;
 		try {
 

@@ -1,0 +1,26 @@
+# Builder Maven Image
+# Supported JAVA_VERSION is 11, 17, and 21 (AS of RTSDK Java 2.2.3.L1 - Oct 2024)
+ARG JAVA_VERSION=17
+ARG VARIANT=alpine 
+FROM maven:3.9.9-eclipse-temurin-${JAVA_VERSION}-${VARIANT} as builder
+
+LABEL authors="Developer Relations"
+
+ENV MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+WORKDIR /app
+COPY pom.xml .
+RUN mvn dependency:go-offline -B
+COPY src ./src
+#RUN mvn clean -e -B package
+RUN mvn clean install -Dmaven.test.skip=true
+
+# Runner JRE Image
+FROM eclipse-temurin:${JAVA_VERSION}-jre-${VARIANT}
+WORKDIR /app
+COPY --from=builder /app/target/rtsdk223L1_maven-1.0-SNAPSHOT-jar-with-dependencies.jar .
+COPY EmaConfig.xml .
+#ADD logs /app/logs
+ADD resources /app/resources
+
+# run rtsdk223L1_maven-1.0-SNAPSHOT-jar-with-dependencies.jar for consumer with CMD
+CMD ["java", "-Dlog4j2.configurationFile=./resources/log4j2.xml","-cp", "./rtsdk223L1_maven-1.0-SNAPSHOT-jar-with-dependencies.jar", "com.refinitiv.ema.consumer.Consumer_App"]

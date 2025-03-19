@@ -18,7 +18,7 @@
 			<Channel value="Channel_1"/>
 
 			<!-- Dictionary is optional: defaulted to "ChannelDictionary"								-->
-			<Dictionary value="Dictionary_3"/>
+			<Dictionary value="Dictionary_1"/>
 			<XmlTraceToStdout value="0"/>
 		</Consumer>
 	</ConsumerList>
@@ -55,7 +55,7 @@
 			
 			<MaxDispatchCountUserThread value="500" />
 			
-			<PipePort value="9009" />
+			<!--<PipePort value="9009" />-->
 			
 			<RefreshFirstRequired value="1" />
 			<XmlTraceToStdout value="0"/>
@@ -85,7 +85,10 @@
 			<!-- TcpNodelay is optional: defaulted to 1 												-->
 			<!-- possible values: 1 (tcp_nodelay option set), 0 (tcp_nodelay not set)					-->
 			<TcpNodelay value="1"/>
-			<Host value="localhost"/>
+			<!-- manual jar run -->
+			<!--<Host value="localhost"/>-->
+			<!-- Docker Compose-->
+			<Host value="provider"/>
 			<Port value="14022"/>
 		</Channel>
 	</ChannelList>
