@@ -196,8 +196,7 @@ The ```log4j2.xml``` file detail is as follows.
 
     <Appenders>
         <Console name="LogToConsole" target="SYSTEM_OUT">
-            <!--<PatternLayout pattern="%d Class name-%C Message-%m%n"/>-->
-            <PatternLayout pattern="%d LEVEL-%-5p Thread-[%t]  Method-%M() Class name-%C   Message-%m%n"/>
+            <PatternLayout pattern="%d Class name-%C Message-%m%n"/>
         </Console>
         <File name="emaLogFile" fileName="logs/ema_log4j.log">
             <PatternLayout pattern="%d LEVEL-%-5p Thread-[%t]  Method-%M() Class name-%C   Message-%m%n"/>
