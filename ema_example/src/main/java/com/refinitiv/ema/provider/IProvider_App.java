@@ -71,14 +71,20 @@ class AppClient implements OmmProviderClient {
 	}
 
 	void processLoginRequest(ReqMsg reqMsg, OmmProviderEvent event) {
+		logger.info("IProvider_App.AppClient: Received Consumer Login Request Message");
 		event.provider()
 				.submit(EmaFactory.createRefreshMsg().domainType(EmaRdm.MMT_LOGIN).name(reqMsg.name())
 						.nameType(EmaRdm.USER_NAME).complete(true).solicited(true).state(OmmState.StreamState.OPEN,
 								OmmState.DataState.OK, OmmState.StatusCode.NONE, "Login accepted")
 						.attrib(EmaFactory.createElementList()), event.handle());
+		
+		logger.info("IProvider_App.AppClient: Sent Login Refresh message");
 	}
 
 	void processMarketPriceRequest(ReqMsg reqMsg, OmmProviderEvent event) {
+
+		logger.info("IProvider_App.AppClient: Received Market Price Item Request message");
+
 		if (itemHandle != 0) {
 			processInvalidItemRequest(reqMsg, event);
 			return;
@@ -98,11 +104,12 @@ class AppClient implements OmmProviderClient {
 				.state(OmmState.StreamState.OPEN, OmmState.DataState.OK, OmmState.StatusCode.NONE, "Refresh Completed")
 				.solicited(true).payload(fieldList).complete(true), event.handle());
 		// logger.info("IProvider_App: Send Market Price Refresh messages");
-		logger.info("IProvider_App.AppClient: Sent Market Price Refresh messages");
+		logger.info("IProvider_App.AppClient: Sent Market Price Refresh message");
 		itemHandle = event.handle();
 	}
 
 	void processInvalidItemRequest(ReqMsg reqMsg, OmmProviderEvent event) {
+		logger.info("IProvider_App.AppClient: Received Invalid Market Price Item Request message");
 		event.provider()
 				.submit(EmaFactory.createStatusMsg().name(reqMsg.name()).serviceName(reqMsg.serviceName())
 						.domainType(reqMsg.domainType()).state(OmmState.StreamState.CLOSED, OmmState.DataState.SUSPECT,

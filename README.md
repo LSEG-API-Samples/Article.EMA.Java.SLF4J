@@ -87,22 +87,21 @@ docker compose down
 #### Consumer_App result
 
 ```bash
-15:10:45.983 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
-15:10:48.678 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
-15:10:48.680 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
-15:10:48.680 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-15:10:48.681 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
-15:10:48.690 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: U8004042
-15:10:48.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
-15:10:48.699 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
-15:10:48.701 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+07:10:48.600 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Starting Consumer_App application
+07:10:53.810 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Login stream
+07:10:53.813 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Register Directory stream
+07:10:53.813 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+07:10:53.815 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: root
+07:10:53.815 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+07:10:53.816 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Login accepted'
+07:10:53.817 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
     streamId="1"
     domain="Login Domain"
     solicited
     RefreshComplete
     state="Open / Ok / None / 'Login accepted'"
     itemGroup="00 00"
-    name="U8004042"
+    name="root"
     nameType="1"
     Attrib dataType="ElementList"
         ElementList
@@ -110,13 +109,51 @@ docker compose down
     AttribEnd
 RefreshMsgEnd
 
-15:10:48.733 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+07:10:53.818 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-15:10:49.672 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
-15:10:49.673 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-15:10:49.683 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-15:10:49.684 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
-15:10:49.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+07:10:53.821 [main] INFO  com.refinitiv.ema.consumer.Consumer_App - Consumer_App: Send item request message
+07:10:53.823 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+07:10:53.824 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: <not set>
+07:10:53.825 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: <not set>
+07:10:53.825 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / ''
+07:10:53.829 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
+    streamId="5"
+    domain="Directory Domain"
+    solicited
+    RefreshComplete
+    state="Open / Ok / None / ''"
+    itemGroup="00 00"
+    filter="0"
+    Payload dataType="Map"
+        Map
+            MapEntry action="Add" key dataType="UInt" value="1" dataType="FilterList"
+                FilterList
+                    FilterEntry action="Set" filterId="1 dataType="ElementList"
+                        ElementList
+                            ElementEntry name="Name" dataType="Ascii" value="ELEKTRON_DD"
+                            ....
+                            ElementEntry name="AcceptingConsumerStatus" dataType="UInt" value="0"
+                        ElementListEnd
+                    FilterEntryEnd
+                    FilterEntry action="Set" filterId="2 dataType="ElementList"
+                        ElementList
+                            ElementEntry name="ServiceState" dataType="UInt" value="1"
+                            ElementEntry name="AcceptingRequests" dataType="UInt" value="1"
+                        ElementListEnd
+                    FilterEntryEnd
+                FilterListEnd
+            MapEntryEnd
+        MapEnd
+    PayloadEnd
+RefreshMsgEnd
+
+07:10:53.830 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+
+07:10:54.758 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Refresh message
+07:10:54.759 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+07:10:54.759 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+07:10:54.760 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item State: Open / Ok / None / 'Refresh Completed'
+07:10:54.763 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - RefreshMsg
     streamId="6"
     domain="MarketPrice Domain"
     solicited
@@ -130,8 +167,8 @@ RefreshMsgEnd
         FieldList
             FieldEntry fid="3" name="DSPLY_NAME" dataType="Rmtes" value="/EUR="
             FieldEntry fid="15" name="CURRENCY" dataType="Enum" value="840"
-            FieldEntry fid="21" name="HST_CLOSE" dataType="Real" value="39.0"
-            FieldEntry fid="22" name="BID" dataType="Real" value="39.9"
+            FieldEntry fid="21" name="HST_CLOSE" dataType="Real" value="39.00"
+            FieldEntry fid="22" name="BID" dataType="Real" value="39.90"
             FieldEntry fid="25" name="ASK" dataType="Real" value="39.94"
             FieldEntry fid="30" name="BIDSIZE" dataType="Real" value="9.0"
             FieldEntry fid="31" name="ASKSIZE" dataType="Real" value="19.0"
@@ -139,12 +176,12 @@ RefreshMsgEnd
     PayloadEnd
 RefreshMsgEnd
 
-15:10:49.694 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
+07:10:54.763 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - 
 
-15:10:50.674 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
-15:10:50.675 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
-15:10:50.677 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
-15:10:50.688 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
+07:10:55.760 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Consumer_App.AppClient: Receives Market Price Update message
+07:10:55.764 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Item Name: /EUR=
+07:10:55.766 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - Service Name: ELEKTRON_DD
+07:10:55.768 [pool-3-thread-1] INFO  com.refinitiv.ema.consumer.AppClient - UpdateMsg
     streamId="6"
     domain="MarketPrice Domain"
     updateTypeNum="0"
@@ -166,11 +203,16 @@ UpdateMsgEnd
 #### IProvider_App result
 
 ```bash
-15:10:33.972 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
-15:10:49.671 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh messages
-15:10:50.674 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-15:10:51.674 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-15:10:52.675 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:48.565 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
+07:10:51.624 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Received Consumer Login Request Message
+07:10:51.630 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Login Refresh message
+07:10:54.754 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Received Market Price Item Request message
+07:10:54.757 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh message
+07:10:55.759 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:56.761 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:57.763 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:58.764 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:59.766 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
 ```
 
 #### EMA Java result
@@ -178,7 +220,30 @@ UpdateMsgEnd
 EMA Java log messages from both demo applications will be in ema_log4j.log file.
 
 ```bash
-2020-12-16 15:10:34,565 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:48,850 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 100000
+	 serviceCountHint: 513
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 0
+	 maxDispatchCountApiThread: 100
+	 ...
+	 restProxyPort: null
+	 sessionEnhancedItemRecovery: true
+loggerMsgEnd
+
+
+2025-03-28 07:10:48,868 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Successfully open Selector.
+loggerMsgEnd
+
+....
+
+2025-03-28 07:10:49,413 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Print out active configuration detail.
@@ -188,105 +253,23 @@ EMA Java log messages from both demo applications will be in ema_log4j.log file.
 	 dispatchTimeoutApiThread: 500
 	 maxDispatchCountApiThread: 500
 	 maxDispatchCountUserThread: 500
-	 userDispatch: 0
-	 configuredName: Provider_1
-	 instanceName: Provider_1_1
-	 xmlTraceEnable: false
-	 globalConfig.reactorChannelEventPoolLimit: -1
-	 globalConfig.reactorMsgEventPoolLimit: -1
-	 globalConfig.workerEventPoolLimit: -1
-	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
-	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
-	 defaultServiceName: 14002
-	 acceptMessageWithoutAcceptingRequests: false
-	 acceptDirMessageWithoutMinFilters: false
-	 acceptMessageWithoutBeingLogin: false
-	 acceptMessageSameKeyButDiffStream: false
-	 acceptMessageThatChangesService: false
-	 acceptMessageWithoutQosInRange: false
-	 enforceAckIDValidation: false
-	 operationModel: 1
-	 directoryAdminControl: 1
-	 dictionaryAdminControl: 1
-	 refreshFirstRequired: true
+	 ...
 	 maxFieldDictFragmentSize: 8192
-	 maxEnumTypeFragmentSize: 128000
+	 maxEnumTypeFragmentSize: 12800
 loggerMsgEnd
 
-....
 
-2020-12-16 15:10:35,612 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:49,419 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
-    Text:    Provider bound on port = 14022.
+    Text:    Successfully open Selector.
 loggerMsgEnd
 
 
-2020-12-16 15:10:46,102 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
-    ClientName: Consumer_1_1
+2025-03-28 07:10:49,439 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
     Severity: Trace
-    Text:    Print out active configuration detail.
-	 itemCountHint: 100000
-	 serviceCountHint: 513
-	 requestTimeout: 15000
-	 dispatchTimeoutApiThread: 0
-	 maxDispatchCountApiThread: 100
-	 maxDispatchCountUserThread: 100
-	 userDispatch: 1
-	 configuredName: Consumer_1
-	 instanceName: Consumer_1_1
-	 xmlTraceEnable: false
-	 globalConfig.reactorChannelEventPoolLimit: -1
-	 globalConfig.reactorMsgEventPoolLimit: -1
-	 globalConfig.workerEventPoolLimit: -1
-	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
-	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
-	 obeyOpenWindow: 1
-	 postAckTimeout: 15000
-	 maxOutstandingPosts: 100000
-	 userDispatch: 1
-	 reconnectAttemptLimit: -1
-	 reconnectMinDelay: 1000
-	 reconnectMaxDelay: 5000
-	 msgKeyInUpdates: true
-	 directoryRequestTimeOut: 45000
-	 dictionaryRequestTimeOut: 45000
-	 reissueTokenAttemptLimit: -1
-	 reissueTokenAttemptInterval: 5000
-	 restRequestTimeOut: 45000
-	 tokenReissueRatio: 0.8
-	 loginRequestTimeOut: 45000
-loggerMsgEnd
-
-...
-
-2020-12-16 15:10:46,371 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
-    ClientName: LoginCallbackClient
-    Severity: Trace
-    Text:    Created LoginCallbackClient
-loggerMsgEnd
-
-
-2020-12-16 15:10:46,371 LEVEL-TRACE Thread-[main]  Method-initialize()   Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
-    ClientName: LoginCallbackClient
-    Severity: Trace
-    Text:    RDMLogin request message was populated with this info: 
-	LoginRequest: 
-	streamId: 1
-	userName: U8004042
-	streaming: true
-	nameType: 1
-	applicationId: 256
-	applicationName: ema
-	position: 192.168.68.113/WIN-V793K3HCLOL
-
-loggerMsgEnd
-
-
-2020-12-16 15:10:46,372 LEVEL-TRACE Thread-[main]  Method-<init>()   Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
-    ClientName: DictionaryCallbackClient
-    Severity: Trace
-    Text:    Created DictionaryCallbackClient
+    Text:    Successfully created Reactor.
 loggerMsgEnd
 ...
 ```
@@ -301,10 +284,10 @@ That covers all I wanted to say today.
 
 For further details, please check out the following resources:
 
-- [Real-time Java API page](https://developers.lseg.com/en/api-catalog/real-time-opnsrc/rt-sdk-java) on the [LSEG Developer Community](https://developers.lseg.com/) website.
+- [Real-time Java SDK page](https://developers.lseg.com/en/api-catalog/real-time-opnsrc/rt-sdk-java) on the [LSEG Developer Community](https://developers.lseg.com/) website.
 - [Simple Logging Facade for Java (SLF4J)](https://www.slf4j.org/) website.
 - [Apache Log4j 2](https://logging.apache.org/log4j/2.x/) website.
-- [Enterprise Message API Java Quick Start](https://developers.lseg.com/en/api-catalog/real-time-opnsrc/rt-sdk-java/quick-start)
 - [Developer Webinar: Introduction to Enterprise App Creation With Open-Source Enterprise Message API](https://www.youtube.com/watch?v=2pyhYmgHxlU)
+- [Learn how to direct EMA Java log to Java Logging API](https://developers.lseg.com/en/article-catalog/article/learn-how-to-use-ema-java-log-with-java-logging-api) article.
 
 For any question related to this article or Enterprise Message API page, please use the Developer Community [Q&A Forum](https://community.developers.refinitiv.com/).

@@ -1,4 +1,4 @@
-2025-03-19 04:40:26,278 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+2025-03-28 07:10:48,850 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
     ClientName: Consumer_1_1
     Severity: Trace
     Text:    Print out active configuration detail.
@@ -55,28 +55,28 @@
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,281 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+2025-03-28 07:10:48,868 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
     ClientName: Consumer_1_1
     Severity: Trace
     Text:    Successfully open Selector.
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,297 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+2025-03-28 07:10:48,894 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
     ClientName: Consumer_1_1
     Severity: Trace
     Text:    Successfully created Reactor.
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,299 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,896 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
     ClientName: LoginCallbackClient
     Severity: Trace
     Text:    Created LoginCallbackClient
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,299 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,897 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
     ClientName: LoginCallbackClient
     Severity: Trace
     Text:    RDMLogin request message was populated with this info: 
@@ -87,26 +87,26 @@ loggerMsgEnd
 	nameType: 1
 	applicationId: 256
 	applicationName: ema
-	position: 172.21.0.3/24269c4a3e23
+	position: 172.18.0.3/2b7490df4b32
 
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,300 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,898 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
     ClientName: DictionaryCallbackClient
     Severity: Trace
     Text:    Created DictionaryCallbackClient
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,306 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,904 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
     ClientName: DirectoryCallbackClient
     Severity: Trace
     Text:    Created DirectoryCallbackClient
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,307 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,905 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
     ClientName: DirectoryCallbackClient
     Severity: Trace
     Text:    RDMDirectoryRequest message was populated with Filter(s)
@@ -120,21 +120,21 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,308 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,907 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
     ClientName: ItemCallbackClient
     Severity: Trace
     Text:    Created ItemCallbackClient
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,339 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,934 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Trace
     Text:    Created ChannelCallbackClient
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,340 LEVEL-TRACE Thread-[main]  Method-socketProxyConfiguration() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,936 LEVEL-TRACE Thread-[main]  Method-socketProxyConfiguration() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Trace
     Text:    Successfully set a tunneling 
@@ -166,14 +166,14 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,341 LEVEL-TRACE Thread-[main]  Method-initializeReactor() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:48,937 LEVEL-TRACE Thread-[main]  Method-initializeReactor() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Trace
     Text:    Attempt to connect using 
 	1] SOCKET
 	Channel name Channel_1
 	Instance Name Consumer_1_1
-	RsslReactor @696f0212
+	RsslReactor @56c698e3
 	InterfaceName 
 	hostName provider
 	port 14022
@@ -192,7 +192,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,393 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:49,011 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Trace
     Text:    Received ChannelOpened on channel Channel_1
@@ -200,7 +200,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,394 LEVEL-TRACE Thread-[main]  Method-initializeReactor() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:49,012 LEVEL-TRACE Thread-[main]  Method-initializeReactor() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Trace
     Text:    Successfully created a Reactor and Channel(s)
@@ -209,12 +209,12 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,396 LEVEL-WARN  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:49,014 LEVEL-WARN  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Warning
     Text:    Received ChannelDownReconnecting event on channel Channel_1
-	RsslReactor @696f0212
-	RsslChannel @4b3c354a
+	RsslReactor @56c698e3
+	RsslChannel @21aa6d6c
 	Error Id 0
 	Internal sysError 0
 	Error Location Reactor.processWorkerEvent
@@ -222,7 +222,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,557 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:49,413 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Print out active configuration detail.
@@ -271,35 +271,35 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,560 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:49,419 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Successfully open Selector.
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,576 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:49,439 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Successfully created Reactor.
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,665 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+2025-03-28 07:10:49,535 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
     ClientName: ItemCallbackClient
     Severity: Trace
     Text:    Created ItemCallbackClient
 loggerMsgEnd
 
 
-2025-03-19 04:40:26,718 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:49,605 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Provider bound on port = 14022.
 loggerMsgEnd
 
 
-2025-03-19 04:40:27,755 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:50,646 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Info
     Text:    Received ChannelUp event on channel Channel_1
@@ -308,7 +308,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:28,735 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+2025-03-28 07:10:51,618 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
     ClientName: ServerChannelHandler
     Severity: Info
     Text:    Received ChannelUp event on ClientHandle 1
@@ -317,7 +317,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:28,736 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+2025-03-28 07:10:51,618 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
     ClientName: ServerChannelHandler
     Severity: Trace
     Text:    Received ChannelReady event on client handle 1
@@ -325,7 +325,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:28,740 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback() Class name-com.refinitiv.ema.access.LoginHandler   Message-loggerMsg
+2025-03-28 07:10:51,623 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback() Class name-com.refinitiv.ema.access.LoginHandler   Message-loggerMsg
     ClientName: LoginHandler
     Severity: Trace
     Text:    Received login request message.
@@ -335,7 +335,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:28,741 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:51,624 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Added ItemInfo 1 to ItemInfoMap
@@ -343,7 +343,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:28,749 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback() Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
+2025-03-28 07:10:51,633 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback() Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
     ClientName: LoginCallbackClient
     Severity: Trace
     Text:    RDMLogin stream was open with refresh message
@@ -362,7 +362,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:29,748 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback() Class name-com.refinitiv.ema.access.DirectoryHandler   Message-loggerMsg
+2025-03-28 07:10:52,632 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback() Class name-com.refinitiv.ema.access.DirectoryHandler   Message-loggerMsg
     ClientName: DirectoryHandler
     Severity: Trace
     Text:    Received directory request message.
@@ -372,7 +372,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:29,749 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:52,633 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Added ItemInfo 2 to ItemInfoMap
@@ -380,33 +380,33 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:29,757 LEVEL-TRACE Thread-[main]  Method-downloadDictionary() Class name-com.refinitiv.ema.access.DictionaryCallbackClient   Message-loggerMsg
+2025-03-28 07:10:52,640 LEVEL-TRACE Thread-[main]  Method-downloadDictionary() Class name-com.refinitiv.ema.access.DictionaryCallbackClient   Message-loggerMsg
     ClientName: DictionaryCallbackClient
     Severity: Trace
     Text:    Requested Dictionary RWFFld
 	from Service ELEKTRON_DD
 	on Channel 
 		RsslReactorChannel name Channel_1
-		RsslReactor 696f0212
-		RsslReactorChannel 35beb15e
+		RsslReactor 56c698e3
+		RsslReactorChannel 6c67e137
 	
 loggerMsgEnd
 
 
-2025-03-19 04:40:29,758 LEVEL-TRACE Thread-[main]  Method-downloadDictionary() Class name-com.refinitiv.ema.access.DictionaryCallbackClient   Message-loggerMsg
+2025-03-28 07:10:52,641 LEVEL-TRACE Thread-[main]  Method-downloadDictionary() Class name-com.refinitiv.ema.access.DictionaryCallbackClient   Message-loggerMsg
     ClientName: DictionaryCallbackClient
     Severity: Trace
     Text:    Requested Dictionary RWFEnum
 	from Service ELEKTRON_DD
 	on Channel 
 		RsslReactorChannel name Channel_1
-		RsslReactor 696f0212
-		RsslReactorChannel 35beb15e
+		RsslReactor 56c698e3
+		RsslReactorChannel 6c67e137
 	
 loggerMsgEnd
 
 
-2025-03-19 04:40:29,758 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback() Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
+2025-03-28 07:10:52,642 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback() Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
     ClientName: DirectoryCallbackClient
     Severity: Trace
     Text:    RDMDirectory stream state was open with refresh message 
@@ -414,7 +414,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:29,759 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+2025-03-28 07:10:52,643 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
     ClientName: ChannelCallbackClient
     Severity: Trace
     Text:    Received ChannelReady event on channel Channel_1
@@ -422,7 +422,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,754 LEVEL-TRACE Thread-[main]  Method-rdmDictionaryMsgCallback() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+2025-03-28 07:10:53,639 LEVEL-TRACE Thread-[main]  Method-rdmDictionaryMsgCallback() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
     ClientName: DictionaryHandler
     Severity: Trace
     Text:    Received dictionary request message.
@@ -432,7 +432,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,755 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:53,641 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Added ItemInfo 3 to ItemInfoMap
@@ -440,7 +440,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,764 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,652 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -449,7 +449,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,773 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,663 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -458,7 +458,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,777 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,665 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -467,7 +467,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,781 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,667 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -476,7 +476,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,785 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,669 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -485,7 +485,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,788 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,672 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -494,7 +494,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,790 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,674 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -503,7 +503,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,792 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,677 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -512,7 +512,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,795 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,679 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -521,7 +521,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,799 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,681 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -530,7 +530,52 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,800 LEVEL-TRACE Thread-[main]  Method-sendFieldDictionaryResponse() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+2025-03-28 07:10:53,685 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,689 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,692 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,695 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,697 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,697 LEVEL-TRACE Thread-[main]  Method-sendFieldDictionaryResponse() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
     ClientName: DictionaryHandler
     Severity: Trace
     Text:    Successfully sent field dictionary type.
@@ -540,7 +585,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,801 LEVEL-TRACE Thread-[main]  Method-rdmDictionaryMsgCallback() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+2025-03-28 07:10:53,698 LEVEL-TRACE Thread-[main]  Method-rdmDictionaryMsgCallback() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
     ClientName: DictionaryHandler
     Severity: Trace
     Text:    Received dictionary request message.
@@ -550,7 +595,16 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,801 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:53,699 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,699 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Added ItemInfo 4 to ItemInfoMap
@@ -558,7 +612,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,801 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,702 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -567,7 +621,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,803 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,704 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -576,7 +630,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,806 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,706 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -585,7 +639,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,808 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,708 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -594,7 +648,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,809 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,709 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -603,7 +657,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,812 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,711 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -612,7 +666,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,813 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,713 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -621,7 +675,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,815 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,716 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -630,7 +684,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,817 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,718 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -639,7 +693,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,818 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,721 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -648,7 +702,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,819 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,722 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -657,7 +711,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,821 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,723 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -666,7 +720,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,823 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,726 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -675,7 +729,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,824 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,728 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -684,7 +738,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,825 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,730 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -693,7 +747,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,827 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,732 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -702,7 +756,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,829 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,733 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -711,7 +765,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,830 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,735 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -720,7 +774,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,832 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,736 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -729,7 +783,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,834 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,738 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -738,7 +792,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,835 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,739 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -747,7 +801,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,837 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,740 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -756,7 +810,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,838 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,742 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -765,7 +819,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,839 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,743 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -774,7 +828,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,840 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,745 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -783,7 +837,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,843 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,746 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -792,7 +846,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,845 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,747 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -801,7 +855,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,846 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,747 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -810,7 +864,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,847 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,748 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -819,7 +873,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,848 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,749 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -828,7 +882,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,848 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,750 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -837,7 +891,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,849 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,751 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -846,7 +900,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,850 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,752 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -855,61 +909,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,852 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
-    ClientName: ChannelDictionary
-    Severity: Trace
-    Text:    Received RDMDictionary refresh message
-	Dictionary name RWFFld
-	streamId 3
-loggerMsgEnd
-
-
-2025-03-19 04:40:30,852 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
-    ClientName: ChannelDictionary
-    Severity: Trace
-    Text:    Received RDMDictionary refresh message
-	Dictionary name RWFFld
-	streamId 3
-loggerMsgEnd
-
-
-2025-03-19 04:40:30,854 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
-    ClientName: ChannelDictionary
-    Severity: Trace
-    Text:    Received RDMDictionary refresh message
-	Dictionary name RWFFld
-	streamId 3
-loggerMsgEnd
-
-
-2025-03-19 04:40:30,855 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
-    ClientName: ChannelDictionary
-    Severity: Trace
-    Text:    Received RDMDictionary refresh message
-	Dictionary name RWFFld
-	streamId 3
-loggerMsgEnd
-
-
-2025-03-19 04:40:30,855 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
-    ClientName: ChannelDictionary
-    Severity: Trace
-    Text:    Received RDMDictionary refresh message
-	Dictionary name RWFFld
-	streamId 3
-loggerMsgEnd
-
-
-2025-03-19 04:40:30,856 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
-    ClientName: ChannelDictionary
-    Severity: Trace
-    Text:    Received RDMDictionary refresh message
-	Dictionary name RWFFld
-	streamId 3
-loggerMsgEnd
-
-
-2025-03-19 04:40:30,857 LEVEL-TRACE Thread-[main]  Method-sendEnumTypeDictionaryResponse() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+2025-03-28 07:10:53,752 LEVEL-TRACE Thread-[main]  Method-sendEnumTypeDictionaryResponse() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
     ClientName: DictionaryHandler
     Severity: Trace
     Text:    Successfully sent enumeration dictionary type.
@@ -919,7 +919,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,857 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,753 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -928,7 +928,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,858 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,754 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -937,7 +937,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,859 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,755 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -946,7 +946,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,860 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,756 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -955,7 +955,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,860 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,757 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -964,7 +964,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,861 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,758 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -973,7 +973,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,862 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,759 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -982,7 +982,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,862 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,760 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -991,7 +991,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,863 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,761 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1000,7 +1000,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,864 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,761 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1009,7 +1009,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,865 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,762 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1018,7 +1018,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,865 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,763 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1027,7 +1027,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,866 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,764 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1036,7 +1036,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,867 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,765 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1045,7 +1045,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,868 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,766 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1054,7 +1054,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,869 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,766 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1063,7 +1063,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,869 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,767 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1072,7 +1072,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,870 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,768 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1081,7 +1081,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,871 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,769 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1090,7 +1090,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,871 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,769 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1099,7 +1099,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,873 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,770 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1108,7 +1108,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,873 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,772 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1117,7 +1117,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,874 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,773 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1126,7 +1126,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,874 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,773 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1135,7 +1135,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,875 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,774 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1144,7 +1144,34 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,875 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,774 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,775 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,776 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,776 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh complete message
@@ -1153,7 +1180,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,876 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,777 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1162,7 +1189,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,880 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,783 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1171,7 +1198,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,881 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,785 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1180,7 +1207,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,883 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,788 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1189,7 +1216,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,885 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,790 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1198,7 +1225,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,887 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,791 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1207,7 +1234,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,889 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,793 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1216,7 +1243,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,891 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,796 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1225,7 +1252,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,892 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,798 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1234,7 +1261,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,894 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,799 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1243,7 +1270,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,896 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,801 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1252,7 +1279,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,897 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,803 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1261,7 +1288,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,898 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,804 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh message
@@ -1270,7 +1297,43 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,899 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+2025-03-28 07:10:53,805 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,807 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,808 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,809 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 07:10:53,810 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
     ClientName: ChannelDictionary
     Severity: Trace
     Text:    Received RDMDictionary refresh complete message
@@ -1279,7 +1342,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,902 LEVEL-TRACE Thread-[main]  Method-addToItemMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+2025-03-28 07:10:53,812 LEVEL-TRACE Thread-[main]  Method-addToItemMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
     ClientName: ItemCallbackClient
     Severity: Trace
     Text:    Added Item 1 to item map
@@ -1287,7 +1350,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,908 LEVEL-TRACE Thread-[main]  Method-addToMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+2025-03-28 07:10:53,820 LEVEL-TRACE Thread-[main]  Method-addToMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
     ClientName: ItemCallbackClient
     Severity: Trace
     Text:    Added Item 2 of StreamId 5 to item map
@@ -1295,7 +1358,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:30,918 LEVEL-TRACE Thread-[main]  Method-addToMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+2025-03-28 07:10:53,831 LEVEL-TRACE Thread-[main]  Method-addToMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
     ClientName: ItemCallbackClient
     Severity: Trace
     Text:    Added Item 3 of StreamId 6 to item map
@@ -1303,7 +1366,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:31,858 LEVEL-TRACE Thread-[main]  Method-logReceivedMessage() Class name-com.refinitiv.ema.access.MarketItemHandler   Message-loggerMsg
+2025-03-28 07:10:54,753 LEVEL-TRACE Thread-[main]  Method-logReceivedMessage() Class name-com.refinitiv.ema.access.MarketItemHandler   Message-loggerMsg
     ClientName: MarketItemHandler
     Severity: Trace
     Text:    Received request message.
@@ -1313,7 +1376,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:31,859 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:10:54,754 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Added ItemInfo 5 to ItemInfoMap
@@ -1321,97 +1384,62 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:31,860 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+2025-03-28 07:10:54,756 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Received RefreshMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
 loggerMsgEnd
 
 
-2025-03-19 04:40:32,862 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+2025-03-28 07:10:55,758 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
 loggerMsgEnd
 
 
-2025-03-19 04:40:33,863 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+2025-03-28 07:10:56,760 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
 loggerMsgEnd
 
 
-2025-03-19 04:40:34,865 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+2025-03-28 07:10:57,762 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
 loggerMsgEnd
 
 
-2025-03-19 04:40:35,867 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+2025-03-28 07:10:58,763 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
 loggerMsgEnd
 
 
-2025-03-19 04:40:36,869 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+2025-03-28 07:10:59,765 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
 loggerMsgEnd
 
 
-2025-03-19 04:40:37,870 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+2025-03-28 07:11:00,768 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
 loggerMsgEnd
 
 
-2025-03-19 04:40:38,872 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
-    ClientName: Provider_1_1
-    Severity: Trace
-    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
-loggerMsgEnd
-
-
-2025-03-19 04:40:39,874 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
-    ClientName: Provider_1_1
-    Severity: Trace
-    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
-loggerMsgEnd
-
-
-2025-03-19 04:40:40,875 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
-    ClientName: Provider_1_1
-    Severity: Trace
-    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
-loggerMsgEnd
-
-
-2025-03-19 04:40:41,877 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
-    ClientName: Provider_1_1
-    Severity: Trace
-    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
-loggerMsgEnd
-
-
-2025-03-19 04:40:42,877 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
-    ClientName: Provider_1_1
-    Severity: Trace
-    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
-loggerMsgEnd
-
-
-2025-03-19 04:40:43,881 LEVEL-ERROR Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+2025-03-28 07:11:01,769 LEVEL-ERROR Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
     ClientName: ServerChannelHandler
     Severity: Warning
     Text:    Received ChannelDown event on client handle 1
 	Instance Name Provider_1_1
-	RsslReactor @751d3241
-	RsslChannel @76c7beb3
+	RsslReactor @2cf92cc7
+	RsslChannel @30ea8c23
 	Error Id 0
 	Internal sysError 0
 	Error Location null
@@ -1419,7 +1447,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:43,883 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:11:01,771 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Removed ItemInfo 1 from ItemInfoMap
@@ -1427,7 +1455,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:43,884 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:11:01,771 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Removed ItemInfo 2 from ItemInfoMap
@@ -1435,7 +1463,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:43,884 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:11:01,772 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Removed ItemInfo 3 from ItemInfoMap
@@ -1443,7 +1471,7 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:43,885 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:11:01,772 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Removed ItemInfo 4 from ItemInfoMap
@@ -1451,7 +1479,1489 @@ loggerMsgEnd
 loggerMsgEnd
 
 
-2025-03-19 04:40:43,886 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+2025-03-28 07:11:01,773 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 5 from ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,638 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 100000
+	 serviceCountHint: 513
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 0
+	 maxDispatchCountApiThread: 100
+	 maxDispatchCountUserThread: 100
+	 userDispatch: 1
+	 configuredName: Consumer_1
+	 instanceName: Consumer_1_1
+	 xmlTraceEnable: false
+	 xmlTraceToFileEnable: false
+	 xmlTraceMaxFileSize: 100000000
+	 xmlTraceFileName: EmaTrace
+	 xmlTraceToMultipleFiles: false
+	 xmlTraceWriteEnable: true
+	 xmlTraceReadEnable: true
+	 xmlTracePingEnable: false
+	 defaultConverterServiceId: 1
+	 jsonExpandedEnumFields: false
+	 catchUnknownJsonKeys: false
+	 catchUnknownJsonFids: true
+	 closeChannelFromFailure: true
+	 sendJsonConvError: false
+	 globalConfig.reactorChannelEventPoolLimit: -1
+	 globalConfig.reactorMsgEventPoolLimit: -1
+	 globalConfig.workerEventPoolLimit: -1
+	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
+	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
+	 obeyOpenWindow: 1
+	 postAckTimeout: 15000
+	 maxOutstandingPosts: 100000
+	 userDispatch: 1
+	 reconnectAttemptLimit: -1
+	 reconnectMinDelay: 1000
+	 reconnectMaxDelay: 5000
+	 msgKeyInUpdates: true
+	 directoryRequestTimeOut: 45000
+	 dictionaryRequestTimeOut: 45000
+	 reissueTokenAttemptLimit: -1
+	 reissueTokenAttemptInterval: 5000
+	 restRequestTimeOut: 45000
+	 tokenReissueRatio: 0.8
+	 loginRequestTimeOut: 45000
+	 wsProtocols: tr_json2, rssl.rwf, rssl.json.v2
+	 wsMaxMsgSize: 61440
+	 maxFragmentSize: 6144
+	 serviceDiscoveryRetryCount: 
+	 restProxyHostName: null
+	 restProxyPort: null
+	 sessionEnhancedItemRecovery: true
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,657 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Successfully open Selector.
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,674 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmBaseImpl   Message-loggerMsg
+    ClientName: Consumer_1_1
+    Severity: Trace
+    Text:    Successfully created Reactor.
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,677 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    Created LoginCallbackClient
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,677 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    RDMLogin request message was populated with this info: 
+	LoginRequest: 
+	streamId: 1
+	userName: root
+	streaming: true
+	nameType: 1
+	applicationId: 256
+	applicationName: ema
+	position: 172.19.0.3/ed7af64e21af
+
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,679 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: DictionaryCallbackClient
+    Severity: Trace
+    Text:    Created DictionaryCallbackClient
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,685 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    Created DirectoryCallbackClient
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,685 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    RDMDirectoryRequest message was populated with Filter(s)
+	RDM_DIRECTORY_SERVICE_INFO_FILTER
+	RDM_DIRECTORY_SERVICE_STATE_FILTER
+	RDM_DIRECTORY_SERVICE_GROUP_FILTER
+	RDM_DIRECTORY_SERVICE_LOAD_FILTER
+	RDM_DIRECTORY_SERVICE_DATA_FILTER
+	RDM_DIRECTORY_SERVICE_LINK_FILTER
+	requesting all services
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,687 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Created ItemCallbackClient
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,719 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Created ChannelCallbackClient
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,722 LEVEL-TRACE Thread-[main]  Method-socketProxyConfiguration() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Successfully set a tunneling 
+	 Channel name Channel_1
+	Instance Name Consumer_1_1
+	with the following tunneling configurations:
+	TunnelingInfo
+			tunnelingType: None
+			HTTPproxy: false
+			HTTPproxyHostName: null
+			HTTPproxyPort: 0
+			objectName: 
+			KeystoreType: JKS
+			KeystoreFile: null
+			KeystorePasswd: null
+			SecurityProtocol: TLS
+			SecurityProtocolVersions: [1.3, 1.2]
+			SecurityProvider: SunJSSE
+			KeyManagerAlgorithm: SunX509
+			TrustManagerAlgorithm: PKIX
+
+	CredentialsInfo
+			HTTPproxyUsername: null
+			HTTPproxyPasswd: null
+			HTTPproxyDomain: null
+			HTTPproxyLocalHostname: null
+			HTTPproxyKRB5configFile: null
+	
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,722 LEVEL-TRACE Thread-[main]  Method-initializeReactor() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Attempt to connect using 
+	1] SOCKET
+	Channel name Channel_1
+	Instance Name Consumer_1_1
+	RsslReactor @56c698e3
+	InterfaceName 
+	hostName provider
+	port 14022
+	CompressionType None
+	tcpNodelay true
+	reconnectAttemptLimit -1
+	reconnectMinDelay 1000 msec
+	reconnectMaxDelay 5000 msec
+	guaranteedOutputBuffers 5000
+	numInputBuffers 100
+	sysRecvBufSize 65535
+	sysSendBufSize 65535
+	connectionPingTimeout 30000 msec
+	initializationTimeout 5 sec
+	
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,799 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Received ChannelOpened on channel Channel_1
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,801 LEVEL-TRACE Thread-[main]  Method-initializeReactor() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Successfully created a Reactor and Channel(s)
+	 Channel name(s) Channel_1
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:08:58,803 LEVEL-WARN  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Warning
+    Text:    Received ChannelDownReconnecting event on channel Channel_1
+	RsslReactor @56c698e3
+	RsslChannel @21aa6d6c
+	Error Id 0
+	Internal sysError 0
+	Error Location Reactor.processWorkerEvent
+	Error text Error initializing channel: errorId=-1 text=Connection refused
+loggerMsgEnd
+
+
+2025-03-28 08:08:59,219 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Print out active configuration detail.
+	 itemCountHint: 10000
+	 serviceCountHint: 10000
+	 requestTimeout: 15000
+	 dispatchTimeoutApiThread: 500
+	 maxDispatchCountApiThread: 500
+	 maxDispatchCountUserThread: 500
+	 userDispatch: 0
+	 configuredName: Provider_1
+	 instanceName: Provider_1_1
+	 xmlTraceEnable: false
+	 xmlTraceToFileEnable: false
+	 xmlTraceMaxFileSize: 100000000
+	 xmlTraceFileName: EmaTrace
+	 xmlTraceToMultipleFiles: false
+	 xmlTraceWriteEnable: true
+	 xmlTraceReadEnable: true
+	 xmlTracePingEnable: false
+	 defaultConverterServiceId: 1
+	 jsonExpandedEnumFields: false
+	 catchUnknownJsonKeys: false
+	 catchUnknownJsonFids: true
+	 closeChannelFromFailure: true
+	 sendJsonConvError: false
+	 globalConfig.reactorChannelEventPoolLimit: -1
+	 globalConfig.reactorMsgEventPoolLimit: -1
+	 globalConfig.workerEventPoolLimit: -1
+	 globalConfig.tunnelStreamMsgEventPoolLimit: -1
+	 globalConfig.tunnelStreamStatusEventPoolLimit: -1
+	 defaultServiceName: 14002
+	 acceptMessageWithoutAcceptingRequests: false
+	 acceptDirMessageWithoutMinFilters: false
+	 acceptMessageWithoutBeingLogin: false
+	 acceptMessageSameKeyButDiffStream: false
+	 acceptMessageThatChangesService: false
+	 acceptMessageWithoutQosInRange: false
+	 enforceAckIDValidation: false
+	 operationModel: 1
+	 directoryAdminControl: 1
+	 dictionaryAdminControl: 1
+	 refreshFirstRequired: true
+	 maxFieldDictFragmentSize: 8192
+	 maxEnumTypeFragmentSize: 12800
+loggerMsgEnd
+
+
+2025-03-28 08:08:59,222 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Successfully open Selector.
+loggerMsgEnd
+
+
+2025-03-28 08:08:59,237 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Successfully created Reactor.
+loggerMsgEnd
+
+
+2025-03-28 08:08:59,320 LEVEL-TRACE Thread-[main]  Method-<init>() Class name-com.refinitiv.ema.access.CallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Created ItemCallbackClient
+loggerMsgEnd
+
+
+2025-03-28 08:08:59,373 LEVEL-TRACE Thread-[main]  Method-initialize() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Provider bound on port = 14022.
+loggerMsgEnd
+
+
+2025-03-28 08:09:00,418 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Info
+    Text:    Received ChannelUp event on channel Channel_1
+	Instance Name Consumer_1_1
+	Component Version ETA Java Edition|EMA Java Edition
+loggerMsgEnd
+
+
+2025-03-28 08:09:01,392 LEVEL-INFO  Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Info
+    Text:    Received ChannelUp event on ClientHandle 1
+	Instance Name Provider_1_1
+	Component Version ETA Java Edition|EMA Java Edition
+loggerMsgEnd
+
+
+2025-03-28 08:09:01,393 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Trace
+    Text:    Received ChannelReady event on client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:01,399 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback() Class name-com.refinitiv.ema.access.LoginHandler   Message-loggerMsg
+    ClientName: LoginHandler
+    Severity: Trace
+    Text:    Received login request message.
+	Stream Id 1
+	Instance Name Provider_1_1
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:01,400 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 1 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:01,417 LEVEL-TRACE Thread-[main]  Method-rdmLoginMsgCallback() Class name-com.refinitiv.ema.access.LoginCallbackClient   Message-loggerMsg
+    ClientName: LoginCallbackClient
+    Severity: Trace
+    Text:    RDMLogin stream was open with refresh message
+	LoginRefresh: 
+	streamId: 1
+	name: root
+	nameType: 1
+	State: Open/Ok/None - text: "Login accepted"
+	isSolicited: true
+	singleOpen: 1
+	allowSuspectData: 1
+	supportBatchRequests: 1
+	supportEnhancedSymbolList: 1
+
+	
+loggerMsgEnd
+
+
+2025-03-28 08:09:02,415 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback() Class name-com.refinitiv.ema.access.DirectoryHandler   Message-loggerMsg
+    ClientName: DirectoryHandler
+    Severity: Trace
+    Text:    Received directory request message.
+	Stream Id 2
+	Client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:02,416 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 2 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:02,422 LEVEL-TRACE Thread-[main]  Method-downloadDictionary() Class name-com.refinitiv.ema.access.DictionaryCallbackClient   Message-loggerMsg
+    ClientName: DictionaryCallbackClient
+    Severity: Trace
+    Text:    Requested Dictionary RWFFld
+	from Service ELEKTRON_DD
+	on Channel 
+		RsslReactorChannel name Channel_1
+		RsslReactor 56c698e3
+		RsslReactorChannel 6c67e137
+	
+loggerMsgEnd
+
+
+2025-03-28 08:09:02,423 LEVEL-TRACE Thread-[main]  Method-downloadDictionary() Class name-com.refinitiv.ema.access.DictionaryCallbackClient   Message-loggerMsg
+    ClientName: DictionaryCallbackClient
+    Severity: Trace
+    Text:    Requested Dictionary RWFEnum
+	from Service ELEKTRON_DD
+	on Channel 
+		RsslReactorChannel name Channel_1
+		RsslReactor 56c698e3
+		RsslReactorChannel 6c67e137
+	
+loggerMsgEnd
+
+
+2025-03-28 08:09:02,423 LEVEL-TRACE Thread-[main]  Method-rdmDirectoryMsgCallback() Class name-com.refinitiv.ema.access.DirectoryCallbackClient   Message-loggerMsg
+    ClientName: DirectoryCallbackClient
+    Severity: Trace
+    Text:    RDMDirectory stream state was open with refresh message 
+	State: State: Open/Ok/None - text: "null"
+loggerMsgEnd
+
+
+2025-03-28 08:09:02,424 LEVEL-TRACE Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ChannelCallbackClient   Message-loggerMsg
+    ClientName: ChannelCallbackClient
+    Severity: Trace
+    Text:    Received ChannelReady event on channel Channel_1
+	Instance Name Consumer_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,418 LEVEL-TRACE Thread-[main]  Method-rdmDictionaryMsgCallback() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+    ClientName: DictionaryHandler
+    Severity: Trace
+    Text:    Received dictionary request message.
+	Stream Id 3
+	Client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,419 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 3 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,430 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,442 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,446 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,451 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,454 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,458 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,462 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,465 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,471 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,472 LEVEL-TRACE Thread-[main]  Method-sendFieldDictionaryResponse() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+    ClientName: DictionaryHandler
+    Severity: Trace
+    Text:    Successfully sent field dictionary type.
+	Dictionary name RWFFld
+	Stream Id 3
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,473 LEVEL-TRACE Thread-[main]  Method-rdmDictionaryMsgCallback() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+    ClientName: DictionaryHandler
+    Severity: Trace
+    Text:    Received dictionary request message.
+	Stream Id 4
+	Client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,473 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,474 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 4 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,477 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,479 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,481 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,484 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,486 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,489 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,490 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,492 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,494 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,496 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,497 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,499 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,500 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,501 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,503 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,505 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,507 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,510 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,512 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,514 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,517 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,519 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,520 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,522 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,523 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,524 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,526 LEVEL-TRACE Thread-[main]  Method-sendEnumTypeDictionaryResponse() Class name-com.refinitiv.ema.access.DictionaryHandler   Message-loggerMsg
+    ClientName: DictionaryHandler
+    Severity: Trace
+    Text:    Successfully sent enumeration dictionary type.
+	Dictionary name RWFEnum
+	Stream Id 4
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,526 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,527 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,529 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,530 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,531 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,532 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,533 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,534 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,534 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,535 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,536 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,536 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,537 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,537 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,538 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,539 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,539 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,540 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,540 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,541 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,542 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,543 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,543 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,544 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,544 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,545 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,545 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,546 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,547 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,547 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,548 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,548 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,549 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,549 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,550 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,551 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,552 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,552 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,553 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,553 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,554 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,554 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh complete message
+	dictionary name RWFFld
+	streamId 3
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,555 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,559 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,560 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,563 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,564 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,565 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,567 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,569 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,571 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,573 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,574 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,576 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,577 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,578 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,579 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,580 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,581 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh message
+	Dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,582 LEVEL-TRACE Thread-[main]  Method-processCallback() Class name-com.refinitiv.ema.access.ChannelDictionary   Message-loggerMsg
+    ClientName: ChannelDictionary
+    Severity: Trace
+    Text:    Received RDMDictionary refresh complete message
+	dictionary name RWFEnum
+	streamId 4
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,584 LEVEL-TRACE Thread-[main]  Method-addToItemMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Added Item 1 to item map
+	Instance name Consumer_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,590 LEVEL-TRACE Thread-[main]  Method-addToMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Added Item 2 of StreamId 5 to item map
+	Instance name Consumer_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:03,600 LEVEL-TRACE Thread-[main]  Method-addToMap() Class name-com.refinitiv.ema.access.ItemCallbackClient   Message-loggerMsg
+    ClientName: ItemCallbackClient
+    Severity: Trace
+    Text:    Added Item 3 of StreamId 6 to item map
+	Instance name Consumer_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:04,527 LEVEL-TRACE Thread-[main]  Method-logReceivedMessage() Class name-com.refinitiv.ema.access.MarketItemHandler   Message-loggerMsg
+    ClientName: MarketItemHandler
+    Severity: Trace
+    Text:    Received request message.
+	Stream Id 5
+	Client handle 1
+	Instance Name Provider_1_1
+loggerMsgEnd
+
+
+2025-03-28 08:09:04,528 LEVEL-TRACE Thread-[main]  Method-addItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Added ItemInfo 5 to ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:04,530 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received RefreshMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2025-03-28 08:09:05,531 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2025-03-28 08:09:06,532 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2025-03-28 08:09:07,534 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2025-03-28 08:09:08,534 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2025-03-28 08:09:09,536 LEVEL-TRACE Thread-[main]  Method-submit() Class name-com.refinitiv.ema.access.OmmIProviderImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Received UpdateMsg with domain type MarketPrice Domain; handle = 5, user assigned streamId = 0.
+loggerMsgEnd
+
+
+2025-03-28 08:09:10,537 LEVEL-ERROR Thread-[main]  Method-reactorChannelEventCallback() Class name-com.refinitiv.ema.access.ServerChannelHandler   Message-loggerMsg
+    ClientName: ServerChannelHandler
+    Severity: Warning
+    Text:    Received ChannelDown event on client handle 1
+	Instance Name Provider_1_1
+	RsslReactor @2cf92cc7
+	RsslChannel @30ea8c23
+	Error Id 0
+	Internal sysError 0
+	Error Location null
+	Error text SocketChannel.read returned -1 (end-of-stream)
+loggerMsgEnd
+
+
+2025-03-28 08:09:10,538 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 1 from ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:10,539 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 2 from ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:10,539 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 3 from ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:10,539 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
+    ClientName: Provider_1_1
+    Severity: Trace
+    Text:    Removed ItemInfo 4 from ItemInfoMap
+	Client handle 1
+loggerMsgEnd
+
+
+2025-03-28 08:09:10,540 LEVEL-TRACE Thread-[main]  Method-removeItemInfo() Class name-com.refinitiv.ema.access.OmmServerBaseImpl   Message-loggerMsg
     ClientName: Provider_1_1
     Severity: Trace
     Text:    Removed ItemInfo 5 from ItemInfoMap

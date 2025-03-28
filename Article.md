@@ -26,6 +26,10 @@ Note:
 
 Since RTSDK 1.5.1, The EMA uses ETA Java ValueAdd API to bind the SLF4J logging mechanism with [Java Logging API](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/overview.html) as a default logger instead of the EMA API itself (the previous versions EMA API binds SLF4J-Java Logging API directly). When developers add ```ema``` library dependency in a Maven ```pom.xml``` file, Maven automatically downloads the ```etaValueAdd``` library which also downloads the  ```slf4j-api``` and ```slf4j-jdk14``` libraries for an application too. 
 
+![figure-1](images/ema_dependencies.png "EMA Java Dependencies")
+
+![figure-2](images/etavalueadd_dependencies.png "ETA ValueAdd Java Dependencies")
+
 Developers can perform the following steps to integrate the EMA Java Maven application log with Log4j framework. 
 
 1. Configure pom.xml file's EMA dependency declaration to not load slf4j-jdk14 library.
@@ -55,7 +59,7 @@ The Log4j 2 framework requires the following dependencies to integrate with SLF4
 - [log4j-core](https://central.sonatype.com/artifact/org.apache.logging.log4j/log4j-core)
 - [log4j-slf4j2-impl](https://central.sonatype.com/artifact/org.apache.logging.log4j/log4j-slf4j2-impl) (Note, EMA 3.8.3 uses SLF4J version 2.0.16, that is why you need the log4j-slf4j**2**-impl library)
 
-The above dependencies can be configured in the pom.xml file.
+The dependencies above can be configured in the pom.xml file.
 
 ```xml
 <properties>
@@ -130,7 +134,79 @@ Now we come to the demo applications. This project contains the EMA Java demo ex
 
 ### Application Code Walkthrough
 
-The applications use SLF4J's ```logger.info()``` and ```logger.error()``` methods in the source codes to set the application messages like the following example Consumer code.
+The demo applications are the EMA Java Consumer application connects to the EMA Java IProvider application via the RSSL connection. Both applications use SLF4J's ```logger.info()``` and ```logger.error()``` methods in the source codes to log the application messages instead of ```System.out.println()``` method like the following example codes.
+
+EMA Java IProvider Code:
+
+```java
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+...
+public class IProvider_App {
+
+	private static final Logger logger = LoggerFactory.getLogger(IProvider_App.class);
+
+	public static void main(String[] args) {
+		//BasicConfigurator.configure();
+		OmmProvider provider = null;
+		try {
+
+			logger.info("Starting IProvider_App application, waiting for a consumer application");
+
+			AppClient appClient = new AppClient();
+			FieldList fieldList = EmaFactory.createFieldList();
+			UpdateMsg updateMsg = EmaFactory.createUpdateMsg();
+
+			provider = EmaFactory.createOmmProvider(EmaFactory.createOmmIProviderConfig()
+					.operationModel(OmmIProviderConfig.OperationModel.USER_DISPATCH), appClient);
+
+			....
+		} catch (OmmException | InterruptedException excp) {
+			logger.error(excp.getMessage());
+		} finally {
+			if (provider != null)
+				provider.uninitialize();
+		}
+	}
+}
+
+
+class AppClient implements OmmProviderClient {
+
+	private static final Logger logger = LoggerFactory.getLogger(AppClient.class);
+
+	...
+    void processLoginRequest(ReqMsg reqMsg, OmmProviderEvent event) {
+		logger.info("IProvider_App.AppClient: Received Consumer Login Request Message");
+		event.provider()
+				.submit(...);
+		
+		logger.info("IProvider_App.AppClient: Sent Login Refresh message");
+	}
+
+	void processMarketPriceRequest(ReqMsg reqMsg, OmmProviderEvent event) {
+		if (itemHandle != 0) {
+			processInvalidItemRequest(reqMsg, event);
+			return;
+		}
+
+		FieldList fieldList = EmaFactory.createFieldList();
+
+		fieldList.add(EmaFactory.createFieldEntry().ascii(3, reqMsg.name()));
+		fieldList.add(EmaFactory.createFieldEntry().enumValue(15, 840));
+		fieldList.add(EmaFactory.createFieldEntry().real(21, 3900, OmmReal.MagnitudeType.EXPONENT_NEG_2));
+        ...
+
+		event.provider().submit(...);
+		logger.info("IProvider_App.AppClient: Sent Market Price Refresh messages");
+		itemHandle = event.handle();
+	}
+
+}
+
+```
+
+EMA Java Consumer Code:
 
 ```java
 import org.slf4j.Logger;
@@ -155,10 +231,7 @@ public class Consumer_App {
 
 			logger.info("Consumer_App: Register Login stream");
 			consumer.registerClient(reqMsg.domainType(EmaRdm.MMT_LOGIN), appClient);
-
-			logger.info("Consumer_App: Register Directory stream");
-			consumer.registerClient(reqMsg.domainType(EmaRdm.MMT_DIRECTORY).serviceName(service_name), appClient);
-
+            ...
 			logger.info("Consumer_App: Send item request message");
 			consumer.registerClient(reqMsg.clear().serviceName(service_name).name("/EUR="), appClient);
 
@@ -170,6 +243,26 @@ public class Consumer_App {
 				consumer.uninitialize();
 		}
 	}
+}
+
+class AppClient implements OmmConsumerClient {
+
+	private static final Logger logger = LoggerFactory.getLogger(AppClient.class);
+
+	public void onRefreshMsg(RefreshMsg refreshMsg, OmmConsumerEvent event) {
+		logger.info("Consumer_App.AppClient: Receives Market Price Refresh message");
+		logger.info(String.format("Item Name: %s", refreshMsg.hasName() ? refreshMsg.name() : "<not set>"));
+		logger.info(String.format("Service Name: %s",refreshMsg.hasServiceName() ? refreshMsg.serviceName() : "<not set>"));
+
+		logger.info(String.format("Item State: %s", refreshMsg.state()));
+
+		logger.info(String.format("%s",refreshMsg));
+
+		logger.info("\n");
+	}
+
+	...
+
 }
 ```
 
@@ -236,4 +329,4 @@ Example command:
 java -Dlog4j2.configurationFile=resources/log4j2.xml -jar target/rtsdk223L1_maven-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
-That’s all I have to say about how to run an application.
+That’s all I have to say about how to run an application with the Logj42 configuration file.

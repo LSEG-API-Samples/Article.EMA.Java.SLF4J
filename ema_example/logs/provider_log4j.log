@@ -1,14 +1,23 @@
-04:40:25.786 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
-04:40:31.861 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh messages
-04:40:32.862 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:33.864 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:34.866 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:35.868 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:36.869 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:37.871 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:38.873 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:39.874 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:40.876 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:41.878 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:42.879 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
-04:40:43.891 [main] ERROR com.refinitiv.ema.provider.IProvider_App - Attempt to submit UpdateMsg with non existent Handle = 5.
+07:10:48.565 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
+07:10:51.624 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Received Consumer Login Request Message
+07:10:51.630 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Login Refresh message
+07:10:54.754 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Received Market Price Item Request message
+07:10:54.757 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh message
+07:10:55.759 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:56.761 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:57.763 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:58.764 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:10:59.766 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:11:00.768 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+07:11:01.777 [main] ERROR com.refinitiv.ema.provider.IProvider_App - Attempt to submit UpdateMsg with non existent Handle = 5.
+08:08:58.364 [main] INFO  com.refinitiv.ema.provider.IProvider_App - Starting IProvider_App application, waiting for a consumer application
+08:09:01.401 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Received Consumer Login Request Message
+08:09:01.413 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Login Refresh message
+08:09:04.529 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Received Market Price Item Request message
+08:09:04.530 [main] INFO  com.refinitiv.ema.provider.AppClient - IProvider_App.AppClient: Sent Market Price Refresh message
+08:09:05.532 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+08:09:06.533 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+08:09:07.535 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+08:09:08.535 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+08:09:09.536 [main] INFO  com.refinitiv.ema.provider.IProvider_App - IProvider_App: Sent Market Price Update message
+08:09:10.543 [main] ERROR com.refinitiv.ema.provider.IProvider_App - Attempt to submit UpdateMsg with non existent Handle = 5.

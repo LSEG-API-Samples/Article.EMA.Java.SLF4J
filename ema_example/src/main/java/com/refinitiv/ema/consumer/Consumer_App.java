@@ -35,10 +35,10 @@ class AppClient implements OmmConsumerClient {
 
 	public void onRefreshMsg(RefreshMsg refreshMsg, OmmConsumerEvent event) {
 		logger.info("Consumer_App.AppClient: Receives Market Price Refresh message");
-		logger.info("Item Name: " + (refreshMsg.hasName() ? refreshMsg.name() : "<not set>"));
-		logger.info("Service Name: " + (refreshMsg.hasServiceName() ? refreshMsg.serviceName() : "<not set>"));
+		logger.info(String.format("Item Name: %s", refreshMsg.hasName() ? refreshMsg.name() : "<not set>"));
+		logger.info(String.format("Service Name: %s",refreshMsg.hasServiceName() ? refreshMsg.serviceName() : "<not set>"));
 
-		logger.info("Item State: " + refreshMsg.state());
+		logger.info(String.format("Item State: %s", refreshMsg.state()));
 
 		logger.info(String.format("%s",refreshMsg));
 
@@ -48,9 +48,8 @@ class AppClient implements OmmConsumerClient {
 	public void onUpdateMsg(UpdateMsg updateMsg, OmmConsumerEvent event) {
 
 		logger.info("Consumer_App.AppClient: Receives Market Price Update message");
-
-		logger.info("Item Name: " + (updateMsg.hasName() ? updateMsg.name() : "<not set>"));
-		logger.info("Service Name: " + (updateMsg.hasServiceName() ? updateMsg.serviceName() : "<not set>"));
+		logger.info(String.format("Item Name: %s", updateMsg.hasName() ? updateMsg.name() : "<not set>"));
+		logger.info(String.format("Service Name: %s",updateMsg.hasServiceName() ? updateMsg.serviceName() : "<not set>"));
 
 		logger.info(String.format("%s",updateMsg));
 
@@ -58,11 +57,11 @@ class AppClient implements OmmConsumerClient {
 	}
 
 	public void onStatusMsg(StatusMsg statusMsg, OmmConsumerEvent event) {
-		logger.info("Item Name: " + (statusMsg.hasName() ? statusMsg.name() : "<not set>"));
-		logger.info("Service Name: " + (statusMsg.hasServiceName() ? statusMsg.serviceName() : "<not set>"));
+		logger.info("Consumer_App.AppClient: Receives Status message");
+		logger.info(String.format("Item Name: %s", statusMsg.hasName() ? statusMsg.name() : "<not set>"));
+		logger.info(String.format("Service Name: %s",statusMsg.hasServiceName() ? statusMsg.serviceName() : "<not set>"));
 
-		if (statusMsg.hasState())
-			logger.info("Item State: " + statusMsg.state());
+		logger.info(String.format("Item State: %s", statusMsg.hasState()?  statusMsg.state(): "<not set>"));
 
 		logger.info("\n");
 	}
